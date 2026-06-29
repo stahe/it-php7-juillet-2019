@@ -18,7 +18,7 @@
         <link rel="prev" href="le-basi-di-php.html">
       
       
-        <link rel="next" href="classi.html">
+        <link rel="next" href="le-classi.html">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>4. Esercizio pratico – Versioni 1 e 2 - Introduzione a PHP7 attraverso esempi</title>
+        <title>4. Esercizio pratico – versioni 1 e 2 - Introduzione a PHP7 attraverso esempi</title>
       
     
     
@@ -56,6 +56,8 @@
     
     
       <link rel="stylesheet" href="stylesheets/focus.css">
+    
+      <link rel="stylesheet" href="stylesheets/bidi.css">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -128,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              4. Esercizio pratico – Versioni 1 e 2
+              4. Esercizio pratico – versioni 1 e 2
             
           </span>
         </div>
@@ -303,14 +305,14 @@
   
   
     <li class="md-nav__item">
-      <a href="introduzione-a-php-7.html" class="md-nav__link">
+      <a href="introduzione-al-linguaggio-php-7.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    1. Introduzione a PHP 7
+    1. Introduzione al linguaggio PHP 7
   
 
     
@@ -330,14 +332,14 @@
   
   
     <li class="md-nav__item">
-      <a href="configurazione-di-un-ambiente-di-sviluppo.html" class="md-nav__link">
+      <a href="installazione-di-un-ambiente-di-lavoro.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    2. Configurazione di un ambiente di sviluppo
+    2. Installazione di un ambiente di lavoro
   
 
     
@@ -400,7 +402,7 @@
   <span class="md-ellipsis">
     
   
-    4. Esercizio pratico – Versioni 1 e 2
+    4. Esercizio pratico – versioni 1 e 2
   
 
     
@@ -418,7 +420,7 @@
   <span class="md-ellipsis">
     
   
-    4. Esercizio pratico – Versioni 1 e 2
+    4. Esercizio pratico – versioni 1 e 2
   
 
     
@@ -459,7 +461,7 @@
   <a href="#411-calcolo-dellimposta-lorda" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.1.1. Calcolo dell&#x27;imposta lorda
+        4.1.1. Calcolo dell’imposta lorda
       
     </span>
   </a>
@@ -467,10 +469,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#412-limite-del-quoziente-familiare" class="md-nav__link">
+  <a href="#412-limite-massimo-del-quoziente-familiare" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.1.2. Limite del quoziente familiare
+        4.1.2. Limite massimo del quoziente familiare
       
     </span>
   </a>
@@ -478,10 +480,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#413-calcolo-della-riduzione-fiscale" class="md-nav__link">
+  <a href="#413-calcolo-della-riduzione" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.1.3. Calcolo della riduzione fiscale
+        4.1.3. Calcolo della riduzione
       
     </span>
   </a>
@@ -489,10 +491,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#414-calcolo-della-riduzione-fiscale" class="md-nav__link">
+  <a href="#414-calcolo-della-riduzione-dimposta" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.1.4. Calcolo della riduzione fiscale
+        4.1.4. Calcolo della riduzione d’imposta
       
     </span>
   </a>
@@ -503,7 +505,7 @@
   <a href="#415-calcolo-dellimposta-netta" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.1.5. Calcolo dell&#x27;imposta netta
+        4.1.5. Calcolo dell’imposta netta
       
     </span>
   </a>
@@ -511,22 +513,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#416-casi-di-redditi-elevati" class="md-nav__link">
+  <a href="#416-caso-dei-redditi-elevati" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.1.6. Casi di redditi elevati
+        4.1.6. Caso dei redditi elevati
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="4.1.6. Casi di redditi elevati">
+    <nav class="md-nav" aria-label="4.1.6. Caso dei redditi elevati">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#4161-limite-massimo-alla-riduzione-del-10-sul-reddito-annuo" class="md-nav__link">
+  <a href="#4161-limite-massimo-della-riduzione-del-10-sul-reddito-annuo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.1.6.1. Limite massimo alla riduzione del 10% sul reddito annuo
+        4.1.6.1. Limite massimo della riduzione del 10% sul reddito annuo
       
     </span>
   </a>
@@ -534,10 +536,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#4162-limite-del-quoziente-familiare" class="md-nav__link">
+  <a href="#4162-limite-massimo-del-quoziente-familiare" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.1.6.2. Limite del quoziente familiare
+        4.1.6.2. Limite massimo del quoziente familiare
       
     </span>
   </a>
@@ -566,10 +568,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#42-struttura-della-directory-dello-script" class="md-nav__link">
+  <a href="#42-lalbero-degli-script" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.2. Struttura della directory dello script
+        4.2. L’albero degli script
       
     </span>
   </a>
@@ -639,10 +641,10 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#441-modifiche" class="md-nav__link">
+  <a href="#441-le-modifiche" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4.4.1. Modifiche
+        4.4.1. Le modifiche
       
     </span>
   </a>
@@ -680,14 +682,14 @@
   
   
     <li class="md-nav__item">
-      <a href="classi.html" class="md-nav__link">
+      <a href="le-classi.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    5. Classi
+    5. Le classi
   
 
     
@@ -707,14 +709,14 @@
   
   
     <li class="md-nav__item">
-      <a href="interfacce.html" class="md-nav__link">
+      <a href="le-interfacce.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    6. Interfacce
+    6. Le interfacce
   
 
     
@@ -768,7 +770,7 @@
   <span class="md-ellipsis">
     
   
-    8. Esercizio pratico – Versione 3
+    8. Esercizio pratico – versione 3
   
 
     
@@ -788,14 +790,14 @@
   
   
     <li class="md-nav__item">
-      <a href="trait.html" class="md-nav__link">
+      <a href="i-trait.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    9. Trait
+    9. I Trait
   
 
     
@@ -849,7 +851,7 @@
   <span class="md-ellipsis">
     
   
-    11. Esercizio pratico – Versione 4
+    11. Esercizio pratico – versione 4
   
 
     
@@ -869,14 +871,14 @@
   
   
     <li class="md-nav__item">
-      <a href="utilizzo-del-dbms-mysql.html" class="md-nav__link">
+      <a href="utilizzo-di-sgbd-mysql.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    12. Utilizzo del DBMS MySQL
+    12. Utilizzo di SGBD MySQL
   
 
     
@@ -903,7 +905,7 @@
   <span class="md-ellipsis">
     
   
-    13. Esercizio pratico – Versione 5
+    13. Esercizio pratico – versione 5
   
 
     
@@ -930,7 +932,7 @@
   <span class="md-ellipsis">
     
   
-    14. Esercizio pratico – Versione 6
+    14. Esercizio pratico – versione 6
   
 
     
@@ -957,7 +959,7 @@
   <span class="md-ellipsis">
     
   
-    15. Esercizio pratico – Versione 7
+    15. Esercizio pratico – versione 7
   
 
     
@@ -1038,7 +1040,7 @@
   <span class="md-ellipsis">
     
   
-    18. Esercizio pratico – Versione 8
+    18. Esercizio pratico – versione 8
   
 
     
@@ -1065,7 +1067,7 @@
   <span class="md-ellipsis">
     
   
-    19. Esercizio pratico – Versione 9
+    19. Esercizio pratico – versione 9
   
 
     
@@ -1085,14 +1087,14 @@
   
   
     <li class="md-nav__item">
-      <a href="esercizio-sullapplicazione---versione-10.html" class="md-nav__link">
+      <a href="esercizio-pratico---versione-10.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    20. Esercizio sull'applicazione – Versione 10
+    20. Esercizio pratico – versione 10
   
 
     
@@ -1112,14 +1114,14 @@
   
   
     <li class="md-nav__item">
-      <a href="elaborazione-di-documenti-xml.html" class="md-nav__link">
+      <a href="elaborazione-dei-documenti-xml.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    21. Elaborazione di documenti XML
+    21. Elaborazione dei documenti XML
   
 
     
@@ -1139,14 +1141,14 @@
   
   
     <li class="md-nav__item">
-      <a href="esercizio-dellapplicazione---versione-11.html" class="md-nav__link">
+      <a href="esercizio-pratico---versione-11.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    22. Esercizio dell'applicazione – Versione 11
+    22. Esercizio pratico – versione 11
   
 
     
@@ -1173,7 +1175,7 @@
   <span class="md-ellipsis">
     
   
-    23. Esercizio pratico – Versione 12
+    23. Esercizio pratico – versione 12
   
 
     
@@ -1193,14 +1195,14 @@
   
   
     <li class="md-nav__item">
-      <a href="esercizio-sullapplicazione---versione-13.html" class="md-nav__link">
+      <a href="esercizio-pratico---versione-13.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    24. Esercizio sull'applicazione – Versione 13
+    24. Esercizio pratico – versione 13
   
 
     
@@ -1230,158 +1232,160 @@
 
 
 
-<p><a id="toc42690606"></a>
-<a id="refheading398821881943603"></a>
-<a id="toc42689834"></a>
-<a id="toc42690220"></a></p>
-<h1 id="4-esercizio-pratico-versioni-1-e-2">4. <span style="color: #365f91">Esercizio pratico – Versioni 1 e 2</span></h1>
-<p><a id="toc42690607"></a>
-<a id="refheading398841881943603"></a>
-<a id="toc42689835"></a>
-<a id="toc42690221"></a></p>
+<p><span id="toc42690220" name="toc42690220" class="odt-bookmark-anchor"></span>
+<span id="toc42690606" name="toc42690606" class="odt-bookmark-anchor"></span>
+<span id="refheading398821881943603" name="refheading398821881943603" class="odt-bookmark-anchor"></span>
+<span id="toc42689834" name="toc42689834" class="odt-bookmark-anchor"></span></p>
+<h1 id="4-esercizio-pratico-versioni-1-e-2">4. <span style="color: #365f91">Esercizio pratico – versioni 1 e 2</span></h1>
+<p><span id="toc42690221" name="toc42690221" class="odt-bookmark-anchor"></span>
+<span id="toc42690607" name="toc42690607" class="odt-bookmark-anchor"></span>
+<span id="refheading398841881943603" name="refheading398841881943603" class="odt-bookmark-anchor"></span>
+<span id="toc42689835" name="toc42689835" class="odt-bookmark-anchor"></span></p>
 <h2 id="41-il-problema">4.1. <span style="color: #4f81bd">Il problema</span></h2>
-<p><img src="images/10000000000006A20000067B80BCA8CE.png" width="424" height="415" style="width:11.231cm;height:10.973cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000006A20000067B80BCA8CE.png" /></p>
-<p>La tabella sopra riportata consente di calcolare l&#x27;imposta nel caso semplificato di un contribuente che deve dichiarare solo il proprio stipendio. Come indicato nella nota (1), l&#x27;imposta calcolata in questo modo è l&#x27;imposta al lordo di tre meccanismi:</p>
+<p><img src="images/10000000000006A20000067B80BCA8CE.png" width="424" height="415" style="width:11.231cm;height:10.97cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000006A20000067B80BCA8CE.png" /></p>
+<p>La tabella sopra riportata consente di calcolare l’imposta nel caso semplificato di un contribuente che abbia da dichiarare solo il proprio stipendio. Come indicato nella nota (1), l’imposta così calcolata è l’imposta al lordo di tre meccanismi:</p>
 <ul>
-  <li>il limite del quoziente familiare, che si applica ai redditi elevati;
+  <li>il tetto massimo del quoziente familiare, che si applica ai redditi elevati;
   </li>
-  <li>il credito d&#x27;imposta e la riduzione d&#x27;imposta che si applicano ai redditi bassi;
+  <li>la detrazione e la riduzione d’imposta che si applicano ai redditi bassi;
   </li>
 </ul>
 
-<p>Pertanto, il calcolo dell&#x27;imposta prevede le seguenti fasi <strong>[http://impotsurlerevenu.org/comprendre-le-calcul-de-l-impot/1217-calcul-de-l-impot-2019.php]</strong>:</p>
-<p><img src="images/100000000000062000000216E5C64F97.png" width="392" height="133" style="width:10.372cm;height:3.531cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000062000000216E5C64F97.png" /></p>
-<p>Proponiamo di scrivere un programma per calcolare l&#x27;imposta di un contribuente nel caso semplificato di un contribuente che ha solo lo stipendio da dichiarare:</p>
-<p><a id="toc42690608"></a>
-<a id="refheadingtoc185625971629160"></a>
-<a id="toc42689836"></a>
-<a id="toc42690222"></a></p>
-<h3 id="411-calcolo-dellimposta-lorda">4.1.1. <span style="color: #4f81bd">Calcolo dell&#x27;imposta lorda</span></h3>
+<p>Pertanto, il calcolo dell’imposta comprende le seguenti fasi <strong>[http://impotsurlerevenu.org/comprendre-le-calcul-de-l-impot/1217-calcul-de-l-impot-2019.php]</strong>:</p>
+<p><img src="images/100000000000062000000216E5C64F97.png" width="392" height="133" style="width:10.372cm;height:3.53cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000062000000216E5C64F97.png" /></p>
+<p>Ci proponiamo di scrivere un programma che consenta di calcolare l’imposta di un contribuente nel caso semplificato di un contribuente che abbia da dichiarare solo il proprio stipendio:</p>
+<p><span id="toc42690222" name="toc42690222" class="odt-bookmark-anchor"></span>
+<span id="toc42690608" name="toc42690608" class="odt-bookmark-anchor"></span>
+<span id="refheadingtoc185625971629160" name="refheadingtoc185625971629160" class="odt-bookmark-anchor"></span>
+<span id="toc42689836" name="toc42689836" class="odt-bookmark-anchor"></span></p>
+<h3 id="411-calcolo-dellimposta-lorda">4.1.1. <span style="color: #4f81bd">Calcolo dell’imposta lorda</span></h3>
 <p>L&#x27;imposta lorda può essere calcolata come segue:</p>
-<p>Per prima cosa, calcoliamo il numero di quote del contribuente:</p>
+<p>Si calcola innanzitutto il numero di quote del contribuente:</p>
 <ol>
     <ul>
-      <li>ogni genitore contribuisce con 1 quota;
+      <li>ogni genitore apporta 1 quota;
       </li>
-      <li>I primi due figli apportano ciascuno 1/2 quota;
+      <li>i primi due figli apportano ciascuno 1/2 quota;
       </li>
-      <li>i figli rimanenti apportano ciascuno una quota:
+      <li>i figli successivi apportano una quota ciascuno:
       </li>
     </ul>
 </ol>
 
 <p>Il numero di quote è quindi:</p>
 <ul>
-  <li><b>nbParts=1+nbChildren*0,5+(nbChildren-2)*0,5 </b>se il dipendente è celibe;
+  <li><b>nbParts=1+nbEnfants*0,5+(nbEnfants-2)*0,5 </b>se il dipendente non è sposato;
   </li>
-  <li><b>nbParts = 2 + nbChildren * 0,5 + (nbChildren - 2) * 0,5 </b>se è sposato;
+  <li><b>nbParts = 2 + nbEnfants * 0,5 + (nbEnfants - 2) * 0,5 </b>se è sposato;
   </li>
 </ul>
 
-<p>dove <em>nbFigli</em> è il numero di figli;</p>
+<p>dove <em>nbEnfants</em> è il numero dei suoi figli;</p>
 <ul>
-  <li>calcoliamo il reddito imponibile <b>R = 0,9 * S, </b>dove <i>S </i>è lo stipendio annuale;
+  <li>si calcola il reddito imponibile <b>R=0,9*S </b>dove <i>S </i>è lo stipendio annuale;
   </li>
-  <li>il quoziente familiare <b>QF </b>si calcola <b>come QF = R / nbParts;</b>
+  <li>si calcola il quoziente familiare QF = R / <b>nbParts;</b>
   </li>
-  <li>calcoliamo l&#x27;imposta lorda <b>I </b>sulla base dei seguenti dati (2019):
+  <li>si calcola l’imposta lorda <b>I </b>in base ai seguenti dati (2019):
   </li>
 </ul>
 
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">9964</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">0</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">0</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">27.519</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">0,14</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">1.394,96</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">73.779</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">0,3</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">5.798</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">156.244</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">0,41</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">13.913,69</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">0</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">0,45</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">20.163,45</div></td></tr></table>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">9964</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">0</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">0</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">27519</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">0,14</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">1394,96</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">73779</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">0,3</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">5798</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">156.244</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">0,41</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">13913,69</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">0</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">0,45</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">20163,45</div></td></tr></table>
 
-<p>Ogni riga ha 3 campi: <em>campo1</em>, <em>campo2</em>, <em>campo3</em>. Per calcolare l&#x27;imposta I, cerchiamo la prima riga in cui <em>QF &lt;= campo1</em> e prendiamo i valori da quella riga. Ad esempio, per un dipendente sposato con due figli e uno stipendio annuo S di <strong>50.000</strong> euro:</p>
-<p>Reddito imponibile: R=0,9*S=45.000</p>
+<p>Ogni riga presenta 3 campi: <em>champ1</em>, <em>champ2</em>, <em>champ3</em>. Per calcolare l&#x27;imposta I, si cerca la prima riga in cui <em>QF ≤ campo1</em> e si prendono i valori di quella riga. Ad esempio, per un dipendente sposato con due figli e uno stipendio annuo S di 50.<strong>000</strong> euro:</p>
+<p>Reddito imponibile: R=0,9*S=45000</p>
 <p>Numero di quote: nbParts=2+2*0,5=3</p>
-<p>Quoziente familiare: QF=45.000/3=15.000</p>
+<p>Quoziente familiare: QF = 45.000 / 3 = 15.000</p>
 <p>La prima riga in cui QF &lt;= campo1 è la seguente:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>    27519        0.14    1394.96
 </code></pre></div>
-<p>L&#x27;imposta <em>I</em> è quindi pari a <strong>0,14*R – 1394,</strong>96*numeroDiAzioni=<strong>[0,14*45000-1394,96*3]=2115</strong>. L&#x27;imposta viene arrotondata per difetto all&#x27;euro più vicino.</p>
-<p>Se nella prima riga si verifica la condizione <em>QF &lt;= campo1</em>, l&#x27;imposta è pari a zero.</p>
-<p>Se QF è tale che la condizione <em>QF &lt;= campo1</em> non è mai soddisfatta, vengono utilizzati i coefficienti dell&#x27;ultima riga. Qui:</p>
+<p>L’imposta <em>I</em> è quindi pari a <strong>0,14*R – 1394,96*nbParts=[0,14*45000-1394,96*3]=2115</strong>. L’imposta viene arrotondata all’euro inferiore.</p>
+<p>Se la relazione <em>QF ≤ campo1 è vera</em> fin dalla prima riga, allora l’imposta è pari a zero.</p>
+<p>Se QF è tale che la relazione <em>QF&lt;=campo1</em> non è mai soddisfatta, allora vengono utilizzati i coefficienti dell’ultima riga. In questo caso:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>    0            0.45        20163.45
 </code></pre></div>
-<p>il che dà l&#x27;imposta lorda <strong>I</strong> = <strong>0,45*R – 20163,45*nbParts</strong>.</p>
-<p><a id="toc42689837"></a>
-<a id="toc42690223"></a>
-<a id="toc42690609"></a>
-<a id="plafonnementquotientfamilial"></a>
-<a id="plafonnementduquotient"></a>
-<a id="refheadingtoc1594583098701287"></a></p>
-<h3 id="412-limite-del-quoziente-familiare">4.1.2. <span style="color: #4f81bd">Limite del quoziente familiare</span></h3>
-<p><img src="images/10000000000006140000029C5BD678B4.png" width="389" height="167" style="width:10.291cm;height:4.419cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000006140000029C5BD678B4.png" /></p>
-<p>Per determinare se si applica il limite del quoziente familiare (QF), ricalcoliamo l&#x27;imposta lorda senza i figli. Ancora una volta, per il dipendente sposato con due figli e uno stipendio annuo S di <strong>50.000</strong> euro:</p>
-<p>Reddito imponibile: R = 0,9 * S = 45.000</p>
+<p>il che dà l’imposta lorda <strong>I=0,45*R – 20163,45*nbParts</strong>.</p>
+<p><span id="refheadingtoc1594583098701287" name="refheadingtoc1594583098701287" class="odt-bookmark-anchor"></span>
+<span id="toc42689837" name="toc42689837" class="odt-bookmark-anchor"></span>
+<span id="toc42690223" name="toc42690223" class="odt-bookmark-anchor"></span>
+<span id="toc42690609" name="toc42690609" class="odt-bookmark-anchor"></span>
+<span id="plafonnementquotientfamilial" name="plafonnementquotientfamilial" class="odt-bookmark-anchor"></span>
+<span id="plafonnementduquotient" name="plafonnementduquotient" class="odt-bookmark-anchor"></span></p>
+<h3 id="412-limite-massimo-del-quoziente-familiare">4.1.2. <span style="color: #4f81bd">Limite massimo del quoziente familiare</span></h3>
+<p><img src="images/10000000000006140000029C5BD678B4.png" width="389" height="167" style="width:10.291cm;height:4.42cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000006140000029C5BD678B4.png" /></p>
+<p>Per verificare se si applica il limite massimo del quoziente familiare QF, si ricalcola l’imposta lorda senza considerare i figli. Sempre per il lavoratore dipendente sposato con due figli e uno stipendio annuo S di <strong>50.000</strong> euro:</p>
+<p>Reddito imponibile: R=0,9*S=45.000</p>
 <p>Numero di quote: nbParts=2 (i figli non vengono più conteggiati)</p>
-<p>Quoziente familiare: QF = 45.000 / 2 = 22.500</p>
+<p>Quoziente familiare: QF=45000/2=22500</p>
 <p>La prima riga in cui QF &lt;= campo1 è la seguente:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>    27519        0.14    1394.96
 </code></pre></div>
-<p>L&#x27;imposta <em>I</em> è quindi pari a <strong>0,14*R – 1394,</strong>96*numero di azioni <strong>= [0,14*45.000 – 1394,96*2] = 3.510</strong>.</p>
-<p>Indennità massima per figli a carico: 1551 * 2 = 3102 euro</p>
-<p>Imposta minima: 3.510 – 3.102 = 408 euro</p>
-<p>L&#x27;imposta lorda con 3 scaglioni fiscali, già calcolata a 2.115 euro, è superiore all&#x27;imposta minima di 408 euro, quindi in questo caso non si applica il limite familiare.</p>
-<p>In generale, l&#x27;imposta lorda è <strong>maggiore di (imposta1, imposta2)</strong> dove:</p>
+<p>L&#x27;imposta <em>I</em> è quindi pari a <strong>0,14*R – 1394,96*nbParts=[0,14*45000-1394,96*2]=3510</strong>.</p>
+<p>Guadagno massimo legato ai figli: 1551 * 2  = 3102 euro</p>
+<p>Imposta minima: 3510 – 3102 = 408 euro</p>
+<p>L’imposta lorda con 3 quote, già calcolata pari a 2115 euro, è superiore all’imposta minima di 408 euro, pertanto in questo caso non si applica il limite massimo familiare.</p>
+<p>In generale, l’imposta lorda è <strong>maggiore di (imposta1, imposta2)</strong> dove:</p>
 <ul>
-  <li><b>[imposta1]</b>: è l&#x27;imposta lorda calcolata includendo i figli;
+  <li><b>[impôt1]</b>: è l’imposta lorda calcolata con i figli;
   </li>
-  <li><b>[imposta2]</b>: è l&#x27;imposta lorda calcolata senza figli e ridotta del credito massimo (in questo caso 1.551 euro per metà quota) relativo ai figli;
-  </li>
-</ul>
-<p><a id="toc42690610"></a>
-<a id="refheadingtoc185627971629160"></a>
-<a id="toc42689838"></a>
-<a id="toc42690224"></a></p>
-<h3 id="413-calcolo-della-riduzione-fiscale">4.1.3. <span style="color: #4f81bd">Calcolo della riduzione fiscale</span></h3>
-<p><img src="images/10000000000005FB000002056AF8E873.png" width="383" height="129" style="width:10.132cm;height:3.42cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000005FB000002056AF8E873.png" /></p>
-<p>Sempre per il dipendente coniugato con due figli e uno stipendio annuo S di <strong>50.000</strong> euro:</p>
-<p>L&#x27;imposta lorda (2.115) del passaggio precedente è inferiore a 2.627 euro per una coppia (1.595 euro per una persona sola): si applica quindi la riduzione d&#x27;imposta. Essa si calcola come segue:</p>
-<p>sconto = soglia (coppia = 1.970 / single = 1.196) - 0,75 * imposta lorda</p>
-<p><strong>sconto</strong> = 1.970 – 0,75 * 2.115 = 383,75, arrotondato a <strong>384</strong> euro.</p>
-<p><strong>Nuova imposta</strong> lorda = 2.115 – 384 = <strong>1.731</strong> euro</p>
-<p><a id="toc42690611"></a>
-<a id="refheadingtoc185629971629160"></a>
-<a id="toc42689839"></a>
-<a id="toc42690225"></a></p>
-<h3 id="414-calcolo-della-riduzione-fiscale">4.1.4. <span style="color: #4f81bd">Calcolo della riduzione fiscale</span></h3>
-<p><img src="images/100000000000060400000212A9BCD897.png" width="385" height="133" style="width:10.192cm;height:3.508cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000060400000212A9BCD897.png" /></p>
-<p>Al di sotto di una certa soglia, viene applicata una riduzione del 20% all&#x27;imposta lorda risultante dai calcoli precedenti. Nel 2019, le soglie sono le seguenti:</p>
-<ul>
-  <li>Single: 21.037 euro;
-  </li>
-  <li>coppia: 42.074 euro; (la cifra 37.968 utilizzata nell&#x27;esempio sopra riportato sembra essere errata);
+  <li><b>[impôt2]</b>: è l’imposta lorda calcolata senza i figli e ridotta del guadagno massimo (in questo caso 1551 euro per mezza quota) relativo ai figli;
   </li>
 </ul>
 
-<p>Questa soglia viene aumentata del valore: 3.797 * (numero di quote pari alla metà versate dai figli).</p>
-<p>Ancora una volta, per il dipendente sposato con due figli e uno stipendio annuo S di <strong>50.000</strong> euro:</p>
+<p><span id="toc42690224" name="toc42690224" class="odt-bookmark-anchor"></span>
+<span id="toc42690610" name="toc42690610" class="odt-bookmark-anchor"></span>
+<span id="refheadingtoc185627971629160" name="refheadingtoc185627971629160" class="odt-bookmark-anchor"></span>
+<span id="toc42689838" name="toc42689838" class="odt-bookmark-anchor"></span></p>
+<h3 id="413-calcolo-della-riduzione">4.1.3. <span style="color: #4f81bd">Calcolo della riduzione</span></h3>
+<p><img src="images/10000000000005FB000002056AF8E873.png" width="383" height="129" style="width:10.132cm;height:3.42cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000005FB000002056AF8E873.png" /></p>
+<p>Sempre per il dipendente sposato con due figli e uno stipendio annuo S di <strong>50.</strong>000 euro:</p>
+<p>L’imposta lorda (2115) risultante dalla fase precedente è inferiore a 2627 euro per una coppia (1595 euro per un celibe): si applica quindi la riduzione. Essa si ottiene con il seguente calcolo:</p>
+<p>riduzione = soglia (coppia = 1970 / single = 1196) - 0,75 * imposta lorda</p>
+<p>riduzione = 1970 - 0,75 * 2115 = 383,75 arrotondato a <strong>384</strong> euro.</p>
+<p><strong>Nuova imposta</strong> lorda = 2115 - 384 = <strong>1731</strong> euro</p>
+<p><span id="toc42690225" name="toc42690225" class="odt-bookmark-anchor"></span>
+<span id="toc42690611" name="toc42690611" class="odt-bookmark-anchor"></span>
+<span id="refheadingtoc185629971629160" name="refheadingtoc185629971629160" class="odt-bookmark-anchor"></span>
+<span id="toc42689839" name="toc42689839" class="odt-bookmark-anchor"></span></p>
+<h3 id="414-calcolo-della-riduzione-dimposta">4.1.4. <span style="color: #4f81bd">Calcolo della riduzione d’imposta</span></h3>
+<p><img src="images/100000000000060400000212A9BCD897.png" width="385" height="132" style="width:10.192cm;height:3.5cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000060400000212A9BCD897.png" /></p>
+<p>Al di sotto di una certa soglia, viene applicata una riduzione del 20% sull’imposta lorda risultante dai calcoli precedenti. Nel 2019, le soglie sono le seguenti:</p>
+<ul>
+  <li>single: 21.037 euro;
+  </li>
+  <li>coppia: 42.074 euro; (la cifra 37.968 utilizzata nell’esempio sopra riportato sembra errata);
+  </li>
+</ul>
+
+<p>Questa soglia viene aumentata del valore: 3.797 * (numero di mezze quote apportate dai figli).</p>
+<p>Sempre per il lavoratore dipendente sposato con due figli e uno stipendio annuo S di <strong>50.000</strong> euro:</p>
 <ul>
   <li>il suo reddito imponibile (45.000 euro) è inferiore alla soglia (42.074 + 2 × 3.797) = 49.668 euro;
   </li>
-  <li>ha quindi diritto a una riduzione del 20% della sua imposta: 1.731 * 0,2 = 346,2 euro, arrotondati a 347 euro;
+  <li>ha quindi diritto a una riduzione del 20% della sua imposta: 1731 * 0,2 = 346,2 euro, arrotondati a 347 euro;
   </li>
-  <li>l&#x27;imposta lorda del contribuente diventa: 1.731 – 347 =<b> 1.384 </b>euro;
+  <li>l’imposta lorda del contribuente diventa: 1.731 - 347 = 1.<b>384 </b>euro;
   </li>
 </ul>
-<p><a id="toc42690612"></a>
-<a id="refheadingtoc185631971629160"></a>
-<a id="toc42689840"></a>
-<a id="toc42690226"></a></p>
-<h3 id="415-calcolo-dellimposta-netta">4.1.5. <span style="color: #4f81bd"><span style="color: #4f81bd">Calcolo dell&#x27;imposta netta</span></span></h3>
-<p>Il nostro calcolo termina qui: l&#x27;imposta netta dovuta sarà di <strong>1.384</strong> euro. In realtà, il contribuente potrebbe avere diritto ad altre detrazioni, in particolare per le donazioni a organizzazioni pubbliche o di interesse generale.</p>
-<p><a id="toc42690613"></a>
-<a id="refheadingtoc185633971629160"></a>
-<a id="toc42689841"></a>
-<a id="toc42690227"></a></p>
-<h3 id="416-casi-di-redditi-elevati">4.1.6. <span style="color: #4f81bd">Casi di redditi elevati</span></h3>
-<p>Il nostro esempio precedente si applica alla maggior parte dei dipendenti. Tuttavia, il calcolo dell&#x27;imposta è diverso per i redditi elevati.</p>
-<p><a id="toc42690614"></a>
-<a id="refheadingtoc185635971629160"></a>
-<a id="toc42689842"></a>
-<a id="toc42690228"></a></p>
-<h4 id="4161-limite-massimo-alla-riduzione-del-10-sul-reddito-annuo">4.1.6.1. <span style="color: #4f81bd">Limite massimo alla riduzione del 10% sul reddito annuo</span></h4>
-<p>Nella maggior parte dei casi, il reddito imponibile viene calcolato utilizzando la formula: R = 0,9 × S, dove S è lo stipendio annuale. Questa è nota come riduzione del 10%. Tale riduzione è soggetta a un limite massimo. Nel 2019:</p>
+
+<p><span id="toc42690226" name="toc42690226" class="odt-bookmark-anchor"></span>
+<span id="toc42690612" name="toc42690612" class="odt-bookmark-anchor"></span>
+<span id="refheadingtoc185631971629160" name="refheadingtoc185631971629160" class="odt-bookmark-anchor"></span>
+<span id="toc42689840" name="toc42689840" class="odt-bookmark-anchor"></span></p>
+<h3 id="415-calcolo-dellimposta-netta">4.1.5. <span style="color: #4f81bd">Calcolo dell’imposta netta</span></h3>
+<p>Il nostro calcolo si ferma qui: l’imposta netta da pagare sarà di <strong>1384</strong> euro. In realtà, il contribuente può beneficiare di altre riduzioni, in particolare per le donazioni a enti di interesse pubblico o generale.</p>
+<p><span id="toc42690227" name="toc42690227" class="odt-bookmark-anchor"></span>
+<span id="toc42690613" name="toc42690613" class="odt-bookmark-anchor"></span>
+<span id="refheadingtoc185633971629160" name="refheadingtoc185633971629160" class="odt-bookmark-anchor"></span>
+<span id="toc42689841" name="toc42689841" class="odt-bookmark-anchor"></span></p>
+<h3 id="416-caso-dei-redditi-elevati">4.1.6. <span style="color: #4f81bd">Caso dei redditi elevati</span></h3>
+<p>Il nostro esempio precedente corrisponde alla maggior parte dei casi dei lavoratori dipendenti. Tuttavia, il calcolo dell’imposta è diverso nel caso dei redditi elevati.</p>
+<p><span id="toc42690228" name="toc42690228" class="odt-bookmark-anchor"></span>
+<span id="toc42690614" name="toc42690614" class="odt-bookmark-anchor"></span>
+<span id="refheadingtoc185635971629160" name="refheadingtoc185635971629160" class="odt-bookmark-anchor"></span>
+<span id="toc42689842" name="toc42689842" class="odt-bookmark-anchor"></span></p>
+<h4 id="4161-limite-massimo-della-riduzione-del-10-sul-reddito-annuo">4.1.6.1. <span style="color: #4f81bd">Limite massimo della riduzione del 10% sul reddito annuo</span></h4>
+<p>Nella maggior parte dei casi, il reddito imponibile si ottiene con la formula: R=0,9*S, dove S è lo stipendio annuale. Si parla in questo caso di riduzione del 10%. Tale riduzione è soggetta a un limite massimo. Nel 2019:</p>
 <ul>
   <li>non può superare i 12.502 euro;
   </li>
@@ -1389,90 +1393,91 @@
   </li>
 </ul>
 
-<p>Consideriamo il caso di un dipendente non sposato, senza figli e con uno stipendio annuo di 200.000 euro:</p>
+<p>Prendiamo il caso di un dipendente non sposato senza figli con uno stipendio annuo di 200.000 euro:</p>
 <ul>
-  <li>la riduzione del 10% è pari a 200.000 euro &gt; 12.502 euro. Il limite massimo è quindi fissato a 12.502 euro;
+  <li>la riduzione del 10% è pari a 20.000 euro &gt; 12.502 euro. Viene quindi ridotta a 12.502 euro;
   </li>
 </ul>
-<p><a id="toc42690615"></a>
-<a id="refheadingtoc185637971629160"></a>
-<a id="toc42689843"></a>
-<a id="toc42690229"></a></p>
-<h4 id="4162-limite-del-quoziente-familiare">4.1.6.2. <span style="color: #4f81bd">Limite del quoziente familiare</span></h4>
-<p>Consideriamo un caso in cui si applica il limite familiare menzionato nel paragrafo <a href="#plafonnementduquotient"><u><span style="color: #0563c1">collegato</span></u></a>. Prendiamo il caso di una coppia con tre figli e un reddito annuo di 100.000 euro. Ripassiamo i passaggi del calcolo: </p>
+
+<p><span id="toc42690229" name="toc42690229" class="odt-bookmark-anchor"></span>
+<span id="toc42690615" name="toc42690615" class="odt-bookmark-anchor"></span>
+<span id="refheadingtoc185637971629160" name="refheadingtoc185637971629160" class="odt-bookmark-anchor"></span>
+<span id="toc42689843" name="toc42689843" class="odt-bookmark-anchor"></span></p>
+<h4 id="4162-limite-massimo-del-quoziente-familiare">4.1.6.2. <span style="color: #4f81bd">Limite massimo del quoziente familiare</span></h4>
+<p>Consideriamo un caso in cui si applica il limite massimo del quoziente familiare indicato nel paragrafo <a href="#plafonnementduquotient"><u><span style="color: #0563c1">di riferimento</span></u></a>. Prendiamo il caso di una coppia con tre figli e un reddito annuo di 100.000 euro. Ripassiamo le fasi del calcolo: </p>
 <ul>
-  <li>La detrazione del 10% è pari a 10.000 euro &lt; 12.502 euro. Il reddito imponibile <b>R </b>è quindi pari a 100.000 - 10.000 = 90.000 euro;
+  <li>la detrazione del 10% è pari a 10.000 euro &lt; 12.502 euro. Il reddito imponibile <b>R </b>è quindi 100.000 - 10.000 = 90.000 euro;
   </li>
-  <li>La coppia possiede <b>nbParts </b>= 2 + 0,<b>5 </b>* 2 + 1 =<b> 4 </b>quote;
+  <li>la coppia ha nbParts = 2 + 0,<b>5 × 2 + 1 = 4 </b>quote;
   </li>
-  <li>il loro quoziente familiare è quindi QF = R / <b>nbParts = 90.000 </b>/ 4 = 22.<b>500 </b>euro;
+  <li>il suo quoziente familiare è quindi QF = R / <b>nbParts</b> = 90.000 / 4 = 22.500 euro;
   </li>
-  <li>la loro imposta lorda <b>I1 con </b>figli è I1 = 0,14 × 90.000 – 1.394,96 × 4 = 7.020 euro;
+  <li>la sua imposta lorda <b>I1 con </b>figli è pari a I1=0,14*90.000-1.394,96*4= 7.020 euro;
   </li>
-  <li>la loro imposta lorda <b>I2 senza </b>figli:
+  <li>la sua imposta lorda <b>I2 senza </b>figli:
     <ul>
-      <li>QF = 90.000 / 2 = 45.000 euro;
+      <li><b>QF = 90.</b>000 / 2 = 45.000 euro;
       </li>
-      <li>I2 = 0,3 × 90.000 – 5.798 × 2 = 15.404 euro;
+      <li>I2 = 0,3 × 90.000 − 5.798 × 2 = 15.404 euro;
       </li>
-      <li>la regola del limite massimo del quoziente familiare stabilisce che il beneficio derivante dai figli non può superare (1.551 × 4 mezze quote) = 6.204 euro. Tuttavia, in questo caso, si ha I2 – I1 = 15.404 – 7.020 = 8.384 euro, che è superiore a 6.204 euro;
+      <li>la regola del limite massimo del quoziente familiare stabilisce che il beneficio derivante dai figli non possa superare (1551*4 mezze quote)=6204 euro. In questo caso, invece, è pari a I2-I1=15404-7020= 8384 euro, quindi superiore a 6204 euro;
       </li>
-      <li>l&#x27;imposta lorda viene quindi ricalcolata come I3 = I2 - 6.204 = 15.404 - 6.204 =<b> 9.200 </b>euro;
+      <li>l’imposta lorda viene quindi ricalcolata come <b>I3 </b>= <b>I2-6204 </b>= 15.404 - 6.204 =<b> 9.200 </b>euro;
       </li>
     </ul>
   </li>
 </ul>
 
-<p>Questa coppia non riceverà né un credito d&#x27;imposta né una riduzione, e la loro imposta finale sarà di <strong>9.200</strong> euro.</p>
-<p><a id="toc42690616"></a>
-<a id="refheadingtoc185639971629160"></a>
-<a id="toc42689844"></a>
-<a id="toc42690230"></a></p>
+<p>Questa coppia non beneficerà né di uno sconto né di una riduzione e la sua imposta finale sarà di <strong>9200</strong> euro.</p>
+<p><span id="toc42690230" name="toc42690230" class="odt-bookmark-anchor"></span>
+<span id="toc42690616" name="toc42690616" class="odt-bookmark-anchor"></span>
+<span id="refheadingtoc185639971629160" name="refheadingtoc185639971629160" class="odt-bookmark-anchor"></span>
+<span id="toc42689844" name="toc42689844" class="odt-bookmark-anchor"></span></p>
 <h3 id="417-dati-ufficiali">4.1.7. <span style="color: #4f81bd">Dati ufficiali</span></h3>
-<p>Il calcolo dell&#x27;imposta è complesso. Nel corso di questo documento, verranno effettuati dei test utilizzando i seguenti esempi. I risultati provengono dal simulatore dell&#x27;autorità fiscale <strong>[</strong><a href="https://www3.impots.gouv.fr/simulateur/calcul_impot/2019/simplifie/index.htm"><u><span style="color: #0563c1">https://www3.impots.gouv.fr/simulateur/calcul_impot/2019/simplifie/index.htm</span></u></a><strong>]</strong>:</p>
-<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>Contribuente</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>Risultati ufficiali</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>Risultati dell&#x27;algoritmo del documento</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Coppia con 2 figli e un reddito annuo di 55.555 euro</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>Imposta </b>= 2.<b>815 </b>euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 14%</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>Imposta </b>= 2.<b>814 </b>euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 14%</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Coppia con 2 figli e un reddito annuo di 50.000 euro</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>Imposta </b>= 1.<b>385 </b>euro</div><div style="margin:0 0 0.5em 0">Credito d&#x27;imposta = 720 euro</div><div style="margin:0 0 0.5em 0">Riduzione = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 14%</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>Imposta </b>= 1.<b>384 </b>euro</div><div style="margin:0 0 0.5em 0">Detrazione = 384 euro</div><div style="margin:0 0 0.5em 0">Credito = 347 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 14%</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Coppia con 3 figli e un reddito annuo di 50.000 euro</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Imposta =<b> 0 </b>euro</div><div style="margin:0 0 0.5em 0">Credito d&#x27;imposta = 384 euro</div><div style="margin:0 0 0.5em 0">Riduzione = 346 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 14%</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Imposta =<b> 0 </b>euro</div><div style="margin:0 0 0.5em 0">Sconto = 720 euro</div><div style="margin:0 0 0.5em 0">Riduzione = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 14%</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Single con 2 figli e un reddito annuo di 100.000 euro</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Imposta = 19.<b>884 </b>euro</div><div style="margin:0 0 0.5em 0">Credito d&#x27;imposta = 0 euro</div><div style="margin:0 0 0.5em 0">Detrazione = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 41%</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Imposta = 19.<b>884 </b>euro</div><div style="margin:0 0 0.5em 0">Sovrattassa = 4.480 euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Riduzione = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 41%</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Single con 3 figli e un reddito annuo di 100.000 euro</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Imposta = 16.<b>782 </b>euro</div><div style="margin:0 0 0.5em 0">Credito d&#x27;imposta = 0 euro</div><div style="margin:0 0 0.5em 0">Detrazione = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 41%</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Imposta = 16.<b>782 </b>euro</div><div style="margin:0 0 0.5em 0">Sovrattassa = 7.176 euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Riduzione = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 41%</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Coppia con tre figli e un reddito annuo di 100.000 euro</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Imposta =<b> 9.200 </b>euro</div><div style="margin:0 0 0.5em 0">Credito d&#x27;imposta = 0 euro</div><div style="margin:0 0 0.5em 0">Detrazione = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 30%</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Imposta =<b> 9.200 </b>euro</div><div style="margin:0 0 0.5em 0">Sovrattassa = 2.180 euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Riduzione = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 30%</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Coppia con 5 figli e un reddito annuo di 100.000 euro</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Imposta = 4.<b>230 </b>euro</div><div style="margin:0 0 0.5em 0">Credito d&#x27;imposta = 0 euro</div><div style="margin:0 0 0.5em 0">Detrazione = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 14%</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Imposta = 4.<b>230 </b>€</div><div style="margin:0 0 0.5em 0">Detrazione = 0 euro</div><div style="margin:0 0 0.5em 0">Detrazione = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 14%</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Celibe, senza figli e reddito annuo di 100.000 euro</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Imposta = 22.<b>986 </b>euro</div><div style="margin:0 0 0.5em 0">Credito d&#x27;imposta = 0 euro</div><div style="margin:0 0 0.5em 0">Detrazione = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 41%</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Imposta = 22.<b>986 </b>euro</div><div style="margin:0 0 0.5em 0">Sovrattassa = 0 euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Riduzione = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 41%</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Coppia con 2 figli e un reddito annuo di 30.000 euro</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Imposta =<b> 0 </b>euro</div><div style="margin:0 0 0.5em 0">Credito d&#x27;imposta = 0 euro</div><div style="margin:0 0 0.5em 0">Detrazione = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 0%</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Imposta =<b> 0 </b>euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Detrazione = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 0%</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Celibe, senza figli e reddito annuo di 200.000 euro</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>Imposta </b>=<b> 64.211 </b>euro</div><div style="margin:0 0 0.5em 0">Credito d&#x27;imposta = 0 euro</div><div style="margin:0 0 0.5em 0">Detrazione = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 45%</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Imposta = 64.<b>210 </b>euro</div><div style="margin:0 0 0.5em 0">Sovrattassa = 7.498 euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Riduzione = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 45%</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0">Coppia con 3 figli e un reddito annuo di 200.000 euro</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>Imposta </b>= 42.<b>843 </b>euro</div><div style="margin:0 0 0.5em 0">Credito d&#x27;imposta = 0 euro</div><div style="margin:0 0 0.5em 0">Detrazione = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 41%</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top;"><div style="margin:0 0 0.5em 0"><b>Imposta </b>= 42.842 euro</div><div style="margin:0 0 0.5em 0">Sovrattassa = 17.283 euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Riduzione = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 41%</div></td></tr></table>
+<p>Il calcolo dell’imposta è complesso. Nel corso del documento, le verifiche saranno effettuate utilizzando i seguenti esempi. I risultati provengono dal simulatore dell’amministrazione fiscale <strong>[https://www3.impots.gouv.fr/simulateur/calcul_impot/2019/simplifie/index.htm]</strong>:</p>
+<table class="odt-table" style="border-collapse: collapse; width: 100%; margin-bottom: 1em;"><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Contribuente</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Risultati ufficiali</b></div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Risultati dell’algoritmo del documento</b></div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">Coppia con 2 figli e un reddito annuo di 55555 euro</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Imposta = 2815 </b>euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 14 %</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Imposta = 2814 </b>euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 14 %</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">Coppia con 2 figli e un reddito annuo di 50.000 euro</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Imposta = 1.385 </b>euro</div><div style="margin:0 0 0.5em 0">Sconto = 720 euro</div><div style="margin:0 0 0.5em 0">Riduzione = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 14 %</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Imposta = 1.384 </b>euro</div><div style="margin:0 0 0.5em 0">Sconto = 384 euro</div><div style="margin:0 0 0.5em 0">Sconto = 347 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 14 %</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">Coppia con 3 figli e un reddito annuo di 50.000 euro</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Imposta</b> =<b> 0 </b>euro</div><div style="margin:0 0 0.5em 0">Sconto = 384 euro</div><div style="margin:0 0 0.5em 0">Sconto = 346 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 14 %</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Imposta</b> =<b> 0 </b>euro</div><div style="margin:0 0 0.5em 0">Sconto = 720 euro</div><div style="margin:0 0 0.5em 0">Riduzione = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 14 %</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">Celibe con 2 figli e un reddito annuo di 100.000 euro</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Imposta</b> = 19.<b>884 </b>euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 41 %</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Imposta</b> = 19.<b>884 </b>euro</div><div style="margin:0 0 0.5em 0">Sovrattassa = 4.480 euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Riduzione = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 41 %</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">Celibe con 3 figli e un reddito annuo di 100.000 euro</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Imposta</b> = 16.<b>782 </b>euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 41 %</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Imposta</b> = 16.<b>782 </b>euro</div><div style="margin:0 0 0.5em 0">Sovrattassa = 7.176 euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Riduzione = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 41 %</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">Coppia con 3 figli e un reddito annuo di 100.000 euro</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Imposta</b> = 9.<b>200 </b>euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Riduzione = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 30 %</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Imposta</b> = 9.<b>200 </b>euro</div><div style="margin:0 0 0.5em 0">Sovrattassa = 2.180 euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Riduzione = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 30 %</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">Coppia con 5 figli e un reddito annuo di 100.000 euro</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Imposta = 4.230 </b>euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 14 %</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Imposta = 4.230 </b>euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 14 %</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">Celibe senza figli e con un reddito annuo di 100.000 euro</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Imposta</b> = 22.<b>986 </b>euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 41 %</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">Imposta = 22.<b>986 </b>euro</div><div style="margin:0 0 0.5em 0">Sovrattassa = 0 euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Riduzione = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 41 %</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">Coppia con 2 figli e un reddito annuo di 30.000 euro</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Imposta</b> =<b> 0 </b>euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 0%</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Imposta</b> =<b> 0 </b>euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Riduzione = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 0 %</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">Celibe senza figli e con un reddito annuo di 200.000 euro</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Imposta = 64.211 </b>euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 45 %</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">Imposta = 64.<b>210 </b>euro</div><div style="margin:0 0 0.5em 0">Maggiorazione = 7.498 euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Riduzione = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 45 %</div></td></tr><tr><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0">Coppia con 3 figli e un reddito annuo di 200.000 euro</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Imposta</b> = 42.<b>843 </b>euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 41%</div></td><td style="border: 1px solid #ddd; padding: 8px; vertical-align: top; text-align: left;"><div style="margin:0 0 0.5em 0"><b>Imposta</b> = 42.<b>842 </b>euro</div><div style="margin:0 0 0.5em 0">Maggiorazione = 17.283 euro</div><div style="margin:0 0 0.5em 0">Sconto = 0 euro</div><div style="margin:0 0 0.5em 0">Riduzione = 0 euro</div><div style="margin:0 0 0.5em 0">Aliquota fiscale = 41 %</div></td></tr></table>
 
-<p>Nell&#x27;esempio sopra riportato, il termine &quot;sovrattassa&quot; si riferisce all&#x27;importo aggiuntivo pagato dai redditi più elevati a causa di due fattori:</p>
+<p>In questo caso, per «sovrattassa» si intende l’importo aggiuntivo che i redditi elevati devono versare a causa di due fenomeni:</p>
 <ul>
-  <li>il limite massimo del 10% sulla detrazione dal reddito annuo;
+  <li>il limite massimo del 10% sulla detrazione sui redditi annuali;
   </li>
-  <li>il limite massimo dell&#x27;assegno familiare;
+  <li>il limite massimo del quoziente familiare;
   </li>
 </ul>
 
-<p>Questo indicatore non ha potuto essere verificato poiché il simulatore dell’autorità fiscale non lo fornisce.</p>
-<p>Si può notare che l’algoritmo del documento calcola ogni volta l’importo corretto dell’imposta, sebbene con un margine di errore di 1 euro. Questo margine di errore deriva dall’arrotondamento. Tutti gli importi monetari vengono arrotondati per eccesso all’euro più vicino in alcuni casi e per difetto all’euro più vicino in altri. Poiché non conoscevo le regole ufficiali, gli importi monetari nell’algoritmo del documento sono stati arrotondati:</p>
+<p>Questo indicatore non ha potuto essere verificato poiché il simulatore dell’amministrazione fiscale non lo fornisce.</p>
+<p>Si nota che l’algoritmo del documento fornisce ogni volta un’imposta corretta, con tuttavia un margine di errore di 1 euro. Questo margine di errore deriva dagli arrotondamenti. Tutte le somme di denaro vengono arrotondate a volte all’euro superiore, a volte all’euro inferiore. Poiché non conoscevo le regole ufficiali, gli importi dell’algoritmo del documento sono stati arrotondati:</p>
 <ul>
-  <li>per arrotondamento per eccesso all&#x27;euro successivo per sconti e riduzioni;
+  <li>all’euro superiore per gli sconti e le riduzioni;
   </li>
-  <li>per difetto all&#x27;euro più vicino per i supplementi e l&#x27;imposta finale;
+  <li>all’euro inferiore per i sovrapprezzi e l’imposta finale;
   </li>
 </ul>
 
-<p>Nella sezione seguente, verranno condotti dei test per verificare la validità dei risultati. Verranno eseguiti utilizzando gli esempi della tabella precedente con un margine di errore accettato di 1 euro.</p>
-<p><a id="toc42690617"></a>
-<a id="refheadingtoc787912244347140"></a>
-<a id="toc42689845"></a>
-<a id="toc42690231"></a></p>
-<h2 id="42-struttura-della-directory-dello-script">4.2. <span style="color: #4f81bd">Struttura della directory dello script</span></h2>
-<p><img src="images/100000000000017C0000019648ECB13C.png" width="133" height="142" style="width:3.521cm;height:3.762cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000017C0000019648ECB13C.png" /></p>
-<p><a id="toc42689846"></a>
-<a id="toc42690232"></a>
-<a id="toc42690618"></a>
-<a id="version1"></a>
-<a id="refheading398861881943603"></a></p>
-<h2 id="43-versione-1">4.3. <span style="color: #4f81bd">Versione 1</span></h2>
-<p><a id="toc42689847"></a>
-<a id="toc42690233"></a>
-<a id="toc42690619"></a>
-<a id="lalgorithme"></a>
-<a id="refheadingtoc1882273931965946"></a></p>
+<p>In seguito, verranno effettuati dei test per verificare la validità dei risultati. Saranno condotti utilizzando gli esempi della tabella precedente con un margine di errore accettabile di 1 euro.</p>
+<p><span id="toc42690231" name="toc42690231" class="odt-bookmark-anchor"></span>
+<span id="toc42690617" name="toc42690617" class="odt-bookmark-anchor"></span>
+<span id="refheadingtoc787912244347140" name="refheadingtoc787912244347140" class="odt-bookmark-anchor"></span>
+<span id="toc42689845" name="toc42689845" class="odt-bookmark-anchor"></span></p>
+<h2 id="42-lalbero-degli-script">4.2. <span style="color: #4f81bd">L’albero degli script</span></h2>
+<p><img src="images/100000000000017C0000019648ECB13C.png" width="133" height="142" style="width:3.521cm;height:3.761cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000017C0000019648ECB13C.png" /></p>
+<p><span id="refheading398861881943603" name="refheading398861881943603" class="odt-bookmark-anchor"></span>
+<span id="toc42689846" name="toc42689846" class="odt-bookmark-anchor"></span>
+<span id="toc42690232" name="toc42690232" class="odt-bookmark-anchor"></span>
+<span id="toc42690618" name="toc42690618" class="odt-bookmark-anchor"></span>
+<span id="version1" name="version1" class="odt-bookmark-anchor"></span></p>
+<h2 id="43-versione-1">4.3. <span style="color: #4f81bd"><strong>Versione 1</strong></span></h2>
+<p><span id="refheadingtoc1882273931965946" name="refheadingtoc1882273931965946" class="odt-bookmark-anchor"></span>
+<span id="toc42689847" name="toc42689847" class="odt-bookmark-anchor"></span>
+<span id="toc42690233" name="toc42690233" class="odt-bookmark-anchor"></span>
+<span id="toc42690619" name="toc42690619" class="odt-bookmark-anchor"></span>
+<span id="lalgorithme" name="lalgorithme" class="odt-bookmark-anchor"></span></p>
 <h3 id="431-lalgoritmo">4.3.1. <span style="color: #4f81bd">L&#x27;algoritmo</span></h3>
-<p>Presentiamo un programma iniziale in cui:</p>
+<p>Presentiamo un primo programma in cui:</p>
 <ul>
-  <li>i dati necessari per calcolare l&#x27;imposta sono hard-coded nel programma come array e costanti;
+  <li>i dati necessari al calcolo dell&#x27;imposta sono hardcoded nel codice sotto forma di tabelle e costanti;
   </li>
-  <li>i dati del contribuente (stato civile, figli, stipendio) sono memorizzati in un primo file di testo <b>[taxpayersdata.txt]</b>;
+  <li>i dati dei contribuenti (stato civile, figli, stipendio) si trovano in un primo file di testo <b>[taxpayersdata.txt]</b>;
   </li>
   <li>i risultati del calcolo dell&#x27;imposta (stato civile, figli, stipendio, imposta) sono memorizzati in un secondo file di testo <b>[resultats.txt]</b>;
   </li>
@@ -1481,11 +1486,11 @@
 <p>Lo script <strong>[version-01/main.php]</strong> è il seguente:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// strict types for function parameters</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// tipi rigorosi per i parametri delle funzioni</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">declare</span>(strict_types=1);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// global constants</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// costanti globali</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">define(</span>&quot;PLAFOND_QF_DEMI_PART&quot;<span style="color:#000000">, 1551);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">define(</span>&quot;PLAFOND_REVENUS_CELIBATAIRE_POUR_REDUCTION&quot;<span style="color:#000000">, 21037);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">define(</span>&quot;PLAFOND_REVENUS_COUPLE_POUR_REDUCTION&quot;<span style="color:#000000">, 42074);</span></span></span>
@@ -1496,99 +1501,99 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">define(</span>&quot;PLAFOND_IMPOT_CELIBATAIRE_POUR_DECOTE&quot;<span style="color:#000000">, 1595);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">define(</span>&quot;ABATTEMENT_DIXPOURCENT_MAX&quot;<span style="color:#000000">, 12502);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">define(</span>&quot;ABATTEMENT_DIXPOURCENT_MIN&quot;<span style="color:#000000">, 437);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// definition of local constants</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// definizione delle costanti locali</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">$DATA = </span>&quot;taxpayersdata.txt&quot;<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">$RESULTATS = </span>&quot;resultats.txt&quot;<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">$limites = <span style="font-weight:bold;color:#7f0055">array</span>(9964, 27519, 73779, 156244, 0);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">$coeffR = <span style="font-weight:bold;color:#7f0055">array</span>(0, 0.14, 0.3, 0.41, 0.45);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">$coeffN = <span style="font-weight:bold;color:#7f0055">array</span>(0, 1394.96, 5798, 13913.69, 20163.45);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// reading data</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// lettura dei dati</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">$data = <span style="font-style:italic">fopen</span>($DATA, <span style="color:#0000c0">&quot;r&quot;</span>);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">if </span>(!$data) {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">print </span>&quot;Impossible d&#x27;ouvrir en lecture le fichier des données <span style="font-weight:bold">[$DATA]</span>\n&quot;<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span>exit<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// open results file</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// apertura del file dei risultati</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">$résultats = <span style="font-style:italic">fopen</span>($RESULTATS, <span style="color:#0000c0">&quot;w&quot;</span>);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">if </span>(!$résultats) {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">print </span>&quot;Impossible de créer le fichier des résultats <span style="font-weight:bold">[$RESULTATS]</span>\n&quot;<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span>exit<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// use the current line of the data file</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// elaborazione della riga corrente del file dei dati</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">while </span>($ligne = <span style="font-style:italic">fgets</span>($data, 100)) {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// remove any end-of-line marker</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// si rimuove l&#x27;eventuale carattere di fine riga</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $ligne = <span style="font-style:italic">cutNewLineChar</span>($ligne);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// we retrieve the 3 fields married:children:salary which form $ligne</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// si recuperano i 3 campi coniuge:figli:stipendio che formano $ligne</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">list</span>($marié, $enfants, $salaire) = <span style="font-style:italic">explode</span>(<span style="color:#0000c0">&quot;,&quot;</span>, $ligne);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// tax calculation</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// si calcola l&#x27;imposta</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $result = <span style="font-style:italic">calculImpot</span>($marié, (int) $enfants, (float) $salaire, $limites, $coeffR, $coeffN);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// enter the result in the results file</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// si inserisce il risultato nel file dei risultati</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $result = [&quot;marié&quot; =&gt; $marié, &quot;enfants&quot; =&gt; $enfants, &quot;salaire&quot; =&gt; $salaire] + $result;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  fputs($résultats, \json_encode($result, <span style="color:#0000c0">JSON_UNESCAPED_UNICODE</span>) . <span style="color:#0000c0">&quot;\n&quot;</span>);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// following data</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// dato successivo</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// close files</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// si chiudono i file</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-style:italic">fclose</span>($data);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-style:italic">fclose</span>($résultats);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// end</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// fine</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">exit<span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">// --------------------------------------------------------------------------</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">function</span> <span style="font-style:italic">cutNewLinechar</span>(<span style="font-weight:bold;color:#7f0055">string </span>$ligne): <span style="font-weight:bold;color:#7f0055">string </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// delete the end-of-line mark from $ligne if it exists</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  $L = strlen($ligne);  // line length</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// si elimina il carattere di fine riga da $ligne, se presente</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  $L = strlen($ligne);  // lunghezza riga</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">while </span>(<span style="font-style:italic">substr</span>($ligne, $L - 1, 1) === <span style="color:#0000c0">&quot;\n&quot; </span>or <span style="font-style:italic">substr</span>($ligne, $L - 1, 1) === <span style="color:#0000c0">&quot;\r&quot;</span>) {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    $ligne = <span style="font-style:italic">substr</span>($ligne, 0, $L - 1);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    $L--;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// end</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// fine</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">return</span>($ligne);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// tAX CALCULATION</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// calcolo dell&#x27;imposta</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">// --------------------------------------------------------------------------</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">function</span> <span style="font-style:italic">calculImpot</span>(<span style="font-weight:bold;color:#7f0055">string </span>$marié, <span style="font-weight:bold;color:#7f0055">int </span>$enfants, <span style="font-weight:bold;color:#7f0055">float </span>$salaire, <span style="font-weight:bold;color:#7f0055">array </span>$limites, <span style="font-weight:bold;color:#7f0055">array </span>$coeffR, <span style="font-weight:bold;color:#7f0055">array </span>$coeffN): <span style="font-weight:bold;color:#7f0055">array </span>{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  …</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// result</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// risultato</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#7f0055">return </span>[&quot;impôt&quot; =&gt; floor($impot), &quot;surcôte&quot; =&gt; $surcôte, &quot;décôte&quot; =&gt; $décôte, &quot;réduction&quot; =&gt; $réduction, &quot;taux&quot; =&gt; $taux];</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">// --------------------------------------------------------------------------</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">function</span> <span style="font-style:italic">calculImpot2</span>(<span style="font-weight:bold;color:#7f0055">string </span>$marié, <span style="font-weight:bold;color:#7f0055">int </span>$enfants, <span style="font-weight:bold;color:#7f0055">float </span>$salaire, <span style="font-weight:bold;color:#7f0055">array </span>$limites, <span style="font-weight:bold;color:#7f0055">array </span>$coeffR, <span style="font-weight:bold;color:#7f0055">array </span>$coeffN): <span style="font-weight:bold;color:#7f0055">array </span>{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  …</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// result</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// risultato</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#7f0055">return </span>[&quot;impôt&quot; =&gt; $impôt, &quot;surcôte&quot; =&gt; $surcôte, &quot;taux&quot; =&gt; $coeffR[$i]];</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// revenuImposable=annualwage-discount</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// the allowance has a minimum and a maximum</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// revenuImposable=stipendioAnnuale-detrazione</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// la detrazione ha un valore minimo e uno massimo</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">function</span> <span style="font-style:italic">getRevenuImposable</span>(<span style="font-weight:bold;color:#7f0055">float </span>$salaire): <span style="font-weight:bold;color:#7f0055">float </span>{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  …</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// result</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// risultato</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">return </span><span style="font-style:italic">floor</span>($revenuImposable);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// calculates any discount</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// calcola un&#x27;eventuale riduzione</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">function</span> <span style="font-style:italic">getDecote</span>(<span style="font-weight:bold;color:#7f0055">string </span>$marié, <span style="font-weight:bold;color:#7f0055">float </span>$salaire, <span style="font-weight:bold;color:#7f0055">float </span>$impots): <span style="font-weight:bold;color:#7f0055">float </span>{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  …</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// result</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// risultato</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">return </span><span style="font-style:italic">ceil</span>($décôte);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// calculates any reduction</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// calcola un&#x27;eventuale riduzione</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">function</span> <span style="font-style:italic">getRéduction</span>(<span style="font-weight:bold;color:#7f0055">string </span>$marié, <span style="font-weight:bold;color:#7f0055">float </span>$salaire, <span style="font-weight:bold;color:#7f0055">int </span>$enfants, <span style="font-weight:bold;color:#7f0055">float </span>$impots): <span style="font-weight:bold;color:#7f0055">float </span>{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#557f5f">/</span>…</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// result</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// risultato</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">return </span><span style="font-style:italic">ceil</span>($réduction);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p>Il file di dati <em>taxpayersdata.txt</em> (stato civile, figli, stipendio):</p>
+<p>Il file dei dati <em>taxpayersdata.txt</em>  (coniuge, figli, stipendio):</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-3-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-3-3"> 3</a></span>
@@ -1611,7 +1616,7 @@
 <a id="__codelineno-3-10" name="__codelineno-3-10"></a>non,0,200000
 <a id="__codelineno-3-11" name="__codelineno-3-11"></a>oui,3,200000
 </code></pre></div></td></tr></table></div>
-<p>Il file <em>results.txt</em> (stato civile, figli, stipendio, imposta, sovrattassa, sconto, riduzione, aliquota fiscale) dei risultati ottenuti:</p>
+<p>I file <em>résultats.txt</em> (stato civile, figli, stipendio, imposta, maggiorazione, riduzione, aliquota fiscale) dei risultati ottenuti:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-4-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-4-3"> 3</a></span>
@@ -1636,77 +1641,77 @@
 </code></pre></div></td></tr></table></div>
 <p><strong>Commenti</strong></p>
 <ul>
-  <li>riga 4: imponiamo il rigoroso rispetto del tipo dei parametri della funzione;
+  <li>riga 4: si impone il rigoroso rispetto del tipo dei parametri delle funzioni;
   </li>
-  <li>righe 7–16: definizione di tutte le costanti necessarie per il calcolo dell&#x27;imposta;
+  <li>righe 7-16: definizione di tutte le costanti necessarie al calcolo dell’imposta;
   </li>
-  <li>riga 19: il nome del file di testo contenente i dati del contribuente (stato civile, figli, stipendio);
+  <li>riga 19: il nome del file di testo contenente i dati dei contribuenti (coniugato, figli, stipendio);
   </li>
-  <li>riga 20: il nome del file di testo contenente i risultati (stato civile, figli, stipendio, imposta) del calcolo delle imposte;
+  <li>riga 20: il nome del file di testo contenente i risultati (stato civile, figli, stipendio, imposta) del calcolo dell&#x27;imposta;
   </li>
-  <li>righe 21–23: i tre array di dati che definiscono le diverse fasce di imposta per il calcolo delle imposte;
+  <li>righe 21-23: le tre tabelle di dati che definiscono le diverse fasce di imposta per il calcolo dell’imposta;
   </li>
-  <li>righe 26–30: aprono il file dei dati del contribuente in lettura <b>[r]</b>. La funzione<b> [fopen] </b>restituisce il valore booleano FALSE se il file non può essere aperto;
+  <li>righe 26-30: apertura in lettura <b>[r] </b>del file dei dati dei contribuenti. La funzione <b>[fopen] </b>restituisce il valore booleano FALSE se l’apertura non è andata a buon fine;
   </li>
-  <li>righe 33–37: aprono il file dei risultati in modalità scrittura <b>[w]</b>;
+  <li>righe 33-37: apertura in scrittura <b>[w] </b>del file dei risultati;
   </li>
-  <li>righe 40–51: ciclo per leggere le righe (coniuge, figli, reddito) dal file dei dati del contribuente;
+  <li>righe 40-51: ciclo di lettura delle righe (coniuge, figli, stipendio) del file dei dati dei contribuenti;
   </li>
-  <li>riga 40: la funzione<b> [fgets] </b>legge 100 caratteri e si ferma al primo carattere di fine riga incontrato. In questo caso, tutte le righe hanno una lunghezza inferiore a 100 caratteri. Se viene incontrato un carattere di fine riga, questo viene incluso nella stringa restituita. Quando viene raggiunta la fine del file, la funzione<b> [fgets] </b>restituisce FALSE;
+  <li>riga 40: la funzione <b>[fgets] </b>legge 100 caratteri e si interrompe al primo carattere di fine riga incontrato. In questo caso tutte le righe contengono meno di 100 caratteri. Se viene rilevato un carattere di fine riga, questo viene incluso nella stringa restituita. Quando viene raggiunta la fine del file, la funzione <b>[fgets] </b>restituisce il valore FALSE;
   </li>
   <li>riga 42: il carattere di fine riga viene rimosso;
   </li>
-  <li>riga 44: vengono recuperati i componenti (stato civile, figli, stipendio) della riga;
+  <li>riga 44: vengono recuperate le componenti (coniuge, figli, stipendio) della riga;
   </li>
-  <li>riga 46: viene calcolata l&#x27;imposta. Il risultato viene restituito come array associativo (riga 76);
+  <li>riga 46: viene calcolata l’imposta. Il risultato viene restituito sotto forma di tabella associativa (riga 76);
   </li>
-  <li>riga 48: le chiavi <b>[married, children, salary] </b>vengono aggiunte all&#x27;array precedentemente recuperato;
+  <li>riga 48: all&#x27;array recuperato in precedenza vengono aggiunte le chiavi <b>[marié, enfants, salaire]</b>;
   </li>
-  <li>riga 49: il risultato viene memorizzato nel file dei risultati come stringa JSON;
+  <li>riga 49: il risultato viene memorizzato nel file dei risultati sotto forma di stringa jSON;
   </li>
-  <li>righe 53–54: una volta che il file dei dati del contribuente è stato completamente elaborato, i file vengono chiusi;
+  <li>righe 53-54: una volta completata l’elaborazione del file dei dati dei contribuenti, i file vengono chiusi;
   </li>
-  <li>riga 60: la funzione che rimuove l&#x27;interruzione di riga da una riga <i>$line</i>. L&#x27;interruzione di riga è la stringa &quot;\r\n&quot; sui sistemi Windows, &quot;\n&quot; sui sistemi Unix. Il risultato è la stringa di input senza l&#x27;interruzione di riga.
+  <li>riga 60: la funzione che rimuove il carattere di fine riga da una riga $ligne. Il carattere di fine riga è la stringa &quot;\r\n&quot; sui sistemi Windows, &quot;\n&quot; sui sistemi Unix. Il risultato è la stringa di input senza il carattere di fine riga.
   </li>
-  <li>righe 63-64: <i>substr($string, $start, $size) </i>è la sottostringa di <i>$string </i>che inizia dal carattere <i>$start </i>e contiene al massimo <i>$size </i>caratteri;
+  <li>righe 63-64: <i>substr($chaîne,$début,$taille) </i>è la sottostringa di $chaîne che inizia dal carattere $début e contiene al massimo $taille caratteri;
   </li>
 </ul>
 
 <p>La funzione <strong>[calculImpot]</strong> è la seguente:</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-python">
-<span class="odt-code-line"><span class="odt-code-line-content">// constantes globales</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// costanti globali</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">define(</span>&quot;PLAFOND_QF_DEMI_PART&quot;<span style="color:#000000">, 1551);</span></span></span>
 </code></pre></div>
 
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-bash">
-<span class="odt-code-line"><span class="odt-code-line-content">// calcul de l&#x27;impôt</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// calcolo dell&#x27;imposta</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">// --------------------------------------------------------------------------</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">function</span> <span style="font-style:italic">calculImpot</span>(<span style="font-weight:bold;color:#7f0055">string </span>$marié, <span style="font-weight:bold;color:#7f0055">int </span>$enfants, <span style="font-weight:bold;color:#7f0055">float </span>$salaire, <span style="font-weight:bold;color:#7f0055">array </span>$limites, <span style="font-weight:bold;color:#7f0055">array </span>$coeffR, <span style="font-weight:bold;color:#7f0055">array </span>$coeffN): <span style="font-weight:bold;color:#7f0055">array </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// $marié : oui, non</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// $enfants : nombre d&#x27;enfants</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// $salaire : salaire annuel</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// $limites, $coeffR, $coeffN : les tableaux des données permettant le calcul de l&#x27;impôt</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// $marié: sì, no</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// $enfants: numero di figli</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// $salaire: stipendio annuo</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// $limites, $coeffR, $coeffN: tabelle dei dati che consentono il calcolo dell&#x27;imposta</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#557f5f">//</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// calcul de l&#x27;impôt avec enfants</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// calcolo dell&#x27;imposta con figli</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $result1 = <span style="font-style:italic">calculImpot2</span>($marié, $enfants, $salaire, $limites, $coeffR, $coeffN);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $impot1 = $result1<span style="font-weight:bold">[&quot;impôt&quot;]</span>;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// calcul de l&#x27;impôt sans les enfants</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// calcolo dell&#x27;imposta senza figli</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">if </span>($enfants != 0) {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    $result2 = <span style="font-style:italic">calculImpot2</span>($marié, 0, $salaire, $limites, $coeffR, $coeffN);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    $impot2 = $result2<span style="font-weight:bold">[&quot;impôt&quot;]</span>;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// application du plafonnement du quotient familial</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// applicazione del limite massimo del quoziente familiare</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="font-weight:bold;color:#7f0055">if </span>($enfants &lt; 3) {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// $PLAFOND_QF_DEMI_PART euros pour les 2 premiers enfants</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// $PLAFOND_QF_DEMI_PART euro per i primi 2 figli</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">      $impot2 = $impot2 - $enfants * <span style="font-style:italic;color:#0000c0">PLAFOND_QF_DEMI_PART</span>;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    } <span style="font-weight:bold;color:#7f0055">else </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// $PLAFOND_QF_DEMI_PART euros pour les 2 premiers enfants, le double pour les suivants</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// $PLAFOND_QF_DEMI_PART euro per i primi 2 figli, il doppio per i successivi</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">      $impot2 = $impot2 - 2 * <span style="font-style:italic;color:#0000c0">PLAFOND_QF_DEMI_PART</span> - ($enfants - 2) * 2 * <span style="font-style:italic;color:#0000c0">PLAFOND_QF_DEMI_PART</span>;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  } <span style="font-weight:bold;color:#7f0055">else </span>{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    $impot2 = $impot1;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    $result2 = $result1;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// on prend l&#x27;impôt le plus fort avec le taux et la surcôte qui vont avec</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// si considera l’imposta più elevata con l’aliquota e la maggiorazione corrispondenti</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">if </span>($impot1 &gt; $impot2) {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    $impot = $impot1;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    $taux = $result1<span style="font-weight:bold">[&quot;taux&quot;]</span>;</span></span>
@@ -1716,73 +1721,73 @@
 <span class="odt-code-line"><span class="odt-code-line-content">    $impot = $impot2;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    $taux = $result2<span style="font-weight:bold">[&quot;taux&quot;]</span>;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// calcul d&#x27;une éventuelle décôte</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// calcolo di un’eventuale riduzione</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $décôte = <span style="font-style:italic">getDecote</span>($marié, $salaire, $impot);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $impot -= $décôte;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// calcul d&#x27;une éventuelle réduction d&#x27;impôts</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// calcolo di un’eventuale riduzione delle imposte</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $réduction = <span style="font-style:italic">getRéduction</span>($marié, $salaire, $enfants, $impot);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $impot -= $réduction;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// résultat</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// risultato</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#7f0055">return </span>[&quot;impôt&quot; =&gt; floor($impot), &quot;surcôte&quot; =&gt; $surcôte, &quot;décôte&quot; =&gt; $décôte, &quot;réduction&quot; =&gt; $réduction, &quot;taux&quot; =&gt; $taux];</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">// --------------------------------------------------------------------------</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">function</span> <span style="font-style:italic">calculImpot2</span>(<span style="font-weight:bold;color:#7f0055">string </span>$marié, <span style="font-weight:bold;color:#7f0055">int </span>$enfants, <span style="font-weight:bold;color:#7f0055">float </span>$salaire, <span style="font-weight:bold;color:#7f0055">array </span>$limites, <span style="font-weight:bold;color:#7f0055">array </span>$coeffR, <span style="font-weight:bold;color:#7f0055">array </span>$coeffN): <span style="font-weight:bold;color:#7f0055">array </span>{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  …</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// résultat</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// risultato</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#7f0055">return </span>[&quot;impôt&quot; =&gt; $impôt, &quot;surcôte&quot; =&gt; $surcôte, &quot;taux&quot; =&gt; $coeffR[$i]];</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// revenuImposable=salaireAnnuel-abattement</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// l&#x27;abattement de 10 % a un min et un max</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// revenuImposable=stipendioAnnuale-detrazione</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// la detrazione del 10% ha un valore minimo e uno massimo</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">function</span> <span style="font-style:italic">getRevenuImposable</span>(<span style="font-weight:bold;color:#7f0055">float </span>$salaire): <span style="font-weight:bold;color:#7f0055">float </span>{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  …</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// calcule une décôte éventuelle</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// calcola un&#x27;eventuale riduzione</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">function</span> <span style="font-style:italic">getDecote</span>(<span style="font-weight:bold;color:#7f0055">string </span>$marié, <span style="font-weight:bold;color:#7f0055">float </span>$salaire, <span style="font-weight:bold;color:#7f0055">float </span>$impots): <span style="font-weight:bold;color:#7f0055">float </span>{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  …</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// résultat</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// risultato</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">return </span><span style="font-style:italic">ceil</span>($décôte);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// calcule une réduction éventuelle</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// calcola un&#x27;eventuale riduzione</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">function</span> <span style="font-style:italic">getRéduction</span>(<span style="font-weight:bold;color:#7f0055">string </span>$marié, <span style="font-weight:bold;color:#7f0055">float </span>$salaire, <span style="font-weight:bold;color:#7f0055">int </span>$enfants, <span style="font-weight:bold;color:#7f0055">float </span>$impots): <span style="font-weight:bold;color:#7f0055">float </span>{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  …</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// résultat</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// risultato</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">return </span><span style="font-style:italic">ceil</span>($réduction);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <p><strong>Commenti</strong></p>
 <ul>
-  <li>Riga 10: L&#x27;imposta lorda viene calcolata includendo i figli. Il risultato viene restituito nella forma <b>[&quot;tax&quot; =&gt; $tax, &quot;surcharge&quot; =&gt; $surcharge, &quot;rate&quot; =&gt; $coeffR[$i]</b>] dove:
+  <li>riga 10: l’imposta lorda viene calcolata includendo i figli. Si ottiene un risultato nella forma <b>[&quot;impôt&quot; =&gt; $impôt, &quot;surcôte&quot; =&gt; $surcôte, &quot;taux&quot; =&gt; $coeffR[$i]]</b> con:
     <ul>
-      <li><b>[‘tax’]</b>: l’imposta lorda;
+      <li><b>[‘impôt’]</b>: l’imposta lorda;
       </li>
-      <li><b>[‘surcharge’]</b>: l’importo della sovrattassa, se presente. Questa si applica quando la detrazione del 10% supera la soglia di 12.502 euro;
+      <li><b>[‘surcôte’]</b>: l’importo della maggiorazione, se presente. Questa si applica quando la detrazione del 10% supera la soglia di 12.502 euro;
       </li>
-      <li><b>[‘rate’]</b>: l’aliquota fiscale del contribuente;
+      <li><b>[‘taux’]</b>: l’aliquota fiscale del contribuente;
       </li>
     </ul>
   </li>
-  <li>riga 11: l’imposta lorda <b>[impot1] </b>dovuta;
+  <li>riga 11: l’imposta lorda da pagare <b>[impot1]</b>;
   </li>
-  <li>righe 13–14: se il contribuente ha almeno un figlio, il calcolo dell’imposta viene rifatto utilizzando gli stessi dati ma con 0 figli. Questo secondo calcolo è necessario per determinare se la riduzione prevista per i figli (nbParts*coeffN) supera una certa soglia;
+  <li>righe 13-14: se il contribuente ha almeno un figlio, il calcolo dell’imposta viene ripetuto con gli stessi dati ma considerando 0 figli. Questo secondo calcolo è necessario per verificare se la riduzione derivante dai figli (nbParts*coeffN) è superiore a una determinata soglia;
   </li>
-  <li>riga 15: l’imposta lorda <b>[impot2] </b>dovuta;
+  <li>riga 15: l’imposta lorda <b>[impot2] </b>da pagare;
   </li>
-  <li>righe 16–23: per l&#x27;imposta lorda <b>[impot2]</b>, ora si tiene conto dei figli: ogni quota di 1/2 fornita dai figli consente una riduzione di <b>[PLAFOND_QF_DEMI_PART] </b>euro;
+  <li>righe 16-23: per l’imposta lorda <b>[impot2]</b>, si tiene ora conto dei figli: ogni 1/2 quota derivante dai figli consente una riduzione di <b>[PLAFOND_QF_DEMI_PART] </b>euro;
   </li>
-  <li>righe 25–26: caso in cui il contribuente non abbia figli. In questo caso, il calcolo <b>di [impot2] </b>non è necessario. È pari a <b>[impot1]</b>;
+  <li>righe 25-26: caso in cui il contribuente non abbia figli. In questo caso, il calcolo di <b>[impot2] </b>è superfluo. È pari a <b>[impot1]</b>;
   </li>
-  <li>righe 29–37: sono state calcolate due imposte lorde <b>[impot1, impot2]</b>. L&#x27;autorità fiscale mantiene la più alta delle due. Ciò produce un&#x27;imposta lorda <b>[impot]</b>;
+  <li>righe 29-37: sono state calcolate due imposte lorde <b>[impot1, impot2]</b>. L’amministrazione fiscale prende in considerazione la più elevata delle due. Si ottiene un’imposta lorda <b>[impot]</b>;
   </li>
-  <li>righe 39–40: l&#x27;importo lordo <b>[tax] </b>può essere soggetto a una riduzione;
+  <li>righe 39-40: l’importo lordo <b>[impot] </b>può essere soggetto a una riduzione;
   </li>
-  <li>righe 42–43: l&#x27;importo lordo <b>[impot] </b>può essere soggetto a una riduzione;
+  <li>righe 42-43: l’importo lordo <b>[impot] </b>può essere soggetto a una riduzione;
   </li>
-  <li>riga 45: <b>[tax] </b>è ora l&#x27;imposta netta dovuta. Vengono restituiti i risultati;
+  <li>riga 45: <b>[impot] </b>è ora l’imposta netta da pagare. Si restituiscono i risultati;
   </li>
 </ul>
 
@@ -1790,117 +1795,117 @@
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-bash">
 <span class="odt-code-line"><span class="odt-code-line-content">// --------------------------------------------------------------------------</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">function</span> <span style="font-style:italic">calculImpot2</span>(<span style="font-weight:bold;color:#7f0055">string </span>$marié, <span style="font-weight:bold;color:#7f0055">int </span>$enfants, <span style="font-weight:bold;color:#7f0055">float </span>$salaire, <span style="font-weight:bold;color:#7f0055">array </span>$limites, <span style="font-weight:bold;color:#7f0055">array </span>$coeffR, <span style="font-weight:bold;color:#7f0055">array </span>$coeffN): <span style="font-weight:bold;color:#7f0055">array </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// $marié : oui, non</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// $enfants : nombre d&#x27;enfants</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// $salaire : salaire annuel</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// $limites, $coeffR, $coeffN : les tableaux des données permettant le calcul de l&#x27;impôt</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// $marié: sì, no</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// $enfants: numero di figli</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// $salaire: stipendio annuo</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// $limites, $coeffR, $coeffN: tabelle dei dati che consentono il calcolo dell&#x27;imposta</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#557f5f">//</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// nombre de parts</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// numero di quote</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $marié = <span style="font-style:italic">strtolower</span>($marié);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">if </span>($marié === <span style="color:#0000c0">&quot;oui&quot;</span>) {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    $nbParts = $enfants / 2 + 2;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  } <span style="font-weight:bold;color:#7f0055">else </span>{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    $nbParts = $enfants / 2 + 1;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// 1 part par enfant à partir du 3e</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// 1 quota per ogni figlio a partire dal terzo</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">if </span>($enfants &gt;= 3) {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// une demi-part de + pour chaque enfant à partir du 3e</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// mezza quota in più per ogni figlio a partire dal terzo</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    $nbParts += 0.5 * ($enfants - 2);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// revenu imposable</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// reddito imponibile</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $revenuImposable = <span style="font-style:italic">getRevenuImposable</span>($salaire);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// surcôte</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// maggiorazione</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $surcôte = <span style="font-style:italic">floor</span>($revenuImposable - 0.9 * $salaire);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// pour des pbs d&#x27;arrondi</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// per problemi di arrotondamento</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">if </span>($surcôte &lt; 0) {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    $surcôte = 0;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// quotient familial</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// quoziente familiare</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $quotient = $revenuImposable / $nbParts;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// est mis à la fin du tableau limites pour arrêter la boucle qui suit</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// viene inserito alla fine della tabella dei limiti per interrompere il ciclo successivo</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $limites<span style="font-weight:bold">[count($limites) - 1]</span> = $quotient;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// calcul de l&#x27;impôt</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// calcolo dell’imposta</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $i = 0;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">while </span>($quotient &gt; $limites<span style="font-weight:bold">[$i]</span>) {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    $i++;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// du fait qu&#x27;on a placé $quotient à la fin du tableau $limites, la boucle précédente</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// ne peut déborder du tableau $limites</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// maintenant on peut calculer l&#x27;impôt</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// poiché $quotient è stato inserito alla fine della tabella $limites, il ciclo precedente</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// non può andare oltre i limiti della tabella $limites</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// ora è possibile calcolare l’imposta</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $impôt = <span style="font-style:italic">floor</span>($revenuImposable * $coeffR<span style="font-weight:bold">[$i]</span> - $nbParts * $coeffN<span style="font-weight:bold">[$i]</span>);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// résultat</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// risultato</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#7f0055">return </span>[&quot;impôt&quot; =&gt; $impôt, &quot;surcôte&quot; =&gt; $surcôte, &quot;taux&quot; =&gt; $coeffR[$i]];</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// revenuImposable=salaireAnnuel-abattement</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// l&#x27;abattement a un min et un max</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// revenuImposable = stipendio annuo - detrazione</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// la detrazione ha un valore minimo e uno massimo</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">function</span> <span style="font-style:italic">getRevenuImposable</span>(<span style="font-weight:bold;color:#7f0055">float </span>$salaire): <span style="font-weight:bold;color:#7f0055">float </span>{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// résultat</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// risultato</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">return </span><span style="font-style:italic">floor</span>($revenuImposable);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 </code></pre></div>
 
 <p><strong>Commenti</strong></p>
 <ul>
-  <li>Qui applichiamo il calcolo dell&#x27;imposta utilizzando l&#x27;aliquota progressiva;
+  <li>qui si applica il calcolo dell’imposta secondo la tabella progressiva;
   </li>
-  <li>riga 9: <i>strtolower($string) </i>converte <i>$string </i>in minuscolo;
+  <li>riga 9: <i>strtolower($chaîne) </i>converte $chaîne in minuscolo;
   </li>
-  <li>righe 10–19: calcolo del numero di quote del contribuente;
+  <li>righe 10-19: calcolo del numero di quote del contribuente;
   </li>
-  <li>riga 21: calcoliamo il reddito imponibile utilizzando una funzione. Infatti, abbiamo visto che non è sempre 0,9*RedditoAnnuale. La detrazione del 10% è infatti limitata a 12.502 euro;
+  <li>riga 21: si calcola il reddito imponibile utilizzando una funzione. Infatti, abbiamo visto che non è sempre pari a 0,9*revenusAnnuels. La detrazione del 10% è infatti limitata a 12.502 euro;
   </li>
-  <li>riga 23: calcola la potenziale sovrattassa se il reddito imponibile è superiore a 0,9*redditoAnnuo;
+  <li>riga 23: calcolo dell’eventuale maggiorazione se il reddito imponibile è superiore a 0,9*revenusAnnuels;
   </li>
-  <li>righe 25–27: corregge il fatto che, a causa di errori di arrotondamento, a volte si ha <b>[$surcharge=-1]</b>;
+  <li>righe 25-27: corregge il fatto che, a causa di errori di arrotondamento, talvolta si ottiene <b>[$surcôte=-1]</b>;
   </li>
   <li>riga 29: il quoziente familiare;
   </li>
-  <li>righe 30–36: questo quoziente viene utilizzato per determinare la fascia di imposta del contribuente;
+  <li>righe 30-36: questo quoziente consente di individuare la fascia di imposta del contribuente;
   </li>
-  <li>riga 40: una volta determinata la fascia di imposta del contribuente, è possibile calcolare l&#x27;imposta lorda. La funzione<i> floor($x) </i>restituisce il numero intero immediatamente inferiore a <b>[$x]</b>;
+  <li>riga 40: una volta individuata la fascia di imposta del contribuente, è possibile calcolare la sua imposta lorda. La funzione <i>floor($x) </i>restituisce il valore intero immediatamente inferiore a <b>[$x]</b>;
   </li>
-  <li>riga 42: vengono restituite le informazioni calcolate;
+  <li>riga 42: si restituiscono le informazioni calcolate;
   </li>
 </ul>
 
 <p>La funzione <strong>[getRevenuImposable]</strong> è la seguente:</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-python">
-<span class="odt-code-line"><span class="odt-code-line-content">// constantes globales</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// costanti globali</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">define(</span>&quot;ABATTEMENT_DIXPOURCENT_MAX&quot;<span style="color:#000000">, 12502);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">define(</span>&quot;ABATTEMENT_DIXPOURCENT_MIN&quot;<span style="color:#000000">, 437);</span></span></span>
 </code></pre></div>
 
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-bash">
-<span class="odt-code-line"><span class="odt-code-line-content">// revenuImposable=salaireAnnuel-abattement</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// l&#x27;abattement a un min et un max</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// revenuImposable=stipendioAnnuale-detrazione</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// la detrazione ha un valore minimo e uno massimo</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">function</span> <span style="font-style:italic">getRevenuImposable</span>(<span style="font-weight:bold;color:#7f0055">float </span>$salaire): <span style="font-weight:bold;color:#7f0055">float </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// abattement de 10% du salaire</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// detrazione pari al 10% dello stipendio</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $abattement = 0.1 * $salaire;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// cet abattement ne peut dépasser ABATTEMENT_DIXPOURCENT_MAX</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// questa detrazione non può superare ABATTEMENT_DIXPOURCENT_MAX</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">if </span><span style="color:#000000">($abattement &gt; </span>ABATTEMENT_DIXPOURCENT_MAX<span style="color:#000000">) {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    $abattement = </span>ABATTEMENT_DIXPOURCENT_MAX<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// l&#x27;abattement ne peut être inférieur à ABATTEMENT_DIXPOURCENT_MIN</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// la detrazione non può essere inferiore a ABATTEMENT_DIXPOURCENT_MIN</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">if </span><span style="color:#000000">($abattement &lt; </span>ABATTEMENT_DIXPOURCENT_MIN<span style="color:#000000">) {</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    $abattement = </span>ABATTEMENT_DIXPOURCENT_MIN<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// revenu imposable</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// reddito imponibile</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $revenuImposable = $salaire - $abattement;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// résultat</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// risultato</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">return </span><span style="font-style:italic">floor</span>($revenuImposable);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <p><strong>Commenti</strong></p>
 <ul>
-  <li>riga 5: la detrazione forfettaria è pari al 10% dello stipendio annuo;
+  <li>riga 5: la detrazione standard è pari al 10% dello stipendio annuale;
   </li>
-  <li>righe 7–9: la detrazione non può superare la detrazione massima <b>[ABATTEMENT_DIXPOURCENT_MAX]</b>;
+  <li>righe 7-9: la detrazione non può superare la detrazione massima <b>[ABATTEMENT_DIXPOURCENT_MAX]</b>;
   </li>
-  <li>righe 10–13: la detrazione non può essere inferiore alla detrazione minima <b>[ABATTEMENT_DIXPOURCENT_MIN]</b>;
+  <li>righe 10-13: la detrazione non può essere inferiore alla detrazione minima <b>[ABATTEMENT_DIXPOURCENT_MIN]</b>;
   </li>
   <li>riga 15: calcolo del reddito imponibile;
   </li>
@@ -1908,96 +1913,97 @@
 
 <p>La funzione <strong>[getDecote]</strong> è la seguente:</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-python">
-<span class="odt-code-line"><span class="odt-code-line-content">// constantes globales</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// costanti globali</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">define(</span>&quot;PLAFOND_DECOTE_CELIBATAIRE&quot;<span style="color:#000000">, 1196);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">define(</span>&quot;PLAFOND_DECOTE_COUPLE&quot;<span style="color:#000000">, 1970);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">define(</span>&quot;PLAFOND_IMPOT_COUPLE_POUR_DECOTE&quot;<span style="color:#000000">, 2627);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">define(</span>&quot;PLAFOND_IMPOT_CELIBATAIRE_POUR_DECOTE&quot;<span style="color:#000000">, 1595);</span></span></span>
 </code></pre></div>
 
-<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-vbscript">
-<span class="odt-code-line"><span class="odt-code-line-content">// calcule une décôte éventuelle</span></span>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-python">
+<span class="odt-code-line"><span class="odt-code-line-content">// calcola un eventuale sconto</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">function</span> <span style="font-style:italic">getDecote</span>(<span style="font-weight:bold;color:#7f0055">string </span>$marié, <span style="font-weight:bold;color:#7f0055">float </span>$salaire, <span style="font-weight:bold;color:#7f0055">float </span>$impots): <span style="font-weight:bold;color:#7f0055">float </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// au départ, une décôt nulle</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// inizialmente, uno sconto pari a zero</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $décôte = 0;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  // montant maximal d&#x27;tax to get the discount</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// importo massimo dell&#x27;imposta per ottenere la riduzione</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  $plafondImpôtPourDécôte = $marié === </span>&quot;oui&quot; <span style="color:#000000">? </span>PLAFOND_IMPOT_COUPLE_POUR_DECOTE<span style="color:#000000"> : </span>PLAFOND_IMPOT_CELIBATAIRE_POUR_DECOTE<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">if </span>($impots &lt; $plafondImpôtPourDécôte) {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// montant maximal de la décôte</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// importo massimo della riduzione</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    $plafondDécôte = $marié === </span>&quot;oui&quot; <span style="color:#000000">? </span>PLAFOND_DECOTE_COUPLE<span style="color:#000000"> : </span>PLAFOND_DECOTE_CELIBATAIRE<span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// décôte théorique</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// sconto teorico</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    $décôte = $plafondDécôte - 0.75 * $impots;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    // la décôte ne peut dépasser le montant de l&#x27;tax</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// la riduzione non può superare l&#x27;importo dell&#x27;imposta</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="font-weight:bold;color:#7f0055">if </span>($décôte &gt; $impots) {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">      $décôte = $impots;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// pas de décôte &lt;0</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// nessuna riduzione &lt;0</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="font-weight:bold;color:#7f0055">if </span>($décôte &lt; 0) {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">      $décôte = 0;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// résultat</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// risultato</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">return </span><span style="font-style:italic">ceil</span>($décôte);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p><strong>Commenti</strong></p>
+<p><strong>Note</strong></p>
 <ul>
-  <li>riga 6: importo lordo massimo dell&#x27;imposta per beneficiare di una riduzione fiscale. Tale importo varia a seconda che si tratti di persone single o di coppie;
+  <li>riga 6: importo massimo dell’imposta lorda per avere diritto a una riduzione. Tale importo varia a seconda che si tratti di persone single o di coppie;
   </li>
-  <li>riga 7: se il contribuente ha diritto alla riduzione fiscale;
+  <li>riga 7: se il contribuente ha diritto alla riduzione;
   </li>
-  <li>riga 11: la formula del credito d&#x27;imposta. <b>[taxCreditCap] </b>è l&#x27;importo massimo del credito d&#x27;imposta. Questo importo massimo è calcolato alla riga 9. Anche in questo caso, dipende dallo stato civile del contribuente: coniugato o single;
+  <li>riga 11: la formula della riduzione. <b>[plafondDécôte] </b>è l’importo massimo della riduzione. Tale importo massimo viene calcolato alla riga 9. Anche in questo caso dipende dalla situazione del contribuente, sposato o celibe;
   </li>
-  <li>righe 13–15: la detrazione non può superare l&#x27;imposta lorda dovuta. Questo è il caso, ad esempio, se <b>[taxes] </b>è 0 alla riga 11;
+  <li>righe 13-15: la detrazione non può essere superiore all’imposta lorda da pagare. Ciò si verifica, ad esempio, se <b>[impots] </b>è pari a 0 nella riga 11;
   </li>
-  <li>righe 17–19: per evitare l&#x27;arrotondamento a -1;
+  <li>righe 17-19: per evitare un arrotondamento a -1;
   </li>
 </ul>
 
-<p>La funzione <strong>[getReduction]</strong> è la seguente:</p>
+<p>La funzione <strong>[getRéduction]</strong> è la seguente:</p>
 <div class="odt-code-rich" data-linenums="false" style="counter-reset: odtline 0;"><pre><code class="language-python">
-<span class="odt-code-line"><span class="odt-code-line-content">// constantes globales</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// costanti globali</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">define(</span>&quot;PLAFOND_REVENUS_CELIBATAIRE_POUR_REDUCTION&quot;<span style="color:#000000">, 21037);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">define(</span>&quot;PLAFOND_REVENUS_COUPLE_POUR_REDUCTION&quot;<span style="color:#000000">, 42074);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">define(</span>&quot;VALEUR_REDUC_DEMI_PART&quot;<span style="color:#000000">, 3797);</span></span></span>
 </code></pre></div>
 
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-bash">
-<span class="odt-code-line"><span class="odt-code-line-content">// calcule une réduction éventuelle</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// calcola un&#x27;eventuale riduzione</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">function</span> <span style="font-style:italic">getRéduction</span>(<span style="font-weight:bold;color:#7f0055">string </span>$marié, <span style="font-weight:bold;color:#7f0055">float </span>$salaire, <span style="font-weight:bold;color:#7f0055">int </span>$enfants, <span style="font-weight:bold;color:#7f0055">float </span>$impots): <span style="font-weight:bold;color:#7f0055">float </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// le plafond des revenus pour avoir droit à la réduction de 20%</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// il limite massimo di reddito per avere diritto alla riduzione del 20%</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  $plafondRevenuPourRéduction = $marié === </span>&quot;oui&quot; <span style="color:#000000">? </span>PLAFOND_REVENUS_COUPLE_POUR_REDUCTION<span style="color:#000000"> : </span>PLAFOND_REVENUS_CELIBATAIRE_POUR_REDUCTION<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $plafondRevenuPourRéduction += $enfants * <span style="font-style:italic;color:#0000c0">VALEUR_REDUC_DEMI_PART</span>;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">if </span>($enfants &gt; 2) {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    $plafondRevenuPourRéduction += ($enfants - 2) * <span style="font-style:italic;color:#0000c0">VALEUR_REDUC_DEMI_PART</span>;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// revenu imposable</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// reddito imponibile</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $revenuImposable = <span style="font-style:italic">getRevenuImposable</span>($salaire);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// réduction</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// riduzione</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $réduction = 0;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">if </span>($revenuImposable &lt; $plafondRevenuPourRéduction) {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// réduction de 20%</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// riduzione del 20%</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    $réduction = 0.2 * $impots;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// résultat</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// risultato</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">return </span><span style="font-style:italic">ceil</span>($réduction);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p><strong>Commenti</strong></p>
+<p><strong>Note</strong></p>
 <ul>
-  <li>righe 4–10: per avere diritto a una riduzione fiscale, il reddito imponibile (riga 10) deve essere inferiore a una soglia calcolata nelle righe 4–8;
+  <li>righe 4-10: per avere diritto a una riduzione d’imposta, è necessario che il reddito imponibile (riga 10) sia inferiore a un limite massimo calcolato nelle righe 4-8;
   </li>
-  <li>righe 13–16: se le condizioni sono soddisfatte, il contribuente ha diritto a una riduzione fiscale del 20% (riga 15);
+  <li>righe 13-16: se soddisfa i requisiti, il contribuente ha diritto a una riduzione d’imposta del 20% (riga 15);
   </li>
 </ul>
-<p><a id="toc42690620"></a>
-<a id="refheadingtoc185641971629160"></a>
-<a id="toc42689848"></a>
-<a id="toc42690234"></a></p>
+
+<p><span id="toc42690234" name="toc42690234" class="odt-bookmark-anchor"></span>
+<span id="toc42690620" name="toc42690620" class="odt-bookmark-anchor"></span>
+<span id="refheadingtoc185641971629160" name="refheadingtoc185641971629160" class="odt-bookmark-anchor"></span>
+<span id="toc42689848" name="toc42689848" class="odt-bookmark-anchor"></span></p>
 <h3 id="432-risultati">4.3.2. <span style="color: #4f81bd">Risultati</span></h3>
-<p>Il file di dati <em>taxpayersdata.txt</em> (stato civile, figli, stipendio):</p>
+<p>Il file di dati <em>taxpayersdata.txt</em>  (stato civile, figli, stipendio):</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-5-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-5-3"> 3</a></span>
@@ -2020,7 +2026,7 @@
 <a id="__codelineno-5-10" name="__codelineno-5-10"></a>non,0,200000
 <a id="__codelineno-5-11" name="__codelineno-5-11"></a>oui,3,200000
 </code></pre></div></td></tr></table></div>
-<p>Il file <em>results.txt</em> (stato civile, figli, stipendio, imposta, sovrattassa, sconto, riduzione, aliquota fiscale) dei risultati ottenuti:</p>
+<p>I file <em>résultats.txt</em> (stato civile, figli, stipendio, imposta, maggiorazione, riduzione, aliquota fiscale) dei risultati ottenuti:</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1"> 1</a></span>
 <span class="normal"><a href="#__codelineno-6-2"> 2</a></span>
 <span class="normal"><a href="#__codelineno-6-3"> 3</a></span>
@@ -2043,26 +2049,26 @@
 <a id="__codelineno-6-10" name="__codelineno-6-10"></a>{&quot;marié&quot;:&quot;non&quot;,&quot;enfants&quot;:&quot;0&quot;,&quot;salaire&quot;:&quot;200000&quot;,&quot;impôt&quot;:64210,&quot;surcôte&quot;:7498,&quot;décôte&quot;:0,&quot;réduction&quot;:0,&quot;taux&quot;:0.45}
 <a id="__codelineno-6-11" name="__codelineno-6-11"></a>{&quot;marié&quot;:&quot;oui&quot;,&quot;enfants&quot;:&quot;3&quot;,&quot;salaire&quot;:&quot;200000&quot;,&quot;impôt&quot;:42842,&quot;surcôte&quot;:17283,&quot;décôte&quot;:0,&quot;réduction&quot;:0,&quot;taux&quot;:0.41}
 </code></pre></div></td></tr></table></div>
-<p>I risultati ottenuti sono coerenti con quelli ottenuti utilizzando il simulatore dell&#x27;agenzia delle entrate.</p>
-<p><a id="toc42690621"></a>
-<a id="refheadingtoc185643971629160"></a>
-<a id="toc42689849"></a>
-<a id="toc42690235"></a></p>
+<p>I risultati ottenuti sono conformi a quelli ottenuti con il simulatore dell’amministrazione fiscale.</p>
+<p><span id="toc42690235" name="toc42690235" class="odt-bookmark-anchor"></span>
+<span id="toc42690621" name="toc42690621" class="odt-bookmark-anchor"></span>
+<span id="refheadingtoc185643971629160" name="refheadingtoc185643971629160" class="odt-bookmark-anchor"></span>
+<span id="toc42689849" name="toc42689849" class="odt-bookmark-anchor"></span></p>
 <h3 id="433-conclusione">4.3.3. <span style="color: #4f81bd">Conclusione</span></h3>
-<p>L&#x27;algoritmo di calcolo delle imposte, anche nei casi considerati semplici, è complesso. Non lo riprenderemo qui. Tra le diverse versioni, il suo nucleo rimarrà lo stesso nonostante alcune modifiche nella presentazione. Commenteremo quindi solo queste ultime.</p>
-<p><a id="toc42689850"></a>
-<a id="toc42690236"></a>
-<a id="toc42690622"></a>
-<a id="version2"></a>
-<a id="refheading398881881943603"></a></p>
-<h2 id="44-versione-2">4.4. <span style="color: #4f81bd">Versione 2</span></h2>
-<p><a id="toc42690623"></a>
-<a id="refheadingtoc185645971629160"></a>
-<a id="toc42689851"></a>
-<a id="toc42690237"></a></p>
-<h3 id="441-modifiche">4.4.1. <span style="color: #4f81bd">Modifiche</span></h3>
-<p>Nella versione precedente, i dati necessari per il calcolo dell&#x27;imposta erano hard-coded come costanti e array. Questo metodo dovrebbe essere evitato. Nella nuova versione, questi dati sono esternalizzati in un file JSON:</p>
-<p><img src="images/1000000000000146000000B3BFD01B4B.png" width="163" height="89" style="width:4.309cm;height:2.365cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000146000000B3BFD01B4B.png" /></p>
+<p>L’algoritmo di calcolo dell’imposta, anche in casi ritenuti semplici, è complesso. Non torneremo più su questo argomento. Nel corso delle versioni, il suo nucleo rimarrà lo stesso nonostante alcune modifiche nella presentazione. Ci limiteremo quindi a commentare solo queste ultime.</p>
+<p><span id="refheading398881881943603" name="refheading398881881943603" class="odt-bookmark-anchor"></span>
+<span id="toc42689850" name="toc42689850" class="odt-bookmark-anchor"></span>
+<span id="toc42690236" name="toc42690236" class="odt-bookmark-anchor"></span>
+<span id="toc42690622" name="toc42690622" class="odt-bookmark-anchor"></span>
+<span id="version2" name="version2" class="odt-bookmark-anchor"></span></p>
+<h2 id="44-versione-2">4.4. <span style="color: #4f81bd"><strong>Versione 2</strong></span></h2>
+<p><span id="toc42690237" name="toc42690237" class="odt-bookmark-anchor"></span>
+<span id="toc42690623" name="toc42690623" class="odt-bookmark-anchor"></span>
+<span id="refheadingtoc185645971629160" name="refheadingtoc185645971629160" class="odt-bookmark-anchor"></span>
+<span id="toc42689851" name="toc42689851" class="odt-bookmark-anchor"></span></p>
+<h3 id="441-le-modifiche">4.4.1. <span style="color: #4f81bd">Le modifiche</span></h3>
+<p>Nella versione precedente, i dati necessari al calcolo dell’imposta erano codificati in modo statico sotto forma di costanti e tabelle. Questo metodo è da evitare. Nella nuova versione, tali dati sono esternalizzati in un file jSON:</p>
+<p><img src="images/1000000000000146000000B3BFD01B4B.png" width="163" height="90" style="width:4.309cm;height:2.371cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000146000000B3BFD01B4B.png" /></p>
 <p>Il contenuto del file <strong>[taxadmindata.json]</strong> è il seguente:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
 <span class="odt-code-line"><span class="odt-code-line-content">{</span></span>
@@ -2085,113 +2091,113 @@
 <p>La nuova versione <strong>[version-02/main.php]</strong> è la seguente:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// strict adherence to declared function parameter types</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// rigoroso rispetto dei tipi dichiarati dei parametri delle funzioni</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">declare </span>(strict_types=1);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// definition of constants</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// definizione delle costanti</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">$TAXPAYERSDATA = </span>&quot;taxpayersdata.txt&quot;<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">$RESULTATS = </span>&quot;resultats.txt&quot;<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">$TAXADMINDATA = </span>&quot;taxadmindata.json&quot;<span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// retrieve the contents of the tax data file</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// si recupera il contenuto del file dei dati fiscali</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">$fileContents = \<span style="font-style:italic">file_get_contents</span>($TAXADMINDATA);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">$erreur = <span style="font-weight:bold;color:#7f0055">FALSE</span>;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// mistake?</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// errore?</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">if </span>(!$fileContents) {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// we note the error</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// si registra l&#x27;errore</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $erreur = <span style="font-weight:bold;color:#7f0055">TRUE</span>;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  $message = </span>&quot;Le fichier des données <span style="font-weight:bold">[$TAXADMINDATA]</span> n&#x27;existe pas&quot;<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">if </span>(!$erreur) {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// retrieve the jSON code from the configuration file in an associative array</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// si recupera il codice jSON dal file di configurazione in un array associativo</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $taxAdminData = \<span style="font-style:italic">json_decode</span>($fileContents, <span style="font-weight:bold;color:#7f0055">true</span>);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// mistake?</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// errore?</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">if </span>(!$taxAdminData) {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// we note the error</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// si registra l&#x27;errore</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    $erreur = <span style="font-weight:bold;color:#7f0055">TRUE</span>;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    $message = </span>&quot;Le fichier de données jSON <span style="font-weight:bold">[$TAXADMINDATA]</span> n&#x27;a pu être exploité correctement&quot;<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// mistake?</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// errore?</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">if </span>($erreur) {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">print </span><span style="color:#0000c0">&quot;</span>$message<span style="color:#0000c0">\n&quot;</span>;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span>exit<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// open results file</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// apertura del file dei risultati</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">$résultats = <span style="font-style:italic">fopen</span>($RESULTATS, <span style="color:#0000c0">&quot;w&quot;</span>);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">if </span>(!$résultats) {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">print </span>&quot;Impossible de créer le fichier des résultats <span style="font-weight:bold">[$RESULTATS]</span>\n&quot;<span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// output</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// uscita</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span>exit<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// opening taxpayer data file</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// apertura del file dei dati dei contribuenti</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">$taxpayersdata = <span style="font-style:italic">fopen</span>($TAXPAYERSDATA, <span style="color:#0000c0">&quot;r&quot;</span>);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">if </span>(!$taxpayersdata) {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span><span style="font-weight:bold;color:#7f0055">print </span>&quot;Impossible d&#x27;ouvrir le fichier des contribuables <span style="font-weight:bold">[$TAXPAYERSDATA]</span>\n&quot;<span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// output</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// uscita</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">  </span>exit<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// use the current line of the data file</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// si elabora la riga corrente del file dei dati</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">while </span>($ligne = <span style="font-style:italic">fgets</span>($taxpayersdata, 100)) {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// remove any end-of-line marker</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// si rimuove l&#x27;eventuale carattere di fine riga</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $ligne = <span style="font-style:italic">cutNewLineChar</span>($ligne);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// we retrieve the 3 fields married:children:salary which form $ligne</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// si recuperano i 3 campi coniuge:figli:stipendio che formano $ligne</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">list</span>($marié, $enfants, $salaire) = <span style="font-style:italic">explode</span>(<span style="color:#0000c0">&quot;,&quot;</span>, $ligne);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// tax calculation</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// si calcola l&#x27;imposta</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $result = <span style="font-style:italic">calculImpot</span>($taxAdminData, $marié, (int) $enfants, (int) $salaire);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// enter the result in the results file</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// si inserisce il risultato nel file dei risultati</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $result = [&quot;marié&quot; =&gt; $marié, &quot;enfants&quot; =&gt; $enfants, &quot;salaire&quot; =&gt; $salaire] + $result;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  fputs($résultats, \json_encode($result, <span style="color:#0000c0">JSON_UNESCAPED_UNICODE</span>) . <span style="color:#0000c0">&quot;\n&quot;</span>);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// following data</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// dato successivo</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// close files</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// si chiudono i file</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-style:italic">fclose</span>($taxpayersdata);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-style:italic">fclose</span>($résultats);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// end</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// fine</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">exit<span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">// --------------------------------------------------------------------------</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">function</span> <span style="font-style:italic">cutNewLinechar</span>(<span style="font-weight:bold;color:#7f0055">string </span>$ligne) {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  …</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// end</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// fine</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">return</span>($ligne);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// tAX CALCULATION</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// calcolo dell&#x27;imposta</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">// --------------------------------------------------------------------------</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">function</span> <span style="font-style:italic">calculImpot</span>(<span style="font-weight:bold;color:#7f0055">array </span>$taxAdminData, <span style="font-weight:bold;color:#7f0055">string </span>$marié, <span style="font-weight:bold;color:#7f0055">int </span>$enfants, <span style="font-weight:bold;color:#7f0055">float </span>$salaire) {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// $marié : yes, no</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// $enfants : number of children</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// $salaire: annual salary</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// $taxAdminData: tax administration data</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// $marié: sì, no</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// $enfants: numero di figli</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// $salaire: stipendio annuo</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// $taxAdminData: dati dell&#x27;amministrazione fiscale</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#557f5f">//</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// tax calculation with children</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// calcolo dell’imposta con figli</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $result1 = <span style="font-style:italic">calculImpot2</span>($taxAdminData, $marié, $enfants, $salaire);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $impot1 = $result1<span style="font-weight:bold">[&quot;impôt&quot;]</span>;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// tax calculation without children</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// calcolo dell’imposta senza figli</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">if </span>($enfants != 0) {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    $result2 = <span style="font-style:italic">calculImpot2</span>($taxAdminData, $marié, 0, $salaire);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    $impot2 = $result2<span style="font-weight:bold">[&quot;impôt&quot;]</span>;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// application of the family allowance ceiling</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#000000">// applicazione del limite massimo del quoziente familiare</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    <span style="font-weight:bold;color:#7f0055">if </span>($enfants &lt; 3) {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// $PLAFOND_QF_DEMI_PART euros for the first 2 children</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// $PLAFOND_QF_DEMI_PART euro per i primi 2 figli</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">      $impot2 = $impot2 - $enfants * $taxAdminData<span style="font-weight:bold">[&quot;PLAFOND_QF_DEMI_PART&quot;]</span>;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    } <span style="font-weight:bold;color:#7f0055">else </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// $PLAFOND_QF_DEMI_PART euros for the first 2 children, double for subsequent children</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">      <span style="color:#000000">// $PLAFOND_QF_DEMI_PART euro per i primi 2 figli, il doppio per i successivi</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">      $impot2 = $impot2 - 2 * $taxAdminData<span style="font-weight:bold">[&quot;PLAFOND_QF_DEMI_PART&quot;]</span> - ($enfants - 2) * 2 * $taxAdminData<span style="font-weight:bold">[&quot;PLAFOND_QF_DEMI_PART&quot;]</span>;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    }</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  } <span style="font-weight:bold;color:#7f0055">else </span>{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    $impot2 = $impot1;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    $result2 = $result1;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// we take the highest tax with the rate and surcharge that go with it</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// si considera l’imposta più elevata con l’aliquota e la maggiorazione corrispondenti</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">if </span>($impot1 &gt; $impot2) {</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    $impot = $impot1;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    $taux = $result1<span style="font-weight:bold">[&quot;taux&quot;]</span>;</span></span>
@@ -2201,78 +2207,78 @@
 <span class="odt-code-line"><span class="odt-code-line-content">    $impot = $impot2;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">    $taux = $result2<span style="font-weight:bold">[&quot;taux&quot;]</span>;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  }</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// calculation of any discount</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// calcolo di un’eventuale riduzione</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $décôte = <span style="font-style:italic">getDecote</span>($taxAdminData, $marié, $salaire, $impot);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $impot -= $décôte;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// calculation of any tax reduction</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// calcolo di un’eventuale riduzione delle imposte</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $réduction = <span style="font-style:italic">getRéduction</span>($taxAdminData, $marié, $salaire, $enfants, $impot);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  $impot -= $réduction;</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// result</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// risultato</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#7f0055">return </span>[&quot;impôt&quot; =&gt; floor($impot), &quot;surcôte&quot; =&gt; $surcôte, &quot;décôte&quot; =&gt; $décôte, &quot;réduction&quot; =&gt; $réduction, &quot;taux&quot; =&gt; $taux];</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">// --------------------------------------------------------------------------</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">function</span> <span style="font-style:italic">calculImpot2</span>(<span style="font-weight:bold;color:#7f0055">array </span>$taxAdminData, <span style="font-weight:bold;color:#7f0055">string </span>$marié, <span style="font-weight:bold;color:#7f0055">int </span>$enfants, <span style="font-weight:bold;color:#7f0055">float </span>$salaire) {</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// $marié : yes, no</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// $marié: sì, no</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  …</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// result</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// risultato</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#7f0055">return </span>[&quot;impôt&quot; =&gt; $impôt, &quot;surcôte&quot; =&gt; $surcôte, &quot;taux&quot; =&gt; $coeffR[$i]];</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// revenuImposable=annualwage-discount</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// the allowance has a minimum and a maximum</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// revenuImposable=stipendioAnnuale-detrazione</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// la detrazione ha un valore minimo e uno massimo</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">function</span> <span style="font-style:italic">getRevenuImposable</span>(<span style="font-weight:bold;color:#7f0055">array </span>$taxAdminData, <span style="font-weight:bold;color:#7f0055">float </span>$salaire): <span style="font-weight:bold;color:#7f0055">float </span>{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  …</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// result</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// risultato</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">return </span><span style="font-style:italic">floor</span>($revenuImposable);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// calculates any discount</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// calcola un&#x27;eventuale riduzione</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">function</span> <span style="font-style:italic">getDecote</span>(<span style="font-weight:bold;color:#7f0055">array </span>$taxAdminData, <span style="font-weight:bold;color:#7f0055">string </span>$marié, <span style="font-weight:bold;color:#7f0055">float </span>$salaire, <span style="font-weight:bold;color:#7f0055">float </span>$impots): <span style="font-weight:bold;color:#7f0055">float </span>{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  …</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// result</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// risultato</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">return </span><span style="font-style:italic">ceil</span>($décôte);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// calculates any reduction</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// calcola un&#x27;eventuale riduzione</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#7f0055">function</span> <span style="font-style:italic">getRéduction</span>(<span style="font-weight:bold;color:#7f0055">array </span>$taxAdminData, <span style="font-weight:bold;color:#7f0055">string </span>$marié, <span style="font-weight:bold;color:#7f0055">float </span>$salaire, <span style="font-weight:bold;color:#7f0055">int </span>$enfants, <span style="font-weight:bold;color:#7f0055">float </span>$impots): <span style="font-weight:bold;color:#7f0055">float </span>{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  …</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// result</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">// risultato</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="font-weight:bold;color:#7f0055">return </span><span style="font-style:italic">ceil</span>($réduction);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <p><strong>Commenti</strong></p>
 <ul>
-  <li>righe 11–19: si tenta di leggere il contenuto del file JSON denominato <b>[TAXADMINDATA]</b>;
+  <li>righe 11-19: si tenta di leggere il contenuto del file jSON denominato <b>[TAXADMINDATA]</b>;
   </li>
-  <li>righe 21–30: se il file JSON è stato letto correttamente, il suo contenuto viene decodificato nell&#x27;array associativo <b>[$taxAdminData]</b>;
+  <li>righe 21-30: se si è riusciti a leggere il file jSON, il suo contenuto viene decodificato nell&#x27;array associativo <b>[$taxAdminData]</b>;
   </li>
-  <li>righe 32–36: se si è verificato un errore in una delle due operazioni precedenti, viene visualizzato un messaggio di errore sulla console e il programma si interrompe;
+  <li>righe 32-36: se si è verificato un errore in una delle due operazioni precedenti, si scrive un messaggio di errore sulla console e il programma si interrompe;
   </li>
-  <li>La differenza rispetto alla versione 01 è che qui i dati dell&#x27;amministrazione fiscale (array e costanti) sono memorizzati nell&#x27;array associativo <b>[$taxAdminData]</b>, mentre nella versione 01 erano memorizzati in array e costanti globali. È la natura globale di queste costanti che distingue le due versioni:
+  <li>la differenza rispetto alla versione 01 è che qui i dati (tabelle e costanti) dell’amministrazione fiscale si trovano nel tabellone associativo <b>[$taxAdminData]</b>, mentre nella versione 01 erano contenuti in tabelle e costanti globali. È proprio la globalità di queste costanti a fare la differenza tra le due versioni:
     <ul>
       <li>nella versione 01, le costanti erano note in tutte le funzioni di <b>[main.php]</b>;
       </li>
-      <li>per ottenere lo stesso risultato nella versione 02, l&#x27;array associativo <b>[$taxAdminData] </b>deve essere passato come parametro a tutte le funzioni (righe 83, 129, 138, 145, 152);
+      <li>per ottenere lo stesso risultato nella versione 02, è necessario passare la tabella associativa <b>[$taxAdminData] </b>come parametro a tutte le funzioni (righe 83, 129, 138, 145, 152);
       </li>
     </ul>
   </li>
-  <li>ogni funzione nella versione 02 deve utilizzare il contenuto dell&#x27;array <b>[$taxAdminData]</b>;
+  <li>ogni funzione della versione 02 deve utilizzare il contenuto della tabella <b>[$taxAdminData]</b>;
   </li>
-  <li>Righe 83–126: nella funzione<b> [calculateTax]</b>, dove in precedenza venivano utilizzate costanti globali o gli array<b> [limits, coeffR, coeffN]</b>, ora utilizziamo il contenuto dell&#x27;array<b> [$taxAdminData] </b>passato come parametro (righe 99, 102);
+  <li>righe 83-126: nella funzione <b>[calculerImpot]</b>, dove prima si utilizzavano costanti globali o le tabelle <b>[limites, coeffR, coeffN]</b>, ora si utilizza il contenuto della tabella <b>[$taxAdminData] </b>ricevuta come parametro (righe 99, 102);
   </li>
-  <li>Tutte le altre funzioni vengono riscritte allo stesso modo;
+  <li>tutte le altre funzioni sono state riscritte allo stesso modo;
   </li>
 </ul>
 
 <p>I risultati ottenuti sono gli stessi di quelli ottenuti nella versione precedente.</p>
-<p><a id="toc42690624"></a>
-<a id="refheadingtoc185647971629160"></a>
-<a id="toc42689852"></a>
-<a id="toc42690238"></a></p>
+<p><span id="toc42690238" name="toc42690238" class="odt-bookmark-anchor"></span>
+<span id="toc42690624" name="toc42690624" class="odt-bookmark-anchor"></span>
+<span id="refheadingtoc185647971629160" name="refheadingtoc185647971629160" class="odt-bookmark-anchor"></span>
+<span id="toc42689852" name="toc42689852" class="odt-bookmark-anchor"></span></p>
 <h3 id="442-conclusione">4.4.2. <span style="color: #4f81bd">Conclusione</span></h3>
-<p>La versione 02 è molto più flessibile della versione 01. Nel 2020, l&#x27;algoritmo di calcolo delle imposte sarà probabilmente lo stesso del 2019. Cambieranno solo le fasce di imposta e le costanti di calcolo. Sarà quindi sufficiente aggiornare il file <strong>[taxadmindata.json]</strong>. Con la versione 01, è necessario intervenire sul codice per modificare le fasce di imposta e le costanti di calcolo. Tuttavia, è probabile che le persone che devono modificare i valori delle fasce di imposta e delle costanti di calcolo non abbiano accesso al codice dell&#x27;algoritmo.</p>
+<p>La versione 02 è molto più flessibile della versione 01. Nel 2020, l’algoritmo di calcolo dell’imposta sarà probabilmente lo stesso del 2019. Cambieranno solo le fasce di imposta e le costanti di calcolo. Basterà quindi aggiornare il file <strong>[taxadmindata.json]</strong>. Con la versione 01, è necessario accedere al codice per modificare le fasce di imposta e le costanti di calcolo. Tuttavia, è probabile che le persone che devono modificare i valori delle fasce di imposta e delle costanti di calcolo non abbiano accesso al codice dell’algoritmo.</p>
 
 
 

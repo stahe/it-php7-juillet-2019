@@ -12,13 +12,13 @@
         <meta name="author" content="Serge Tahé">
       
       
-        <link rel="canonical" href="https://stahe.github.io/it-php7-juillet-2019/configurazione-di-un-ambiente-di-sviluppo.html">
+        <link rel="canonical" href="https://stahe.github.io/it-php7-juillet-2019/elaborazione-dei-documenti-xml.html">
       
       
-        <link rel="prev" href="introduzione-a-php-7.html">
+        <link rel="prev" href="esercizio-pratico---versione-10.html">
       
       
-        <link rel="next" href="le-basi-di-php.html">
+        <link rel="next" href="esercizio-pratico---versione-11.html">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>2. Configurazione di un ambiente di sviluppo - Introduzione a PHP7 attraverso esempi</title>
+        <title>21. Elaborazione dei documenti XML - Introduzione a PHP7 attraverso esempi</title>
       
     
     
@@ -56,6 +56,8 @@
     
     
       <link rel="stylesheet" href="stylesheets/focus.css">
+    
+      <link rel="stylesheet" href="stylesheets/bidi.css">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -92,7 +94,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#2-configurazione-di-un-ambiente-di-sviluppo" class="md-skip">
+        <a href="#21-elaborazione-dei-documenti-xml" class="md-skip">
           Skip to content
         </a>
       
@@ -128,7 +130,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              2. Configurazione di un ambiente di sviluppo
+              21. Elaborazione dei documenti XML
             
           </span>
         </div>
@@ -303,14 +305,14 @@
   
   
     <li class="md-nav__item">
-      <a href="introduzione-a-php-7.html" class="md-nav__link">
+      <a href="introduzione-al-linguaggio-php-7.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    1. Introduzione a PHP 7
+    1. Introduzione al linguaggio PHP 7
   
 
     
@@ -327,44 +329,17 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    2. Configurazione di un ambiente di sviluppo
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="configurazione-di-un-ambiente-di-sviluppo.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="installazione-di-un-ambiente-di-lavoro.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    2. Configurazione di un ambiente di sviluppo
+    2. Installazione di un ambiente di lavoro
   
 
     
@@ -373,48 +348,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#21-installazione-di-laragon" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2.1. Installazione di Laragon
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#22-installazione-dellide-netbeans-100" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2.2. Installazione dell&#x27;IDE NetBeans 10.0
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -460,7 +393,7 @@
   <span class="md-ellipsis">
     
   
-    4. Esercizio pratico – Versioni 1 e 2
+    4. Esercizio pratico – versioni 1 e 2
   
 
     
@@ -480,14 +413,14 @@
   
   
     <li class="md-nav__item">
-      <a href="classi.html" class="md-nav__link">
+      <a href="le-classi.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    5. Classi
+    5. Le classi
   
 
     
@@ -507,14 +440,14 @@
   
   
     <li class="md-nav__item">
-      <a href="interfacce.html" class="md-nav__link">
+      <a href="le-interfacce.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    6. Interfacce
+    6. Le interfacce
   
 
     
@@ -568,7 +501,7 @@
   <span class="md-ellipsis">
     
   
-    8. Esercizio pratico – Versione 3
+    8. Esercizio pratico – versione 3
   
 
     
@@ -588,14 +521,14 @@
   
   
     <li class="md-nav__item">
-      <a href="trait.html" class="md-nav__link">
+      <a href="i-trait.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    9. Trait
+    9. I Trait
   
 
     
@@ -649,7 +582,7 @@
   <span class="md-ellipsis">
     
   
-    11. Esercizio pratico – Versione 4
+    11. Esercizio pratico – versione 4
   
 
     
@@ -669,14 +602,14 @@
   
   
     <li class="md-nav__item">
-      <a href="utilizzo-del-dbms-mysql.html" class="md-nav__link">
+      <a href="utilizzo-di-sgbd-mysql.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    12. Utilizzo del DBMS MySQL
+    12. Utilizzo di SGBD MySQL
   
 
     
@@ -703,7 +636,7 @@
   <span class="md-ellipsis">
     
   
-    13. Esercizio pratico – Versione 5
+    13. Esercizio pratico – versione 5
   
 
     
@@ -730,7 +663,7 @@
   <span class="md-ellipsis">
     
   
-    14. Esercizio pratico – Versione 6
+    14. Esercizio pratico – versione 6
   
 
     
@@ -757,7 +690,7 @@
   <span class="md-ellipsis">
     
   
-    15. Esercizio pratico – Versione 7
+    15. Esercizio pratico – versione 7
   
 
     
@@ -838,7 +771,7 @@
   <span class="md-ellipsis">
     
   
-    18. Esercizio pratico – Versione 8
+    18. Esercizio pratico – versione 8
   
 
     
@@ -865,7 +798,7 @@
   <span class="md-ellipsis">
     
   
-    19. Esercizio pratico – Versione 9
+    19. Esercizio pratico – versione 9
   
 
     
@@ -885,14 +818,14 @@
   
   
     <li class="md-nav__item">
-      <a href="esercizio-sullapplicazione---versione-10.html" class="md-nav__link">
+      <a href="esercizio-pratico---versione-10.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    20. Esercizio sull'applicazione – Versione 10
+    20. Esercizio pratico – versione 10
   
 
     
@@ -909,17 +842,26 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="elaborazione-di-documenti-xml.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="elaborazione-dei-documenti-xml.html" class="md-nav__link md-nav__link--active">
         
   
   
   <span class="md-ellipsis">
     
   
-    21. Elaborazione di documenti XML
+    21. Elaborazione dei documenti XML
   
 
     
@@ -928,6 +870,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -939,14 +882,14 @@
   
   
     <li class="md-nav__item">
-      <a href="esercizio-dellapplicazione---versione-11.html" class="md-nav__link">
+      <a href="esercizio-pratico---versione-11.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    22. Esercizio dell'applicazione – Versione 11
+    22. Esercizio pratico – versione 11
   
 
     
@@ -973,7 +916,7 @@
   <span class="md-ellipsis">
     
   
-    23. Esercizio pratico – Versione 12
+    23. Esercizio pratico – versione 12
   
 
     
@@ -993,14 +936,14 @@
   
   
     <li class="md-nav__item">
-      <a href="esercizio-sullapplicazione---versione-13.html" class="md-nav__link">
+      <a href="esercizio-pratico---versione-13.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    24. Esercizio sull'applicazione – Versione 13
+    24. Esercizio pratico – versione 13
   
 
     
@@ -1030,173 +973,126 @@
 
 
 
-<p><a id="toc42689807"></a>
-<a id="toc42690193"></a>
-<a id="toc42690579"></a></p>
-<h1 id="2-configurazione-di-un-ambiente-di-sviluppo">2. <span style="color: #365f91">Configurazione di un ambiente di sviluppo</span></h1>
-<p>Gli script sono stati scritti e testati nel seguente ambiente:</p>
+<p><span id="toc42690482" name="toc42690482" class="odt-bookmark-anchor"></span>
+<span id="toc42690868" name="toc42690868" class="odt-bookmark-anchor"></span>
+<span id="refheading400021881943603" name="refheading400021881943603" class="odt-bookmark-anchor"></span>
+<span id="toc42690096" name="toc42690096" class="odt-bookmark-anchor"></span></p>
+<h1 id="21-elaborazione-dei-documenti-xml">21. <span style="color: #365f91">Elaborazione dei documenti XML</span></h1>
+<p><img src="images/10000000000001C8000002BEFCF65A2E.png" width="159" height="246" style="width:4.219cm;height:6.502cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001C8000002BEFCF65A2E.png" /></p>
+<p>Consideriamo il seguente file XML <strong>[data.xml]</strong>:</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-xml">
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#800080">&lt;tribu&gt;</span><span style="color:#800080"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;enseignant&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#800080">&lt;personne</span><span style="color:#008080"> </span><span style="color:#808000">sexe</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">M</span><span style="color:#800080">&quot;&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            </span><span style="color:#800080">&lt;nom&gt;</span><span style="color:#000000">dupont</span><span style="color:#800080">&lt;/nom&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            </span><span style="color:#800080">&lt;prenom&gt;</span><span style="color:#000000">jean</span><span style="color:#800080">&lt;/prenom&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            </span><span style="color:#800080">&lt;age&gt;</span><span style="color:#000000">28</span><span style="color:#800080">&lt;/age&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            ceci est un commentaire</span><span style="color:#000000"></span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#800080">&lt;/personne&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#800080">&lt;section&gt;</span><span style="color:#000000">27</span><span style="color:#800080">&lt;/section&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;/enseignant&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;etudiant&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#800080">&lt;personne</span><span style="color:#008080"> </span><span style="color:#808000">sexe</span><span style="color:#800080">=&quot;</span><span style="color:#0000ff">F</span><span style="color:#800080">&quot;&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            </span><span style="color:#800080">&lt;nom&gt;</span><span style="color:#000000">martin</span><span style="color:#800080">&lt;/nom&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            </span><span style="color:#800080">&lt;prenom&gt;</span><span style="color:#000000">charline</span><span style="color:#800080">&lt;/prenom&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">            </span><span style="color:#800080">&lt;age&gt;</span><span style="color:#000000">22</span><span style="color:#800080">&lt;/age&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#800080">&lt;/personne&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">        </span><span style="color:#800080">&lt;formation&gt;</span><span style="color:#000000">dess IAIE</span><span style="color:#800080">&lt;/formation&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">    </span><span style="color:#800080">&lt;/etudiant&gt;</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#800080">&lt;/tribu&gt;</span><span style="color:#800080"></span></span></span>
+</code></pre></div>
+
+<p>Analizziamo questo documento con il seguente script:</p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
+<span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-style:italic;color:#808080">// file XML da elaborare</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$FILE_NAME</span><span style="color:#008080"> </span>=<span style="color:#008080"> </span><span style="color:#008000">&quot;data.xml&quot;</span>;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-style:italic;color:#808080">// elaborazione</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$xml</span><span style="color:#008080"> </span>=<span style="color:#008080"> </span>simplexml_load_file(<span style="color:#0000ff">$FILE_NAME</span>);</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">print_r(<span style="color:#0000ff">$xml</span>);</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">print_r(<span style="color:#0000ff">$xml</span>-&gt;enseignant-&gt;personne<span style="font-weight:bold">[&#x27;sexe&#x27;]</span>);</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$nom</span>=<span style="color:#0000ff">$xml</span>-&gt;enseignant-&gt;personne-&gt;nom;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;nom=</span><span style="color:#0000ff">$nom</span><span style="color:#008000">\n&quot;</span>;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$sexe</span>=<span style="color:#0000ff">$xml</span>-&gt;enseignant-&gt;personne<span style="font-weight:bold">[&#x27;sexe&#x27;]</span>;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;sexe=</span><span style="color:#0000ff">$sexe</span><span style="color:#008000">\n&quot;</span>;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$formation</span>=<span style="color:#0000ff">$xml</span>-&gt;etudiant-&gt;formation;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;formation=</span><span style="color:#0000ff">$formation</span><span style="color:#008000">\n&quot;</span>;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;isset=&quot;</span>.<span style="font-weight:bold">isset</span>(<span style="color:#0000ff">$xml</span>-&gt;enseignant-&gt;personne-&gt;nom).<span style="color:#008000">&quot;\n&quot;</span>;</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;isset=&quot;</span>.<span style="font-weight:bold">isset</span>(<span style="color:#0000ff">$xml</span>-&gt;enseignant-&gt;personne-&gt;xx).<span style="color:#008000">&quot;\n&quot;</span>;</span></span>
+</code></pre></div>
+
+<p><span style="color: #000000">Qui utilizziamo un modulo PHP denominato </span><strong><span style="color: #000000">[simpleXML] </span></strong><span style="color: #000000">che consente di elaborare documenti XML.</span></p>
 <ul>
-  <li>un ambiente composto da server web Apache / DBMS MySQL / PHP 7.3 denominato <b>Laragon;</b>
+  <li>riga 6: caricamento del file XML;
   </li>
-  <li>l&#x27;IDE di sviluppo<b> NetBeans 10.0;</b>
+  <li>riga 7: visualizzazione del documento XML;
   </li>
-</ul>
-<p><a id="toc42689808"></a>
-<a id="toc42690194"></a>
-<a id="toc42690580"></a>
-<a id="installationdelaragon"></a>
-<a id="refheadingtoc45843531951845"></a></p>
-<h2 id="21-installazione-di-laragon">2.1. <span style="color: #4f81bd">Installazione di Laragon</span></h2>
-<p>Laragon è un pacchetto che combina diversi componenti software:</p>
-<ul>
-  <li>un server web Apache. Lo useremo per scrivere script web in PHP;
+  <li>riga 8: visualizzazione del valore dell&#x27;attributo &#x27;sexe&#x27; di un docente: <i>&lt;insegnante&gt;&lt;persona sesso=&#x27;…&#x27;&gt;;</i>
   </li>
-  <li>il sistema di gestione di database MySQL;
-  </li>
-  <li>il linguaggio di scripting PHP;
-  </li>
-  <li>un server Redis che fornisce la memorizzazione nella cache per le applicazioni web:
+  <li>riga 9: visualizzazione del valore del primo tag <i>&lt;insegnante&gt;&lt;persona&gt;&lt;nome&gt;;</i>
   </li>
 </ul>
 
-<p>Laragon può essere scaricato (marzo 2019) al seguente indirizzo:</p>
-<p><a href="https://laragon.org/download/"><u><span style="color: #0563c1">https://laragon.org/download/</span></u></a></p>
-<p><img src="images/10000000000005AC000003184BDF25EA.png" width="363" height="198" style="width:9.603cm;height:5.239cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000005AC000003184BDF25EA.png" /></p>
-<p><img src="images/100000000000086200000337E13872C5.png" width="536" height="206" style="width:14.19cm;height:5.442cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000086200000337E13872C5.png" /></p>
-<p><img src="images/100000000000088C0000033343F79C47.png" width="547" height="205" style="width:14.469cm;height:5.415cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000088C0000033343F79C47.png" /></p>
+<p>Si noti che il tag radice &lt;tribu&gt; non compare nel codice. Potrebbe essere qualsiasi cosa;</p>
+<p><strong>Risultati della console</strong></p>
+<div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-text">
+<span class="odt-code-line"><span class="odt-code-line-content">SimpleXMLElement Object</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">(</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="font-weight:bold">[enseignant]</span> =&gt; SimpleXMLElement Object</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        (</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="font-weight:bold">[personne]</span> =&gt; SimpleXMLElement Object</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                (</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                    <span style="font-weight:bold">[@attributes]</span> =&gt; Array</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                        (</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                            <span style="font-weight:bold">[sexe]</span> =&gt; M</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                        )</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                    <span style="font-weight:bold">[nom]</span> =&gt; dupont</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                    <span style="font-weight:bold">[prenom]</span> =&gt; jean</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                    <span style="font-weight:bold">[age]</span> =&gt; 28</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                )</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="font-weight:bold">[section]</span> =&gt; 27</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        )</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="font-weight:bold">[etudiant]</span> =&gt; SimpleXMLElement Object</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        (</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="font-weight:bold">[personne]</span> =&gt; SimpleXMLElement Object</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                (</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                    <span style="font-weight:bold">[@attributes]</span> =&gt; Array</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                        (</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                            <span style="font-weight:bold">[sexe]</span> =&gt; F</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                        )</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                    <span style="font-weight:bold">[nom]</span> =&gt; martin</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                    <span style="font-weight:bold">[prenom]</span> =&gt; charline</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                    <span style="font-weight:bold">[age]</span> =&gt; 22</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">                )</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">            <span style="font-weight:bold">[formation]</span> =&gt; dess IAIE</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">        )</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">SimpleXMLElement Object</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">(</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="font-weight:bold">[0]</span> =&gt; M</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">)</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">nom=dupont</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">sexe=M</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">formation=dess IAIE</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">isset=1</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">isset=</span></span>
+</code></pre></div>
+
 <ul>
-  <li>L&#x27;installazione <b>[1-5] </b>genera la seguente struttura di directory:
+  <li>righe 1-37: il documento XML sotto forma di un oggetto di tipo <b>[simpleXML]</b>.
   </li>
 </ul>
 
-<p><img src="images/100000000000083D000003996FDD348B.png" width="633" height="276" style="width:16.739cm;height:7.31cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000083D000003996FDD348B.png" /></p>
-<ul>
-  <li>in <b>[6] </b>la cartella di installazione di PHP;
-  </li>
-</ul>
-
-<p>L&#x27;avvio di <strong>[Laragon]</strong> visualizza la seguente finestra:</p>
-<p><img src="images/10000000000004F800000346ED7C4AFF.png" width="382" height="252" style="width:10.102cm;height:6.655cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000004F800000346ED7C4AFF.png" /></p>
-<ul>
-  <li><b>[1]</b>: il menu principale di Laragon;
-  </li>
-  <li><b>[2]</b>: il pulsante<b> [Avvia tutto] </b>avvia il server web Apache e il database MySQL;
-  </li>
-  <li><b>[3]</b>: il pulsante<b> [WEB] </b>visualizza la pagina web <b>[http://localhost], </b>che corrisponde al file PHP <b>[&lt;laragon&gt;/www/index.php], </b>dove &lt;laragon&gt; è la cartella di installazione di Laragon;
-  </li>
-  <li><b>[4]</b>: il pulsante<b> [Database] </b>consente di gestire il database MySQL utilizzando lo strumento<b> [phpMyAdmin]</b>. È necessario installare questo strumento in precedenza;
-  </li>
-  <li><b>[5]</b>: il pulsante<b> [Terminal] </b>apre una finestra di comando;
-  </li>
-  <li><b>[6]</b>: Il pulsante<b> [Root] </b>apre una finestra di Esplora risorse posizionata sulla cartella<b> [&lt;laragon&gt;/www]</b>, che è la directory principale del sito web<b> [http://localhost]</b>. È qui che dovresti collocare tutte le applicazioni web gestite dal server Apache di Laragon;
-  </li>
-</ul>
-
-<p>Apriamo un terminale Laragon <strong>[5]</strong>:</p>
-<p><img src="images/1000000000000745000002AC1D4C0E92.png" width="558" height="205" style="width:14.773cm;height:5.429cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000745000002AC1D4C0E92.png" /></p>
-<ul>
-  <li>in <b>[1]</b>, il tipo di terminale. In <b>[6] </b>sono disponibili tre tipi di terminali;
-  </li>
-  <li>in <b>[2, 3]</b>: la directory corrente;
-  </li>
-  <li>In <b>[4]</b>, digita il comando <b>[echo %PATH%], </b>che visualizza l&#x27;elenco delle directory cercate quando si cerca un eseguibile. Tutte le cartelle principali di Laragon sono incluse in questo percorso degli eseguibili, cosa che non accadrebbe se si aprisse una finestra del prompt dei comandi <b>[cmd] </b>in Windows. In questo documento, quando viene richiesto di digitare comandi per installare un particolare software, tali comandi vengono generalmente digitati in un terminale Laragon;
-  </li>
-</ul>
-<p><a id="toc42689809"></a>
-<a id="toc42690195"></a>
-<a id="toc42690581"></a>
-<a id="installationdelide"></a>
-<a id="refheadingtoc45845531951845"></a></p>
-<h2 id="22-installazione-dellide-netbeans-100">2.2. <span style="color: #4f81bd">Installazione dell&#x27;IDE NetBeans 10.0</span></h2>
-<p>L&#x27;IDE NetBeans 10.0 può essere scaricato dal seguente indirizzo (marzo 2019):</p>
-<p><a href="https://netbeans.apache.org/download/index.html"><u><span style="color: #0563c1">https://netbeans.apache.org/download/index.HTML</span></u></a></p>
-<p><img src="images/10000000000007BD0000037EBD90F9D8.png" width="495" height="223" style="width:13.1cm;height:5.913cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000007BD0000037EBD90F9D8.png" /></p>
-<p>Il file scaricato è un file ZIP che deve semplicemente essere decompresso. Una volta installato e avviato NetBeans, è possibile creare il proprio primo progetto PHP.</p>
-<p><img src="images/10000000000005C4000001A8D40DAF59.png" width="443" height="127" style="width:11.719cm;height:3.366cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000005C4000001A8D40DAF59.png" /></p>
-<ul>
-  <li>In <b>[1]</b>, selezionare l&#x27;opzione File / Nuovo progetto;
-  </li>
-  <li>In <b>[2]</b>, selezionare la categoria<b> [PHP]</b>;
-  </li>
-  <li>in <b>[3]</b>, selezionare il tipo di progetto <b>[Applicazione PHP]</b>;
-  </li>
-</ul>
-
-<p><img src="images/100000000000085A000001CEB2D6C5E9.png" width="641" height="139" style="width:16.97cm;height:3.667cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000085A000001CEB2D6C5E9.png" /></p>
-<ul>
-  <li>In <b>[4]</b>, assegnare un nome al progetto;
-  </li>
-  <li>In <b>[5]</b>, scegli una cartella per il progetto;
-  </li>
-  <li>In <b>[6]</b>, seleziona la versione di PHP scaricata;
-  </li>
-  <li>in <b>[7]</b>, selezionare la codifica UTF-8 per i file PHP;
-  </li>
-  <li>In <b>[8]</b>, seleziona la modalità<b> [Script] </b>per eseguire gli script PHP in modalità riga di comando. Seleziona <b>[Local WEB Server] </b>per eseguire uno script PHP in un ambiente web;
-  </li>
-  <li>In <b>[9,10]</b>, specifica la directory di installazione per l&#x27;interprete PHP del pacchetto Laragon:
-  </li>
-</ul>
-
-<p><img src="images/10000000000005DC0000025C1FB2220C.png" width="450" height="181" style="width:11.912cm;height:4.798cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000005DC0000025C1FB2220C.png" /></p>
-<ul>
-  <li>Seleziona <b>[Fine] </b>per completare la procedura guidata di creazione del progetto PHP;
-  </li>
-</ul>
-
-<p><img src="images/100000000000070C0000020CD9C9D0E3.png" width="541" height="157" style="width:14.319cm;height:4.159cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000070C0000020CD9C9D0E3.png" /></p>
-<ul>
-  <li>in <b>[11]</b>, il progetto viene creato con uno script<b> [index.php]</b>;
-  </li>
-  <li>in <b>[12]</b>, scrivi uno script PHP minimale;
-  </li>
-  <li>in <b>[13]</b>, esegui <b>[index.php]</b>;
-  </li>
-</ul>
-
-<p><img src="images/100000000000074C00000147E3253FF8.png" width="561" height="98" style="width:14.833cm;height:2.596cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000074C00000147E3253FF8.png" /></p>
-<ul>
-  <li>in <b>[14]</b>, i risultati nella finestra<b> [output] </b>di NetBeans;
-  </li>
-  <li>In <b>[15]</b>, creare un nuovo script;
-  </li>
-  <li>in <b>[16]</b>, il nuovo script;
-  </li>
-</ul>
-
-<p>Il lettore può creare tutti gli script che seguono in cartelle diverse all&#x27;interno dello stesso progetto PHP. Il codice sorgente degli script presenti in questo documento è disponibile nella seguente struttura di directory di NetBeans:</p>
-<p><img src="images/1000000000000644000002E5AEA38430.png" width="561" height="259" style="width:14.85cm;height:6.86cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000644000002E5AEA38430.png" /></p>
-<p>Gli script in questo documento si trovano nella directory del progetto <strong>[scripts-console] [1]</strong>. Useremo anche librerie PHP che saranno collocate nella cartella <strong>[&lt;laragon-lite&gt;/www/vendor] [2],</strong> dove &lt;laragon-lite&gt; è la directory di installazione del software Laragon. Affinché NetBeans riconosca le librerie in <strong>[2]</strong> come parte del progetto <strong>[scripts-console]</strong>, dobbiamo includere la cartella <strong>[vendor] [2]</strong> nel <strong>[Include Path] [3]</strong> del progetto. Configureremo NetBeans in modo che la cartella <strong>[&lt;laragon-lite&gt;/www/vendor] [2]</strong> sia inclusa in ogni nuovo progetto PHP, non solo nel progetto <strong>[scripts-console]</strong>:</p>
-<p><img src="images/10000000000007C4000002C3270A2133.png" width="696" height="247" style="width:18.41cm;height:6.548cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000007C4000002C3270A2133.png" /></p>
-<ul>
-  <li>In <b>[1-2]</b>, andare alle opzioni di NetBeans;
-  </li>
-  <li>In <b>[3-4]</b>, configurare le opzioni PHP;
-  </li>
-  <li>In <b>[5-7]</b>, configurare <b>il [Global Include Path] </b>di PHP: le cartelle elencate in <b>[7] </b>vengono automaticamente incluse nel <b>[Include Path] </b>per ogni progetto PHP;
-  </li>
-</ul>
-
-<p><img src="images/100000000000025000000231F599A184.png" width="207" height="196" style="width:5.48cm;height:5.193cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/100000000000025000000231F599A184.png" /></p>
-<ul>
-  <li>In <b>[9]</b>, accedere alle proprietà del ramo<b> [Include Path]</b>;
-  </li>
-  <li>In <b>[10-11]</b>, le nuove librerie esplorate da NetBeans. NetBeans esegue la scansione del codice PHP in queste librerie e memorizza le loro classi, interfacce, funzioni, ecc., al fine di fornire assistenza allo sviluppatore;
-  </li>
-</ul>
-
-<p><img src="images/1000000000000403000004FDD8A5CFCC.png" width="360" height="447" style="width:9.513cm;height:11.829cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000403000004FDD8A5CFCC.png" /></p>
-<ul>
-  <li>in <b>[12]</b>, un frammento di codice utilizza la classe<b> [PhpMimeMailParser\Parser] </b>dalla libreria<b> [vendor/php-mime-mail-parser]</b>;
-  </li>
-  <li>in <b>[13]</b>, NetBeans suggerisce i metodi di questa classe;
-  </li>
-  <li>In <b>[14-15]</b>, NetBeans visualizza la documentazione relativa al metodo selezionato;
-  </li>
-</ul>
-
-<p>Il concetto di <strong>[Include Path]</strong> è specifico di NetBeans. Anche PHP ha questo concetto, ma si tratta, in linea di principio, di due concetti diversi.</p>
-<p>Ora che l&#x27;ambiente di sviluppo è stato configurato, possiamo trattare le nozioni di base di PHP.</p>
+<p>Lo script precedente non ci mostra tutte le possibilità del modulo <strong>[simpleXML],</strong> ma è sufficiente per scrivere una nuova versione dell’esercizio applicativo.</p>
 
 
 

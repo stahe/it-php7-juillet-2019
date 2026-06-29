@@ -15,7 +15,7 @@
         <link rel="canonical" href="https://stahe.github.io/it-php7-juillet-2019/eccezioni-ed-errori.html">
       
       
-        <link rel="prev" href="interfacce.html">
+        <link rel="prev" href="le-interfacce.html">
       
       
         <link rel="next" href="esercizio-pratico---versione-3.html">
@@ -56,6 +56,8 @@
     
     
       <link rel="stylesheet" href="stylesheets/focus.css">
+    
+      <link rel="stylesheet" href="stylesheets/bidi.css">
     
     <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
@@ -303,14 +305,14 @@
   
   
     <li class="md-nav__item">
-      <a href="introduzione-a-php-7.html" class="md-nav__link">
+      <a href="introduzione-al-linguaggio-php-7.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    1. Introduzione a PHP 7
+    1. Introduzione al linguaggio PHP 7
   
 
     
@@ -330,14 +332,14 @@
   
   
     <li class="md-nav__item">
-      <a href="configurazione-di-un-ambiente-di-sviluppo.html" class="md-nav__link">
+      <a href="installazione-di-un-ambiente-di-lavoro.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    2. Configurazione di un ambiente di sviluppo
+    2. Installazione di un ambiente di lavoro
   
 
     
@@ -391,7 +393,7 @@
   <span class="md-ellipsis">
     
   
-    4. Esercizio pratico – Versioni 1 e 2
+    4. Esercizio pratico – versioni 1 e 2
   
 
     
@@ -411,14 +413,14 @@
   
   
     <li class="md-nav__item">
-      <a href="classi.html" class="md-nav__link">
+      <a href="le-classi.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    5. Classi
+    5. Le classi
   
 
     
@@ -438,14 +440,14 @@
   
   
     <li class="md-nav__item">
-      <a href="interfacce.html" class="md-nav__link">
+      <a href="le-interfacce.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    6. Interfacce
+    6. Le interfacce
   
 
     
@@ -525,10 +527,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#71-la-struttura-delle-directory-degli-script" class="md-nav__link">
+  <a href="#71-lalbero-degli-script" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7.1. La struttura delle directory degli script
+        7.1. L&#x27;albero degli script
       
     </span>
   </a>
@@ -539,7 +541,7 @@
   <a href="#72-linterfaccia-throwable" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7.2. L&#x27;interfaccia [\Throwable]
+        7.2. L’interfaccia [\Throwable]
       
     </span>
   </a>
@@ -547,10 +549,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#73-eccezioni-predefinite-in-php-7" class="md-nav__link">
+  <a href="#73-le-eccezioni-predefinite-in-php-7" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7.3. Eccezioni predefinite in PHP 7
+        7.3. Le eccezioni predefinite in PHP 7
       
     </span>
   </a>
@@ -558,10 +560,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#74-errori-predefiniti-in-php-7" class="md-nav__link">
+  <a href="#74-gli-errori-predefiniti-in-php-7" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7.4. Errori predefiniti in PHP 7
+        7.4. Gli errori predefiniti in PHP 7
       
     </span>
   </a>
@@ -605,7 +607,7 @@
   <a href="#78-clausola-finally" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7.8. clausola [finally]
+        7.8. Clausola [finally]
       
     </span>
   </a>
@@ -613,10 +615,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#79-creazione-di-classi-di-eccezione-personalizzate" class="md-nav__link">
+  <a href="#79-creare-le-proprie-classi-di-eccezioni" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7.9. Creazione di classi di eccezione personalizzate
+        7.9. Creare le proprie classi di eccezioni
       
     </span>
   </a>
@@ -624,10 +626,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#710-rilancio-di-uneccezione" class="md-nav__link">
+  <a href="#710-rilanciare-uneccezione" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7.10. Rilancio di un&#x27;eccezione
+        7.10. Rilanciare un&#x27;eccezione
       
     </span>
   </a>
@@ -635,10 +637,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#711-lavorare-con-uno-stack-di-eccezioni" class="md-nav__link">
+  <a href="#711-gestione-di-una-pila-di-eccezioni" class="md-nav__link">
     <span class="md-ellipsis">
       
-        7.11. Lavorare con uno stack di eccezioni
+        7.11. Gestione di una pila di eccezioni
       
     </span>
   </a>
@@ -667,7 +669,7 @@
   <span class="md-ellipsis">
     
   
-    8. Esercizio pratico – Versione 3
+    8. Esercizio pratico – versione 3
   
 
     
@@ -687,14 +689,14 @@
   
   
     <li class="md-nav__item">
-      <a href="trait.html" class="md-nav__link">
+      <a href="i-trait.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    9. Trait
+    9. I Trait
   
 
     
@@ -748,7 +750,7 @@
   <span class="md-ellipsis">
     
   
-    11. Esercizio pratico – Versione 4
+    11. Esercizio pratico – versione 4
   
 
     
@@ -768,14 +770,14 @@
   
   
     <li class="md-nav__item">
-      <a href="utilizzo-del-dbms-mysql.html" class="md-nav__link">
+      <a href="utilizzo-di-sgbd-mysql.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    12. Utilizzo del DBMS MySQL
+    12. Utilizzo di SGBD MySQL
   
 
     
@@ -802,7 +804,7 @@
   <span class="md-ellipsis">
     
   
-    13. Esercizio pratico – Versione 5
+    13. Esercizio pratico – versione 5
   
 
     
@@ -829,7 +831,7 @@
   <span class="md-ellipsis">
     
   
-    14. Esercizio pratico – Versione 6
+    14. Esercizio pratico – versione 6
   
 
     
@@ -856,7 +858,7 @@
   <span class="md-ellipsis">
     
   
-    15. Esercizio pratico – Versione 7
+    15. Esercizio pratico – versione 7
   
 
     
@@ -937,7 +939,7 @@
   <span class="md-ellipsis">
     
   
-    18. Esercizio pratico – Versione 8
+    18. Esercizio pratico – versione 8
   
 
     
@@ -964,7 +966,7 @@
   <span class="md-ellipsis">
     
   
-    19. Esercizio pratico – Versione 9
+    19. Esercizio pratico – versione 9
   
 
     
@@ -984,14 +986,14 @@
   
   
     <li class="md-nav__item">
-      <a href="esercizio-sullapplicazione---versione-10.html" class="md-nav__link">
+      <a href="esercizio-pratico---versione-10.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    20. Esercizio sull'applicazione – Versione 10
+    20. Esercizio pratico – versione 10
   
 
     
@@ -1011,14 +1013,14 @@
   
   
     <li class="md-nav__item">
-      <a href="elaborazione-di-documenti-xml.html" class="md-nav__link">
+      <a href="elaborazione-dei-documenti-xml.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    21. Elaborazione di documenti XML
+    21. Elaborazione dei documenti XML
   
 
     
@@ -1038,14 +1040,14 @@
   
   
     <li class="md-nav__item">
-      <a href="esercizio-dellapplicazione---versione-11.html" class="md-nav__link">
+      <a href="esercizio-pratico---versione-11.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    22. Esercizio dell'applicazione – Versione 11
+    22. Esercizio pratico – versione 11
   
 
     
@@ -1072,7 +1074,7 @@
   <span class="md-ellipsis">
     
   
-    23. Esercizio pratico – Versione 12
+    23. Esercizio pratico – versione 12
   
 
     
@@ -1092,14 +1094,14 @@
   
   
     <li class="md-nav__item">
-      <a href="esercizio-sullapplicazione---versione-13.html" class="md-nav__link">
+      <a href="esercizio-pratico---versione-13.html" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    24. Esercizio sull'applicazione – Versione 13
+    24. Esercizio pratico – versione 13
   
 
     
@@ -1129,93 +1131,94 @@
 
 
 
-<p><a id="toc42690650"></a>
-<a id="refheadingtoc55563710956990"></a>
-<a id="toc42689878"></a>
-<a id="toc42690264"></a></p>
+<p><span id="toc42690264" name="toc42690264" class="odt-bookmark-anchor"></span>
+<span id="toc42690650" name="toc42690650" class="odt-bookmark-anchor"></span>
+<span id="refheadingtoc55563710956990" name="refheadingtoc55563710956990" class="odt-bookmark-anchor"></span>
+<span id="toc42689878" name="toc42689878" class="odt-bookmark-anchor"></span></p>
 <h1 id="7-eccezioni-ed-errori">7. <span style="color: #365f91">Eccezioni ed errori</span></h1>
-<p>Quando un metodo di classe incontra un errore irreversibile (file inesistente, database non connesso, connessione di rete interrotta), non visualizza un errore su una console (file, database) ma <strong>genera un&#x27;eccezione</strong>. Tutte le eccezioni estendono la classe <strong>[\Exception]</strong>. Oltre alle eccezioni, anche le operazioni interne di PHP generano errori la cui classe base è la classe <strong>[\Error]</strong>. Entrambe le classi implementano l&#x27;interfaccia PHP <strong>[\Throwable]</strong>.</p>
-<p><a id="toc42690651"></a>
-<a id="refheadingtoc787972244347140"></a>
-<a id="toc42689879"></a>
-<a id="toc42690265"></a></p>
-<h2 id="71-la-struttura-delle-directory-degli-script">7.1. <span style="color: #4f81bd"><span style="color: #4f81bd">La struttura delle directory degli script</span></span></h2>
-<p><img src="images/1000000000000182000001F53C2F7898.png" width="135" height="175" style="width:3.572cm;height:4.636cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000182000001F53C2F7898.png" /></p>
-<p><a id="toc42690652"></a>
-<a id="refheadingtoc55565710956990"></a>
-<a id="toc42689880"></a>
-<a id="toc42690266"></a></p>
-<h2 id="72-linterfaccia-throwable">7.2. <span style="color: #4f81bd">L&#x27;interfaccia [\Throwable]</span></h2>
-<p>L&#x27;interfaccia <strong>[\Throwable]</strong> è la seguente:</p>
-<p><img src="images/10000000000003B60000030A9D5E70DD.png" width="285" height="233" style="width:7.541cm;height:6.175cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000003B60000030A9D5E70DD.png" /></p>
-<p>Il ruolo dei metodi dell&#x27;interfaccia è il seguente:</p>
-<p><img src="images/1000000000000624000001A276916377.png" width="472" height="125" style="width:12.48cm;height:3.318cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000624000001A276916377.png" /></p>
-<p><a id="toc42690653"></a>
-<a id="refheadingtoc55567710956990"></a>
-<a id="toc42689881"></a>
-<a id="toc42690267"></a></p>
-<h2 id="73-eccezioni-predefinite-in-php-7">7.3. <span style="color: #4f81bd">Eccezioni predefinite in PHP 7</span></h2>
+<p>Quando un metodo di una classe incontra un errore irreversibile (file inesistente, database non connesso, connessione di rete non disponibile), non visualizza un errore su una console (file, database) ma <strong>genera un’eccezione</strong>. Tutte le eccezioni estendono la classe <strong>[\Exception]</strong>. Oltre alle eccezioni, il funzionamento interno di PHP genera anche errori la cui classe base è la classe <strong>[\Error]</strong>. Entrambe le classi implementano l’interfaccia PHP <strong>[\Throwable]</strong>.</p>
+<p><span id="toc42690265" name="toc42690265" class="odt-bookmark-anchor"></span>
+<span id="toc42690651" name="toc42690651" class="odt-bookmark-anchor"></span>
+<span id="refheadingtoc787972244347140" name="refheadingtoc787972244347140" class="odt-bookmark-anchor"></span>
+<span id="toc42689879" name="toc42689879" class="odt-bookmark-anchor"></span></p>
+<h2 id="71-lalbero-degli-script">7.1. <span style="color: #4f81bd">L&#x27;albero degli script</span></h2>
+<p><img src="images/1000000000000182000001F53C2F7898.png" width="135" height="175" style="width:3.572cm;height:4.643cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000182000001F53C2F7898.png" /></p>
+<p><span id="toc42690266" name="toc42690266" class="odt-bookmark-anchor"></span>
+<span id="toc42690652" name="toc42690652" class="odt-bookmark-anchor"></span>
+<span id="refheadingtoc55565710956990" name="refheadingtoc55565710956990" class="odt-bookmark-anchor"></span>
+<span id="toc42689880" name="toc42689880" class="odt-bookmark-anchor"></span></p>
+<h2 id="72-linterfaccia-throwable">7.2. <span style="color: #4f81bd"><strong>L’interfaccia</strong> [\Throwable]</span></h2>
+<p>L’interfaccia <strong>[\Throwable]</strong> è la seguente:</p>
+<p><img src="images/10000000000003B60000030A9D5E70DD.png" width="285" height="234" style="width:7.541cm;height:6.181cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000003B60000030A9D5E70DD.png" /></p>
+<p>La funzione dei metodi dell’interfaccia è la seguente:</p>
+<p><img src="images/1000000000000624000001A276916377.png" width="472" height="125" style="width:12.48cm;height:3.32cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000624000001A276916377.png" /></p>
+<p><span id="toc42690267" name="toc42690267" class="odt-bookmark-anchor"></span>
+<span id="toc42690653" name="toc42690653" class="odt-bookmark-anchor"></span>
+<span id="refheadingtoc55567710956990" name="refheadingtoc55567710956990" class="odt-bookmark-anchor"></span>
+<span id="toc42689881" name="toc42689881" class="odt-bookmark-anchor"></span></p>
+<h2 id="73-le-eccezioni-predefinite-in-php-7">7.3. <span style="color: #4f81bd">Le eccezioni predefinite in PHP 7</span></h2>
 <p>PHP 7 definisce diverse classi di eccezioni:</p>
-<p><img src="images/1000000000000699000003EB5A5396D7.png" width="591" height="351" style="width:15.64cm;height:9.289cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000699000003EB5A5396D7.png" /></p>
+<p><img src="images/1000000000000699000003EB5A5396D7.png" width="591" height="351" style="width:15.64cm;height:9.29cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/1000000000000699000003EB5A5396D7.png" /></p>
 <ul>
   <li>in <b>[1]</b>, le eccezioni predefinite in PHP;
   </li>
-  <li>in <b>[2]</b>, le eccezioni della SPL (Standard PHP Library) in PHP 7. La SPL è una raccolta di classi e interfacce progettate per risolvere i problemi che gli sviluppatori incontrano frequentemente.
+  <li>In <b>[2]</b>, le eccezioni della libreria SPL (Libreria standard PHP) di PHP 7. La libreria SPL è una raccolta di classi e interfacce destinate a risolvere i problemi che gli sviluppatori incontrano frequentemente.
   </li>
 </ul>
-<p><a id="toc42690654"></a>
-<a id="refheadingtoc55569710956990"></a>
-<a id="toc42689882"></a>
-<a id="toc42690268"></a></p>
-<h2 id="74-errori-predefiniti-in-php-7">7.4. <span style="color: #4f81bd">Errori predefiniti in PHP 7</span></h2>
-<p>PHP 7 definisce diverse classi di errore:</p>
-<p><img src="images/10000000000001B60000023C194A52DA.png" width="153" height="200" style="width:4.06cm;height:5.302cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001B60000023C194A52DA.png" /></p>
-<p>La classe <strong>[\Error]</strong> è la classe padre di tutti gli errori predefiniti in PHP. La classe <strong>[ErrorException]</strong> consente di incapsulare un&#x27;istanza della classe <strong>[\Error]</strong> all&#x27;interno di un&#x27;istanza della classe <strong>[\Exception]</strong>. Ciò consente una gestione standardizzata degli errori occupandosi esclusivamente delle eccezioni.</p>
-<p><a id="toc42690655"></a>
-<a id="refheadingtoc55571710956990"></a>
-<a id="toc42689883"></a>
-<a id="toc42690269"></a></p>
+
+<p><span id="toc42690268" name="toc42690268" class="odt-bookmark-anchor"></span>
+<span id="toc42690654" name="toc42690654" class="odt-bookmark-anchor"></span>
+<span id="refheadingtoc55569710956990" name="refheadingtoc55569710956990" class="odt-bookmark-anchor"></span>
+<span id="toc42689882" name="toc42689882" class="odt-bookmark-anchor"></span></p>
+<h2 id="74-gli-errori-predefiniti-in-php-7">7.4. <span style="color: #4f81bd">Gli errori predefiniti in PHP 7</span></h2>
+<p>PHP 7 definisce diverse classi di errori:</p>
+<p><img src="images/10000000000001B60000023C194A52DA.png" width="153" height="200" style="width:4.06cm;height:5.3cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000001B60000023C194A52DA.png" /></p>
+<p>La classe <strong>[\Error]</strong> è la classe padre di tutti gli errori predefiniti in PHP. La classe <strong>[ErrorException]</strong> consente di incapsulare un&#x27;istanza della classe <strong>[\Error]</strong> in un&#x27;istanza della classe <strong>[\Exception]</strong>. Ciò permette di uniformare la gestione degli errori trattando esclusivamente le eccezioni.</p>
+<p><span id="toc42690269" name="toc42690269" class="odt-bookmark-anchor"></span>
+<span id="toc42690655" name="toc42690655" class="odt-bookmark-anchor"></span>
+<span id="refheadingtoc55571710956990" name="refheadingtoc55571710956990" class="odt-bookmark-anchor"></span>
+<span id="toc42689883" name="toc42689883" class="odt-bookmark-anchor"></span></p>
 <h2 id="75-esempio-1">7.5. <span style="color: #4f81bd">Esempio 1</span></h2>
-<p>Il primo esempio <strong>[exceptions-01.php]</strong> mostra sia gli errori PHP che un&#x27;eccezione:</p>
+<p>Il primo esempio <strong>[exceptions-01.php]</strong> mostra sia errori PHP sia un&#x27;eccezione:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// display all errors</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// visualizzazione di tutti gli errori</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">ini_set(</span>&quot;error_reporting&quot;<span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000000">E_ALL);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">ini_set(</span>&quot;display_errors&quot;<span style="color:#000000">,</span><span style="color:#008080"> </span>&quot;on&quot;<span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// code --------</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// codice --------</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">$var<span style="color:#000000">=[];</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// unknown key</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">print<span style="color:#008080"> </span><span style="color:#0000ff">$var</span>[&quot;abcd&quot;];</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// division by zero</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// chiave sconosciuta</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold">print</span><span style="color:#008080"> </span><span style="color:#0000ff">$var</span>[&quot;abcd&quot;];</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// divisione per zero</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">$var<span style="color:#000000">=</span><span style="color:#000080">7</span><span style="color:#000000">/</span><span style="color:#000080">0</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">var_dump(<span style="color:#0000ff">$var</span>);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// fixed terminal board</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// matrice a valori fissi</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$array</span><span style="color:#008080"> </span>=<span style="color:#008080"> </span><span style="font-weight:bold">new</span><span style="color:#008080"> </span>\SplFixedArray(<span style="color:#000080">5</span>);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">$array<span style="font-weight:bold;color:#000000">[1]</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000080">2</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">$array<span style="font-weight:bold;color:#000000">[4]</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#008000">&quot;foo&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// index outside the limits</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// indice fuori dai limiti</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">$array<span style="font-weight:bold;color:#000000">[5]</span><span style="color:#000000">=</span><span style="color:#000080">8</span><span style="color:#000000">;</span></span></span>
 </code></pre></div>
 
 <p><strong><span style="color: #000000">Commenti</span></strong></p>
 <ul>
-  <li><span style="color: #000000">Riga 4: Indichiamo a PHP di segnalare tutti gli errori. Il secondo parametro è il livello di errore richiesto:</span>
+  <li><span style="color: #000000">riga 4: si richiede a PHP di segnalare tutti gli errori. Il secondo parametro è il livello di errore richiesto:</span>
   </li>
 </ul>
 
-<p><img src="images/10000000000007CB0000039244FC96F3.png" width="598" height="274" style="width:15.829cm;height:7.251cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000007CB0000039244FC96F3.png" /></p>
+<p><img src="images/10000000000007CB0000039244FC96F3.png" width="598" height="274" style="width:15.829cm;height:7.25cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000007CB0000039244FC96F3.png" /></p>
 <p><img src="images/10000000000007CB000002E0AB3A90C4.png" width="598" height="221" style="width:15.829cm;height:5.84cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000007CB000002E0AB3A90C4.png" /></p>
 <ul>
-  <li><span style="color: #000000">riga 5: chiediamo di visualizzare gli errori sulla console;</span>
+  <li><span style="color: #000000">riga 5: si richiede di visualizzare gli errori sulla console;</span>
   </li>
-  <li><span style="color: #000000">riga 9: accediamo a un elemento inesistente dell&#x27;array </span><b><span style="color: #000000">[$var]</span></b><span style="color: #000000">;</span>
+  <li><span style="color: #000000">riga 9: si accede a un elemento inesistente dell&#x27;array </span><b><span style="color: #000000">[$var]</span></b><span style="color: #000000">;</span>
   </li>
-  <li><span style="color: #000000">riga 11: eseguiamo una divisione per zero;</span>
+  <li><span style="color: #000000">riga 11: si esegue una divisione per zero;</span>
   </li>
-  <li><span style="color: #000000">riga 14: creiamo un&#x27;istanza della classe</span><b><span style="color: #000000"> [SplFixedArray]</span></b><span style="color: #000000">. Questa classe ci permette di creare un array con limiti fissi e indici interi;</span>
+  <li><span style="color: #000000">riga 14: si crea un&#x27;istanza della classe </span><b><span style="color: #000000">[SplFixedArray]</span></b><span style="color: #000000">. Questa classe consente di creare un array a intervallo fisso e con indici interi;</span>
   </li>
-  <li><span style="color: #000000">riga 18: accediamo a un elemento inesistente dell&#x27;array;</span>
+  <li><span style="color: #000000">riga 18: si accede a un elemento inesistente dell&#x27;array;</span>
   </li>
 </ul>
 
@@ -1240,55 +1243,56 @@
 </code></pre></div></td></tr></table></div>
 <p><strong><span style="color: #000000">Commenti</span></strong></p>
 <ul>
-  <li><span style="color: #000000">Riga 1 dei risultati: L&#x27;accesso a una chiave di array inesistente causa un errore PHP di livello </span><b><span style="color: #000000">[E_NOTICE]</span></b><span style="color: #000000">. Ciò non interrompe l&#x27;esecuzione dello script;</span>
+  <li><span style="color: #000000">riga 1 dei risultati: l&#x27;accesso a una chiave inesistente di un array provoca un errore PHP di livello </span><b><span style="color: #000000">[E_NOTICE]</span></b><span style="color: #000000">. Ciò non interrompe l&#x27;esecuzione dello script;</span>
   </li>
-  <li><span style="color: #000000">Riga 3 dei risultati: la divisione di un numero per zero causa un errore PHP di livello </span><b><span style="color: #000000">[E_WARNING]</span></b><span style="color: #000000">. Ciò non interrompe l&#x27;esecuzione dello script;</span>
+  <li><span style="color: #000000">riga 3 dei risultati: la divisione di un numero per zero provoca un errore PHP di livello </span><b><span style="color: #000000">[E_WARNING]</span></b><span style="color: #000000">. Ciò non interrompe l’esecuzione dello script;</span>
   </li>
-  <li><span style="color: #000000">Righe 6–9 dei risultati: l&#x27;accesso a un indice inesistente di un array </span><b><span style="color: #000000">[SplFixedArray] </span></b><span style="color: #000000">causa un </span><b><span style="color: #000000">[RuntimeException] </span></b><span style="color: #000000">e interrompe l&#x27;esecuzione dello script;</span>
+  <li><span style="color: #000000">righe 6-9 dei risultati: l&#x27;accesso a un indice inesistente di un array </span><b><span style="color: #000000">[SplFixedArray] </span></b><span style="color: #000000">provoca un&#x27;eccezione di tipo </span><b><span style="color: #000000">[RuntimeException] </span></b><span style="color: #000000">e interrompe l&#x27;esecuzione dello script;</span>
   </li>
 </ul>
-<p><a id="toc42690656"></a>
-<a id="refheadingtoc787992244347140"></a>
-<a id="toc42689884"></a>
-<a id="toc42690270"></a></p>
+
+<p><span id="toc42690270" name="toc42690270" class="odt-bookmark-anchor"></span>
+<span id="toc42690656" name="toc42690656" class="odt-bookmark-anchor"></span>
+<span id="refheadingtoc787992244347140" name="refheadingtoc787992244347140" class="odt-bookmark-anchor"></span>
+<span id="toc42689884" name="toc42689884" class="odt-bookmark-anchor"></span></p>
 <h2 id="76-gestione-delle-eccezioni">7.6. <span style="color: #4f81bd">Gestione delle eccezioni</span></h2>
 <p><span style="color: #000000">Lo script </span><strong><span style="color: #000000">[exceptions-02.php] </span></strong><span style="color: #000000">mostra come gestire le eccezioni:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// all errors are displayed</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// vengono visualizzati tutti gli errori</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">ini_set(</span>&quot;error_reporting&quot;<span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000000">E_ALL);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">ini_set(</span>&quot;display_errors&quot;<span style="color:#000000">,</span><span style="color:#008080"> </span>&quot;on&quot;<span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// surround the code with a try / catch</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// il codice è racchiuso in un try / catch</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">try<span style="color:#008080"> </span>{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#0000ff">$var</span> <span style="color:#000000">=</span> <span style="color:#000000">[];</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// unknown key</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span>print<span style="color:#008080"> </span><span style="color:#0000ff">$var</span>[&quot;abcd&quot;];</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// division by zero</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// chiave sconosciuta</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold">print</span><span style="color:#008080"> </span><span style="color:#0000ff">$var</span>[&quot;abcd&quot;];</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// divisione per zero</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#0000ff">$var</span> <span style="color:#000000">=</span> <span style="color:#000080">7</span> <span style="color:#000000">/</span> <span style="color:#000080">0</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span>var_dump(<span style="color:#0000ff">$var</span>);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// fixed terminal board</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// array con indici fissi</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="color:#0000ff">$array</span><span style="color:#008080"> </span>=<span style="color:#008080"> </span><span style="font-weight:bold">new</span><span style="color:#008080"> </span>\SplFixedArray(<span style="color:#000080">5</span>);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span>$array<span style="font-weight:bold;color:#000000">[1]</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000080">2</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span>$array<span style="font-weight:bold;color:#000000">[4]</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#008000">&quot;foo&quot;</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// index outside the limits</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// indice fuori dai limiti</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span>$array<span style="font-weight:bold;color:#000000">[5]</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000080">8</span><span style="color:#000000">;</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// check</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// verifica</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span>&quot;ce message ne sera pas affiché\n&quot;<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}<span style="color:#008080"> </span><span style="font-weight:bold">catch</span><span style="color:#008080"> </span>(\Throwable<span style="color:#008080"> </span><span style="color:#0000ff">$ex</span>)<span style="color:#008080"> </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// \Throwable is the interface implemented by most errors and exceptions</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// exception is displayed</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// \Throwable è l&#x27;interfaccia implementata dalla maggior parte degli errori e delle eccezioni</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// viene visualizzata l&#x27;eccezione</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;erreur, message : &quot;</span><span style="color:#008080"> </span>.<span style="color:#008080"> </span><span style="color:#0000ff">$ex</span>-&gt;getMessage()<span style="color:#008080"> </span>.<span style="color:#008080"> </span><span style="color:#008000">&quot;, type : &quot;</span><span style="color:#008080"> </span>.<span style="color:#008080"> </span>get_class(<span style="color:#0000ff">$ex</span>)<span style="color:#008080"> </span>.<span style="color:#008080"> </span><span style="color:#008000">&quot;\n&quot;</span>;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <p><strong><span style="color: #000000">Commenti</span></strong></p>
 <ul>
-  <li><span style="color: #000000">Questo script è quello presentato nel paragrafo precedente. Tuttavia, ora abbiamo racchiuso il codice delle righe 8–19 — che potrebbe causare errori — in un blocco </span><b><span style="color: #000000">try/catch</span></b><span style="color: #000000">: se il codice delle righe 8–21 causa (genera) un&#x27;eccezione o un errore, questo verrà gestito dalla clausola </span><b><span style="color: #000000">catch </span></b><span style="color: #000000">nelle righe 22–26;</span>
+  <li><span style="color: #000000">lo script è quello presentato nel paragrafo precedente. Solo che ora il codice delle righe 8-19, che potrebbe causare errori, è stato racchiuso in una struttura </span><b><span style="color: #000000">try/catch</span></b><span style="color: #000000">: se il codice delle righe 8-21 genera (lancia) un&#x27;eccezione o un errore, questa verrà gestita dalla clausola </span><b><span style="color: #000000">catch </span></b><span style="color: #000000">delle righe 22-26;</span>
   </li>
-  <li><span style="color: #000000">Riga 22: Il parametro della clausola</span><b><span style="color: #000000"> [catch] </span></b><span style="color: #000000">è il tipo di eccezione o errore da gestire. Specificando il tipo come </span><b><span style="color: #000000">[\Throwable] </span></b><span style="color: #000000">— che è un&#x27;interfaccia — indichiamo che vogliamo gestire qualsiasi istanza di classe che implementi l&#x27;interfaccia</span><b><span style="color: #000000"> [\Throwable]</span></b><span style="color: #000000">. Poiché tutte le classi di errore ed eccezione implementano questa interfaccia, la clausola</span><b><span style="color: #000000"> [catch] </span></b><span style="color: #000000">qui gestisce qualsiasi errore o eccezione incapsulato in una classe;</span>
+  <li><span style="color: #000000">riga 22: il parametro della clausola </span><b><span style="color: #000000">[catch] </span></b><span style="color: #000000">è il tipo di eccezione o di errore che si desidera gestire. Impostando come tipo </span><b><span style="color: #000000">[\Throwable]</span></b><span style="color: #000000">, che è un&#x27;interfaccia, si indica che si desidera gestire qualsiasi istanza di classe che implementi l&#x27;interfaccia </span><b><span style="color: #000000">[\Throwable]</span></b><span style="color: #000000">. Poiché tutte le classi di errori ed eccezioni implementano questa interfaccia, la clausola </span><b><span style="color: #000000">[catch] </span></b><span style="color: #000000">gestisce in questo caso qualsiasi errore/eccezione incapsulato in una classe;</span>
   </li>
-  <li><span style="color: #000000">riga 19: l&#x27;istruzione che genera l&#x27;errore e solleva l&#x27;eccezione. Non appena si verifica un&#x27;eccezione, il controllo passa alla clausola</span><b><span style="color: #000000"> [catch]</span></b><span style="color: #000000">. Il codice che segue la riga 19 non verrà quindi eseguito;</span>
+  <li><span style="color: #000000">riga 19: l’istruzione che genera l’errore e dà origine all’eccezione. Non appena si verifica un’eccezione, si passa alla clausola </span><b><span style="color: #000000">[catch]</span></b><span style="color: #000000">. Il codice successivo alla riga 19 non verrà quindi eseguito;</span>
   </li>
 </ul>
 
@@ -1305,103 +1309,104 @@
 </code></pre></div></td></tr></table></div>
 <p><strong><span style="color: #000000">Commenti sui risultati</span></strong></p>
 <ul>
-  <li><span style="color: #000000">righe 1 e 3: vediamo errori di livello </span><b><span style="color: #000000">[E_NOTICE] </span></b><span style="color: #000000">e </span><b><span style="color: #000000">[E_WARNING]</span></b><span style="color: #000000">. Questi errori non sono eccezioni e quindi non vengono gestiti dalla clausola</span><b><span style="color: #000000"> [catch]</span></b><span style="color: #000000">;</span>
+  <li><span style="color: #000000">righe 1 e 3: si riscontrano gli errori di livello </span><b><span style="color: #000000">[E_NOTICE] </span></b><span style="color: #000000">e </span><b><span style="color: #000000">[E_WARNING]</span></b><span style="color: #000000">. Questi errori non sono eccezioni e non sono quindi gestiti dalla clausola </span><b><span style="color: #000000">[catch]</span></b><span style="color: #000000">;</span>
   </li>
-  <li><span style="color: #000000">riga 5: abbiamo il messaggio di errore scritto nella clausola</span><b><span style="color: #000000"> [catch]</span></b><span style="color: #000000">. Si è quindi verificata un&#x27;eccezione derivata da </span><b><span style="color: #000000">[\Exception] </span></b><span style="color: #000000">o un errore derivato da </span><b><span style="color: #000000">[\Error]</span></b><span style="color: #000000">. Qui vediamo che si tratta della classe</span><b><span style="color: #000000"> [\RuntimeException]</span></b><span style="color: #000000">;</span>
+  <li><span style="color: #000000">riga 5: il messaggio di errore è riportato nella clausola </span><b><span style="color: #000000">[catch]</span></b><span style="color: #000000">. Si è quindi verificata un’eccezione derivata da </span><b><span style="color: #000000">[\Exception] </span></b><span style="color: #000000">o un errore derivato da </span><b><span style="color: #000000">[\Error]</span></b><span style="color: #000000">. Qui vediamo che si tratta della classe </span><b><span style="color: #000000">[\RuntimeException]</span></b><span style="color: #000000">;</span>
   </li>
 </ul>
-<p><a id="toc42690657"></a>
-<a id="refheadingtoc788012244347140"></a>
-<a id="toc42689885"></a>
-<a id="toc42690271"></a></p>
-<h2 id="77-parametri-della-clausola-catch">7.7. <span style="color: #4f81bd">Parametri della clausola [catch]</span></h2>
-<p><span style="color: #000000">Esaminiamo il seguente script</span><strong><span style="color: #000000"> [exceptions-03.php]</span></strong><span style="color: #000000">:</span></p>
+
+<p><span id="toc42690271" name="toc42690271" class="odt-bookmark-anchor"></span>
+<span id="toc42690657" name="toc42690657" class="odt-bookmark-anchor"></span>
+<span id="refheadingtoc788012244347140" name="refheadingtoc788012244347140" class="odt-bookmark-anchor"></span>
+<span id="toc42689885" name="toc42689885" class="odt-bookmark-anchor"></span></p>
+<h2 id="77-parametri-della-clausola-catch">7.7. <span style="color: #4f81bd"><strong>Parametri della clausola</strong> [catch]</span></h2>
+<p><span style="color: #000000">Esaminiamo il seguente script </span><strong><span style="color: #000000">[exceptions-03.php]</span></strong><span style="color: #000000">:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// all errors are displayed</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// vengono visualizzati tutti gli errori</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">ini_set(</span>&quot;error_reporting&quot;<span style="color:#000000">,</span><span style="color:#008080"> </span><span style="color:#000000">E_ALL);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#000000">ini_set(</span>&quot;display_errors&quot;<span style="color:#000000">,</span><span style="color:#008080"> </span>&quot;on&quot;<span style="color:#000000">);</span></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// a fixed terminal board</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// un array a intervallo fisso</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$array</span><span style="color:#008080"> </span>=<span style="color:#008080"> </span><span style="font-weight:bold">new</span><span style="color:#008080"> </span>\SplFixedArray(<span style="color:#000080">5</span>);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">try<span style="color:#008080"> </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// index outside the limits</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// indice fuori dai limiti</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span>$array<span style="font-weight:bold;color:#000000">[5]</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000080">8</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}<span style="color:#008080"> </span><span style="font-weight:bold">catch</span><span style="color:#008080"> </span>(\Throwable<span style="color:#008080"> </span><span style="color:#0000ff">$ex</span>)<span style="color:#008080"> </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// error message display</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// visualizzazione del messaggio di errore</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;Erreur 1 : &quot;</span><span style="color:#008080"> </span>.<span style="color:#008080"> </span><span style="color:#0000ff">$ex</span>-&gt;getMessage()<span style="color:#008080"> </span>.<span style="color:#008080"> </span><span style="color:#008000">&quot;\n&quot;</span>;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">try<span style="color:#008080"> </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// index outside the limits</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// indice fuori dai limiti</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span>$array<span style="font-weight:bold;color:#000000">[5]</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000080">8</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}<span style="color:#008080"> </span>catch<span style="color:#008080"> </span>(\Exception<span style="color:#008080"> </span><span style="color:#0000ff">$ex</span>)<span style="color:#008080"> </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// error message display</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// visualizzazione del messaggio di errore</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;Erreur 2 : &quot;</span><span style="color:#008080"> </span>.<span style="color:#008080"> </span><span style="color:#0000ff">$ex</span>-&gt;getMessage()<span style="color:#008080"> </span>.<span style="color:#008080"> </span><span style="color:#008000">&quot;\n&quot;</span>;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">try<span style="color:#008080"> </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// index outside the limits</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// valore fuori intervallo</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span>$array<span style="font-weight:bold;color:#000000">[5]</span><span style="color:#008080"> </span><span style="color:#000000">=</span><span style="color:#008080"> </span><span style="color:#000080">8</span><span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}<span style="color:#008080"> </span><span style="font-weight:bold">catch</span><span style="color:#008080"> </span>(\RuntimeException<span style="color:#008080"> </span><span style="color:#0000ff">$ex</span>)<span style="color:#008080"> </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// error message display</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// visualizzazione messaggio di errore</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;Erreur 3 : &quot;</span><span style="color:#008080"> </span>.<span style="color:#008080"> </span><span style="color:#0000ff">$ex</span>-&gt;getMessage()<span style="color:#008080"> </span>.<span style="color:#008080"> </span><span style="color:#008000">&quot;\n&quot;</span>;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">try<span style="color:#008080"> </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// division by 0</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// divisione per 0</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span>intdiv(<span style="color:#000080">5</span>,<span style="color:#008080"> </span><span style="color:#000080">0</span>);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}<span style="color:#008080"> </span><span style="font-weight:bold">catch</span><span style="color:#008080"> </span>(\Throwable<span style="color:#008080"> </span><span style="color:#0000ff">$ex</span>)<span style="color:#008080"> </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// error message display</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// visualizzazione messaggio di errore</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;Erreur 4 : &quot;</span><span style="color:#008080"> </span>.<span style="color:#008080"> </span><span style="color:#0000ff">$ex</span>-&gt;getMessage()<span style="color:#008080"> </span>.<span style="color:#008080"> </span><span style="color:#008000">&quot;\n&quot;</span>;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">try<span style="color:#008080"> </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// division by 0</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// divisione per 0</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span>intdiv(<span style="color:#000080">5</span>,<span style="color:#008080"> </span><span style="color:#000080">0</span>);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}<span style="color:#008080"> </span><span style="font-weight:bold">catch</span><span style="color:#008080"> </span>(\DivisionByzeroError<span style="color:#008080"> </span><span style="color:#0000ff">$ex</span>)<span style="color:#008080"> </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// error message display</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// visualizzazione messaggio di errore</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;Erreur 5 : &quot;</span><span style="color:#008080"> </span>.<span style="color:#008080"> </span><span style="color:#0000ff">$ex</span>-&gt;getMessage()<span style="color:#008080"> </span>.<span style="color:#008080"> </span><span style="color:#008000">&quot;\n&quot;</span>;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">try<span style="color:#008080"> </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// division by 0</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// divisione per 0</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span>intdiv(<span style="color:#000080">5</span>,<span style="color:#008080"> </span><span style="color:#000080">0</span>);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}<span style="color:#008080"> </span><span style="font-weight:bold">catch</span><span style="color:#008080"> </span>(\Error<span style="color:#008080"> </span><span style="color:#0000ff">$ex</span>)<span style="color:#008080"> </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// error message display</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// visualizzazione del messaggio di errore</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;Erreur 6 : &quot;</span><span style="color:#008080"> </span>.<span style="color:#008080"> </span><span style="color:#0000ff">$ex</span>-&gt;getMessage()<span style="color:#008080"> </span>.<span style="color:#008080"> </span><span style="color:#008000">&quot;\n&quot;</span>;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">try<span style="color:#008080"> </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// division by 0</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// divisione per 0</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span>intdiv(<span style="color:#000080">5</span>,<span style="color:#008080"> </span><span style="color:#000080">0</span>);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}<span style="color:#008080"> </span>catch<span style="color:#008080"> </span>(\Exception<span style="color:#008080"> </span><span style="color:#0000ff">$ex</span>)<span style="color:#008080"> </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// error message display</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// visualizzazione del messaggio di errore</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold">print</span><span style="color:#008080"> </span><span style="color:#008000">&quot;Erreur 6 : &quot;</span><span style="color:#008080"> </span>.<span style="color:#008080"> </span><span style="color:#0000ff">$ex</span>-&gt;getMessage()<span style="color:#008080"> </span>.<span style="color:#008080"> </span><span style="color:#008000">&quot;\n&quot;</span>;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <p><strong><span style="color: #000000">Commenti</span></strong></p>
 <ul>
-  <li><span style="color: #000000">righe 8–31: 3 modi diversi per gestire l&#x27;eccezione generata dall&#x27;uso di un indice errato con la classe</span><b><span style="color: #000000"> [\SplFixedArray]</span></b><span style="color: #000000">. Abbiamo visto che questo errore genera una </span><b><span style="color: #000000">[RuntimeException]</span></b><span style="color: #000000">;</span>
+  <li><span style="color: #000000">righe 8-31: 3 modi diversi per gestire l’eccezione generata dall’uso di un indice errato con la classe </span><b><span style="color: #000000">[\SplFixedArray]</span></b><span style="color: #000000">. Abbiamo visto che questo errore generava un’eccezione di tipo </span><b><span style="color: #000000">[RuntimeException]</span></b><span style="color: #000000">;</span>
     <ul>
-      <li><span style="color: #000000">riga 12: gestisce un errore di tipo </span><b><span style="color: #000000">[\Throwable]</span></b><span style="color: #000000">. Ciò è valido poiché il tipo</span><b><span style="color: #000000"> [RuntimeException] </span></b><span style="color: #000000">deriva dal tipo</span><b><span style="color: #000000"> [\Exception]</span></b><span style="color: #000000">, che implementa l&#x27;interfaccia</span><b><span style="color: #000000"> [\Throwable]</span></b><span style="color: #000000">;</span>
+      <li><span style="color: #000000">riga 12: gestisce un errore di tipo </span><b><span style="color: #000000">[\Throwable]</span></b><span style="color: #000000">. È valido poiché il tipo </span><b><span style="color: #000000">[RuntimeException] </span></b><span style="color: #000000">deriva dal tipo </span><b><span style="color: #000000">[\Exception] </span></b><span style="color: #000000">che implementa l’interfaccia </span><b><span style="color: #000000">[\Throwable]</span></b><span style="color: #000000">;</span>
       </li>
-      <li><span style="color: #000000">riga 20: gestisce un errore di tipo </span><b><span style="color: #000000">[\Exception]</span></b><span style="color: #000000">. Questo è valido poiché il tipo</span><b><span style="color: #000000"> [RuntimeException] </span></b><span style="color: #000000">deriva dal tipo</span><b><span style="color: #000000"> [\Exception]</span></b><span style="color: #000000">;</span>
+      <li><span style="color: #000000">riga 20: gestisce un errore di tipo </span><b><span style="color: #000000">[\Exception]</span></b><span style="color: #000000">. È valido poiché il tipo </span><b><span style="color: #000000">[RuntimeException] </span></b><span style="color: #000000">deriva dal tipo </span><b><span style="color: #000000">[\Exception]</span></b><span style="color: #000000">;</span>
       </li>
-      <li><span style="color: #000000">riga 28: gestisce un errore di tipo </span><b><span style="color: #000000">[\RuntimeException]</span></b><span style="color: #000000">. Questo è il metodo preferito poiché è il tipo esatto dell&#x27;eccezione generata;</span>
+      <li><span style="color: #000000">riga 28: gestisce un errore di tipo </span><b><span style="color: #000000">[\RuntimeException]</span></b><span style="color: #000000">. È il metodo da privilegiare poiché corrisponde esattamente al tipo dell’eccezione generata;</span>
       </li>
     </ul>
   </li>
-  <li><span style="color: #000000">righe 32–62: 4 modi diversi per gestire l&#x27;eccezione generata dalla funzione</span><b><span style="color: #000000"> [intdiv] </span></b><span style="color: #000000">quando le viene passato un divisore pari a 0. La funzione</span><b><span style="color: #000000"> [intdiv(int $dividend, int $divisor): int] </span></b><span style="color: #000000">esegue la divisione intera $dividend / $divisor. Quando il divisore è zero, viene generata l&#x27;eccezione</span><b><span style="color: #000000"> [\DivisionByzeroError]</span></b><span style="color: #000000">;</span>
+  <li><span style="color: #000000">righe 32-62: 4 modi diversi per gestire l’eccezione generata dalla funzione </span><b><span style="color: #000000">[intdiv] </span></b><span style="color: #000000">quando le viene passato un divisore pari a 0. La funzione </span><b><span style="color: #000000">[ intdiv ( int $dividend , int $divisor ) : int] </span></b><span style="color: #000000">esegue la divisione intera $dividend / $divisor. Quando il divisore è nullo, viene generata l’eccezione </span><b><span style="color: #000000">[\DivisionByzeroError]</span></b><span style="color: #000000">;</span>
     <ul>
-      <li><span style="color: #000000">riga 35: intercettiamo qualsiasi errore che implementi l&#x27;interfaccia</span><b><span style="color: #000000"> [\Throwable]</span></b><span style="color: #000000">. Questo è valido;</span>
+      <li><span style="color: #000000">riga 35: si intercetta qualsiasi errore che implementi l’interfaccia </span><b><span style="color: #000000">[\Throwable]</span></b><span style="color: #000000">. È corretto;</span>
       </li>
-      <li><span style="color: #000000">riga 43: intercettiamo il tipo esatto dell&#x27;errore: questo è il metodo preferito;</span>
+      <li><span style="color: #000000">riga 43: si intercetta il tipo esatto dell’errore: questo è il metodo da privilegiare;</span>
       </li>
-      <li><span style="color: #000000">riga 51: viene intercettato il tipo </span><b><span style="color: #000000">[\Error]</span></b><span style="color: #000000">. Questo è valido poiché la classe </span><b><span style="color: #000000">[DivisionByzeroError] </span></b><span style="color: #000000">estende la classe </span><b><span style="color: #000000">[Error]</span></b><span style="color: #000000">;</span>
+      <li><span style="color: #000000">riga 51: si intercetta il tipo </span><b><span style="color: #000000">[\Error]</span></b><span style="color: #000000">. È valido poiché la classe </span><b><span style="color: #000000">[DivisionByzeroError] </span></b><span style="color: #000000">estende la classe </span><b><span style="color: #000000">[Error]</span></b><span style="color: #000000">;</span>
       </li>
-      <li><span style="color: #000000">riga 59: viene intercettato il tipo</span><b><span style="color: #000000"> [\Exception]</span></b><span style="color: #000000">. Ciò non è corretto perché la classe</span><b><span style="color: #000000"> [DivisionByzeroError] </span></b><span style="color: #000000">non ha alcun collegamento con la classe</span><b><span style="color: #000000"> [\Exception]</span></b><span style="color: #000000">;</span>
+      <li><span style="color: #000000">riga 59: viene intercettato il tipo </span><b><span style="color: #000000">[\Exception]</span></b><span style="color: #000000">. Non è valido poiché la classe </span><b><span style="color: #000000">[DivisionByzeroError] </span></b><span style="color: #000000">non ha alcun legame con la classe </span><b><span style="color: #000000">[\Exception]</span></b><span style="color: #000000">;</span>
       </li>
     </ul>
   </li>
@@ -1428,40 +1433,40 @@
 <a id="__codelineno-2-7" name="__codelineno-2-7"></a>
 <a id="__codelineno-2-8" name="__codelineno-2-8"></a>Fatal error: Uncaught DivisionByZeroError: Division by zero in C:\Data\st-2019\dev\php7\php5-exemples\exemples\exceptions\exceptions-03.php:58
 <a id="__codelineno-2-9" name="__codelineno-2-9"></a>Stack trace:
-<a id="__codelineno-2-10" name="__codelineno-2-10"></a>#0 C:\Data\st-2019\dev\php7\php5-exemples\exemples\exceptions\exceptions-03.php(58): intdiv(5, 0)
+<a id="__codelineno-2-10" name="__codelineno-2-10"></a>#0 C:\Data\st-2019\dev\php7\php5-esempi\esempi\eccezioni\exceptions-03.php(58): intdiv(5, 0)
 <a id="__codelineno-2-11" name="__codelineno-2-11"></a>#1 {main}
 <a id="__codelineno-2-12" name="__codelineno-2-12"></a>thrown in C:\Data\st-2019\dev\php7\php5-exemples\exemples\exceptions\exceptions-03.php on line 58
 </code></pre></div></td></tr></table></div>
-<p><a id="toc42690658"></a>
-<a id="refheadingtoc788032244347140"></a>
-<a id="toc42689886"></a>
-<a id="toc42690272"></a></p>
-<h2 id="78-clausola-finally">7.8. <span style="color: #4f81bd">clausola [finally]</span></h2>
-<p>La struttura try/catch può avere un terzo elemento e diventare una struttura <strong>try/catch/finally</strong>. Il codice nella clausola <strong>[finally]</strong> viene eseguito nei seguenti due casi:</p>
+<p><span id="toc42690272" name="toc42690272" class="odt-bookmark-anchor"></span>
+<span id="toc42690658" name="toc42690658" class="odt-bookmark-anchor"></span>
+<span id="refheadingtoc788032244347140" name="refheadingtoc788032244347140" class="odt-bookmark-anchor"></span>
+<span id="toc42689886" name="toc42689886" class="odt-bookmark-anchor"></span></p>
+<h2 id="78-clausola-finally">7.8. <span style="color: #4f81bd"><strong>Clausola</strong> [finally]</span></h2>
+<p>La struttura try / catch può avere un terzo elemento e diventare una struttura <strong>try / catch / finally</strong>. Il codice della clausola <strong>[finally]</strong> viene eseguito nei due casi seguenti:</p>
 <ul>
-  <li>la clausola<b> [try] </b>non genera un&#x27;eccezione. Viene quindi eseguita per intero e l&#x27;esecuzione del codice procede alla clausola<b> [finally]</b>, che viene eseguita per intero;
+  <li>la clausola <b>[try] </b>non genera un&#x27;eccezione. Viene quindi eseguita per intero, dopodiché l&#x27;esecuzione del codice passa alla clausola <b>[finally], </b>che viene eseguita per intero;
   </li>
-  <li>la clausola<b> [try] </b>genera un&#x27;eccezione. Viene quindi eseguita fino all&#x27;istruzione che genera l&#x27;eccezione. L&#x27;esecuzione procede quindi alla clausola<b> [catch]</b>, che viene eseguita per intero. L&#x27;esecuzione procede quindi alla clausola<b> [finally]</b>, che viene eseguita per intero;
+  <li>la clausola <b>[try] </b>genera un&#x27;eccezione. Viene quindi eseguita fino all&#x27;istruzione che genera l&#x27;eccezione. L&#x27;esecuzione del codice passa quindi alla clausola <b>[catch], </b>che viene eseguita per intero. Successivamente, l&#x27;esecuzione del codice passa alla clausola <b>[finally], </b>che viene eseguita per intero;
   </li>
 </ul>
 
-<p>Infine, il codice nel blocco <strong>[finally]</strong> viene sempre eseguito. Questo scenario è utile nel seguente caso:</p>
+<p>infine, viene comunque eseguito il codice della clausola <strong>[finally]</strong>. Questo scenario è utile nel seguente caso:</p>
 <ul>
-  <li>nel blocco<b> [try]</b>, il codice ha acquisito risorse (file, database, connessioni di rete, code). Queste risorse sono generalmente ad alto consumo di memoria. Devono quindi essere rilasciate (il più delle volte indicate <b>come &quot;chiuse&quot;</b>) il prima possibile;
+  <li>nella clausola <b>[try]</b>, il codice ha acquisito delle risorse (file, database, connessioni di rete, code). In genere queste risorse richiedono un elevato consumo di memoria. È quindi necessario restituirle (si dice più comunemente <b>«chiuderle»</b>) non appena possibile;
   </li>
-  <li>Se le risorse sono state acquisite nel blocco<b> [try]</b>, il loro rilascio dovrebbe essere inserito nel blocco<b> [finally]</b>. Ciò garantisce che, in tutti i casi (indipendentemente dal verificarsi o meno di un errore), le risorse acquisite vengano restituite al sistema;
+  <li>se l’acquisizione delle risorse è avvenuta nello scenario <b>[try]</b>, la loro restituzione verrà effettuata nello scenario <b>[finally]</b>. Ciò garantisce che in ogni caso (con o senza errore) le risorse acquisite vengano restituite al sistema;
   </li>
 </ul>
 
-<p>Il seguente script <strong>[examples/exceptions/exceptions-04.php]</strong> mostra come funziona la clausola <strong>[finally]</strong> in varie situazioni:</p>
+<p>Il seguente script <strong>[exemples/exceptions/exceptions-04.php]</strong> illustra il funzionamento della clausola <strong>[finally]</strong> in diverse situazioni:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// or create an exception instance</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// oppure crea un&#x27;istanza di eccezione</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$e</span><span style="color:#008080"> </span>=<span style="color:#008080"> </span><span style="font-weight:bold">new</span><span style="color:#008080"> </span>\<span style="font-weight:bold">Exception</span>(<span style="color:#008000">&quot;Erreur…&quot;</span>);    </span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">var_dump(<span style="color:#0000ff">$e</span>);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// first test</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// primo test</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">try<span style="color:#008080"> </span>{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span>&quot;Premier test\n&quot;<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold">throw</span><span style="color:#008080"> </span><span style="color:#0000ff">$e</span>;</span></span>
@@ -1471,7 +1476,7 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span>&quot;Terminé\n&quot;<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"></span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// second test</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// secondo test</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">try<span style="color:#008080"> </span>{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span>&quot;Second test\n&quot;<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}<span style="color:#008080"> </span>catch<span style="color:#008080"> </span>(\Exception<span style="color:#008080"> </span><span style="color:#0000ff">$ex1</span>)<span style="color:#008080"> </span>{</span></span>
@@ -1479,8 +1484,8 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}<span style="color:#008080"> </span>finally<span style="color:#008080"> </span>{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span>&quot;Terminé\n&quot;<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// third test</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// terzo test</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">try<span style="color:#008080"> </span>{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span>&quot;Troisième test\n&quot;<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span>return;</span></span>
@@ -1491,19 +1496,19 @@
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
-<p><strong>Commenti nel codice</strong></p>
+<p><strong>Commenti al codice</strong></p>
 <ul>
-  <li>riga 4: $e è un&#x27;istanza della classe predefinita <b>[\Exception]</b>. La lanceremo in vari punti;
+  <li>riga 4: $e è un&#x27;istanza della classe predefinita <b>[\Exception]</b>. Verrà lanciata in diversi punti;
   </li>
-  <li>righe 8–15: l&#x27;eccezione $e viene generata nel blocco<b> [try] </b>(riga 10);
+  <li>righe 8-15: l’eccezione $e viene generata all’interno di <b>[try] </b>(riga 10);
   </li>
-  <li>riga 11: l&#x27;eccezione<b> [\Exception] </b>viene intercettata e il suo messaggio di errore viene scritto sulla console;
+  <li>riga 11: l’eccezione <b>[\Exception] </b>viene intercettata e il relativo messaggio di errore viene scritto sulla console;
   </li>
-  <li>righe 13–15: la clausola<b> [finally] </b>stampa un messaggio. In base a quanto detto in precedenza, questo messaggio dovrebbe essere sempre stampato, indipendentemente dal fatto che ci sia un errore nel blocco<b> [try]</b>;
+  <li>righe 13-15: la clausola <b>[finally] </b>scrive un messaggio. In base a quanto detto in precedenza, questo messaggio dovrebbe essere scritto sempre, indipendentemente dal fatto che ci sia o meno un errore nel <b>[try]</b>;
   </li>
-  <li>righe 18–24: non c&#x27;è alcun errore nel <b>[try]</b>. Dovremmo anche entrare nel blocco<b> [finally] </b>qui;
+  <li>righe 18-24: non vi è alcun errore nel <b>[try]</b>. Anche in questo caso si dovrebbe passare al <b>[finally]</b>;
   </li>
-  <li>righe 27–34: nel blocco `try` è presente un&#x27;istruzione<b> `return` </b>e non si verifica alcun errore. Ci si potrebbe quindi chiedere se si entrerà nella clausola<b> `finally`</b>. L&#x27;esecuzione dimostra che sì, ci si entra;
+  <li>righe 27-34: nel blocco «try» è presente un’istruzione <b>[return] </b>e non si verifica alcun errore. Ci si può quindi chiedere se si passerà alla clausola <b>[finally]</b>. L’esecuzione dimostra che sì;
   </li>
 </ul>
 
@@ -1522,11 +1527,11 @@
 <a id="__codelineno-3-6" name="__codelineno-3-6"></a>Troisième test
 <a id="__codelineno-3-7" name="__codelineno-3-7"></a>Terminé
 </code></pre></div></td></tr></table></div>
-<p>Esaminiamo un altro caso <strong>[exceptions-05.php]</strong>:</p>
+<p>Esaminiamo un altro caso, <strong>[exceptions-05.php]</strong>:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// fourth test</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// quarto test</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">try<span style="color:#008080"> </span>{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span>&quot;Quatrième test\n&quot;<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span>exit;</span></span>
@@ -1537,44 +1542,44 @@
 
 <p><strong><span style="color: #000000">Commenti</span></strong></p>
 <ul>
-  <li><span style="color: #000000">riga 6: l&#x27;istruzione</span><b><span style="color: #000000"> [exit] </span></b><span style="color: #000000">interrompe immediatamente l&#x27;esecuzione dello script: la clausola</span><b><span style="color: #000000"> [finally] </span></b><span style="color: #000000">non viene eseguita;</span>
+  <li><span style="color: #000000">riga 6: l&#x27;istruzione </span><b><span style="color: #000000">[exit] </span></b><span style="color: #000000">interrompe immediatamente l&#x27;esecuzione dello script: la clausola </span><b><span style="color: #000000">[finally] </span></b><span style="color: #000000">non viene eseguita;</span>
   </li>
-  <li><span style="color: #000000">righe 4–9: un esempio di try / catch / finally senza una clausola</span><b><span style="color: #000000"> [catch]</span></b><span style="color: #000000">. Ciò è possibile;</span>
+  <li><span style="color: #000000">righe 4-9: un esempio di try / catch / finally senza la clausola </span><b><span style="color: #000000">[catch]</span></b><span style="color: #000000">. È possibile;</span>
   </li>
 </ul>
 
 <p><strong><span style="color: #000000">Risultati</span></strong></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a>Quatrième test
 </code></pre></div></td></tr></table></div>
-<p><a id="toc42690659"></a>
-<a id="refheadingtoc788052244347140"></a>
-<a id="toc42689887"></a>
-<a id="toc42690273"></a></p>
-<h2 id="79-creazione-di-classi-di-eccezione-personalizzate">7.9. <span style="color: #4f81bd">Creazione di classi di eccezione personalizzate</span></h2>
-<p>In un progetto di una certa entità, è utile distinguere tra diversi errori incapsulandoli in diverse classi di eccezione. Nello script precedente, abbiamo visto che qualsiasi eccezione poteva essere intercettata da una clausola <strong>[catch (\Throwable]</strong>. Questo è consigliabile se non si ha idea di quale sia l’errore intercettato e la gestione è la stessa per tutti gli errori. A volte è così, ma spesso è necessario adattare la gestione al tipo esatto di errore. È quindi necessario distinguere tra gli errori.</p>
+<p><span id="toc42690273" name="toc42690273" class="odt-bookmark-anchor"></span>
+<span id="toc42690659" name="toc42690659" class="odt-bookmark-anchor"></span>
+<span id="refheadingtoc788052244347140" name="refheadingtoc788052244347140" class="odt-bookmark-anchor"></span>
+<span id="toc42689887" name="toc42689887" class="odt-bookmark-anchor"></span></p>
+<h2 id="79-creare-le-proprie-classi-di-eccezioni">7.9. <span style="color: #4f81bd">Creare le proprie classi di eccezioni</span></h2>
+<p>In un progetto di una certa entità, è utile distinguere i diversi errori incapsulandoli in diverse classi di eccezioni. Nello script precedente, abbiamo visto che qualsiasi eccezione poteva essere intercettata da una clausola <strong>[catch (\Throwable]</strong>. Questo è consigliabile se non si ha alcuna idea dell’errore intercettato e se la gestione è la stessa per tutti gli errori. A volte è così, ma spesso è necessario adattare la gestione al tipo esatto di errore. È quindi necessario distinguere gli errori tra loro.</p>
 <p>Esaminiamo il seguente script <strong>[exceptions-06.php]</strong>:</p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// we define our own family of exceptions</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// definiamo la nostra famiglia di eccezioni</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold">class</span><span style="color:#008080"> </span>Exception1<span style="color:#008080"> </span><span style="font-weight:bold">extends</span><span style="color:#008080"> </span>\RuntimeException<span style="color:#008080"> </span>{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  </span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold">class</span><span style="color:#008080"> </span>Exception2<span style="color:#008080"> </span><span style="font-weight:bold">extends</span><span style="color:#008080"> </span>\RuntimeException<span style="color:#008080"> </span>{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  </span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// or use our exceptions</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// oppure utilizziamo le nostre eccezioni</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$e1</span><span style="color:#008080"> </span>=<span style="color:#008080"> </span><span style="font-weight:bold">new</span><span style="color:#008080"> </span>Exception1(<span style="color:#008000">&quot;Erreur1…&quot;</span>);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">var_dump(<span style="color:#0000ff">$e1</span>);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#0000ff">$e2</span><span style="color:#008080"> </span>=<span style="color:#008080"> </span><span style="font-weight:bold">new</span><span style="color:#008080"> </span>Exception2(<span style="color:#008000">&quot;Erreur2…&quot;</span>);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">var_dump(<span style="color:#0000ff">$e2</span>);</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// first test</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// primo test</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#000000">(</span>&quot;premier test\n&quot;<span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">try<span style="color:#008080"> </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// throw an Exception1 type</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// si genera un&#x27;eccezione di tipo Exception1</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold">throw</span><span style="color:#008080"> </span><span style="color:#0000ff">$e1</span>;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}<span style="color:#008080"> </span><span style="font-weight:bold">catch</span><span style="color:#008080"> </span>(Exception1<span style="color:#008080"> </span><span style="color:#0000ff">$ex1</span>)<span style="color:#008080"> </span>{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span>&quot;Exception 1&quot;<span style="color:#008080"> </span><span style="color:#000000">.</span><span style="color:#008080"> </span>&quot;\n&quot;<span style="color:#000000">;</span></span></span>
@@ -1583,11 +1588,11 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span>&quot;Exception 2&quot;<span style="color:#008080"> </span><span style="color:#000000">.</span><span style="color:#008080"> </span>&quot;\n&quot;<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold">print</span><span style="color:#008080"> </span><span style="color:#0000ff">$ex2</span>-&gt;getMessage()<span style="color:#008080"> </span>.<span style="color:#008080"> </span><span style="color:#008000">&quot;\n&quot;</span>;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// second test</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// secondo test</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#000000">(</span>&quot;second test\n&quot;<span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">try<span style="color:#008080"> </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// throw an Exception2 type</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// si genera un&#x27;eccezione di tipo Exception2</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold">throw</span><span style="color:#008080"> </span><span style="color:#0000ff">$e2</span>;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}<span style="color:#008080"> </span><span style="font-weight:bold">catch</span><span style="color:#008080"> </span>(Exception1<span style="color:#008080"> </span><span style="color:#0000ff">$ex1</span>)<span style="color:#008080"> </span>{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span>&quot;Exception 1&quot;<span style="color:#008080"> </span><span style="color:#000000">.</span><span style="color:#008080"> </span>&quot;\n&quot;<span style="color:#000000">;</span></span></span>
@@ -1596,21 +1601,21 @@
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span>&quot;Exception 2&quot;<span style="color:#008080"> </span><span style="color:#000000">.</span><span style="color:#008080"> </span>&quot;\n&quot;<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold">print</span><span style="color:#008080"> </span><span style="color:#0000ff">$ex2</span>-&gt;getMessage()<span style="color:#008080"> </span>.<span style="color:#008080"> </span><span style="color:#008000">&quot;\n&quot;</span>;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// third test</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// terzo test</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#000000">(</span>&quot;troisième test\n&quot;<span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">try<span style="color:#008080"> </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// throw an Exception1 type</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// viene generata un&#x27;eccezione di tipo Exception1</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold">throw</span><span style="color:#008080"> </span><span style="color:#0000ff">$e1</span>;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}<span style="color:#008080"> </span><span style="font-weight:bold">catch</span><span style="color:#008080"> </span>(Exception1<span style="color:#008080"> </span>|<span style="color:#008080"> </span>Exception2<span style="color:#008080"> </span><span style="color:#0000ff">$ex</span>)<span style="color:#008080"> </span>{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span>&quot;Exception 1 ou 2&quot;<span style="color:#008080"> </span><span style="color:#000000">.</span><span style="color:#008080"> </span>&quot;\n&quot;<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold">print</span><span style="color:#008080"> </span><span style="color:#0000ff">$ex</span>-&gt;getMessage()<span style="color:#008080"> </span>.<span style="color:#008080"> </span><span style="color:#008000">&quot;\n&quot;</span>;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">// fourth test</span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">// quarto test</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#000000">(</span>&quot;quatrième test\n&quot;<span style="color:#000000">);</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">try<span style="color:#008080"> </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// throw an Exception2 type</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// viene generata un&#x27;eccezione di tipo Exception2</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold">throw</span><span style="color:#008080"> </span><span style="color:#0000ff">$e2</span>;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}<span style="color:#008080"> </span><span style="font-weight:bold">catch</span><span style="color:#008080"> </span>(Exception1<span style="color:#008080"> </span>|<span style="color:#008080"> </span>Exception2<span style="color:#008080"> </span><span style="color:#0000ff">$ex</span>)<span style="color:#008080"> </span>{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span>&quot;Exception 1 ou 2&quot;<span style="color:#008080"> </span><span style="color:#000000">.</span><span style="color:#008080"> </span>&quot;\n&quot;<span style="color:#000000">;</span></span></span>
@@ -1620,11 +1625,11 @@
 
 <p><strong><span style="color: #000000">Commenti</span></strong></p>
 <ul>
-  <li><span style="color: #000000">righe 4–10: definiamo due classi, </span><b><span style="color: #000000">[Exception1] </span></b><span style="color: #000000">e </span><b><span style="color: #000000">[Exception2]</span></b><span style="color: #000000">, entrambe derivate dalla classe predefinita </span><b><span style="color: #000000">[\RuntimeException]</span></b><span style="color: #000000">. Il corpo di queste classi è vuoto. In altre parole, le utilizziamo solo per i loro tipi nell&#x27;istruzion : è proprio grazie ai loro tipi diversi che potremo distinguere tra queste due eccezioni nelle clausole</span><b><span style="color: #000000"> [catch]</span></b><span style="color: #000000">;</span>
+  <li><span style="color: #000000">righe 4-10: si definiscono due classi, </span><b><span style="color: #000000">[Exception1] </span></b><span style="color: #000000">e </span><b><span style="color: #000000">[Exception2], </span></b><span style="color: #000000">entrambe derivate dalla classe predefinita </span><b><span style="color: #000000">[\RuntimeException]</span></b><span style="color: #000000">. Il corpo di queste classi è vuoto. In altre parole, vengono utilizzate solo per i loro tipi: è proprio perché hanno tipi diversi che sarà possibile distinguere queste due eccezioni nelle clausole </span><b><span style="color: #000000">[catch]</span></b><span style="color: #000000">;</span>
   </li>
-  <li><span style="color: #000000">righe 13–16: definiamo due variabili, $e1 e $e2, con i tipi </span><b><span style="color: #000000">[Exception1] </span></b><span style="color: #000000">e </span><b><span style="color: #000000">[Exception2], </span></b><span style="color: #000000">rispettivamente;</span>
+  <li><span style="color: #000000">righe 13-16: si definiscono due variabili $e1 e $e2 aventi rispettivamente i tipi </span><b><span style="color: #000000">[Exception1] </span></b><span style="color: #000000">e </span><b><span style="color: #000000">[Exception2]</span></b><span style="color: #000000">;</span>
   </li>
-  <li><span style="color: #000000">righe 20–29: abbiamo una struttura try/catch/catch. Questo ci permette di gestire diversi tipi di eccezioni con diverse clausole</span><b><span style="color: #000000"> [catch]</span></b><span style="color: #000000">;</span>
+  <li><span style="color: #000000">righe 20-29: è presente una struttura try / catch / catch. Ciò consente di gestire diversi tipi di eccezioni con diverse clausole </span><b><span style="color: #000000">[catch]</span></b><span style="color: #000000">;</span>
   </li>
   <li><span style="color: #000000">riga 23: intercetta le eccezioni di tipo </span><b><span style="color: #000000">[Exception1]</span></b><span style="color: #000000">;</span>
   </li>
@@ -1729,61 +1734,62 @@
 </code></pre></div></td></tr></table></div>
 <p><strong><span style="color: #000000">Commenti sui risultati</span></strong></p>
 <ul>
-  <li><span style="color: #000000">righe 1–17: il “contenuto” di un’eccezione:</span>
+  <li><span style="color: #000000">righe 1-17: il «contenuto» di un’eccezione:</span>
     <ul>
-      <li><span style="color: #000000">righe 2–3: il messaggio di errore;</span>
+      <li><span style="color: #000000">righe 2-3: il messaggio di errore;</span>
       </li>
-      <li><span style="color: #000000">righe 6–7: il codice di errore;</span>
+      <li><span style="color: #000000">righe 6-7: il codice di errore;</span>
       </li>
-      <li><span style="color: #000000">righe 8–9: il nome del file in cui si è verificata l&#x27;eccezione;</span>
+      <li><span style="color: #000000">righe 8-9: il nome del file in cui si è verificata l’eccezione;</span>
       </li>
-      <li><span style="color: #000000">righe 10–11: la riga in cui si è verificata l&#x27;eccezione;</span>
+      <li><span style="color: #000000">righe 10-11: la riga in cui si è verificata l’eccezione;</span>
       </li>
-      <li><span style="color: #000000">righe 15–16: l&#x27;eccezione precedente. Un&#x27;eccezione può incapsulare un&#x27;altra eccezione, definendo così uno stack di eccezioni. L&#x27;attributo</span><b><span style="color: #000000"> [previous] </span></b><span style="color: #000000">consente di accedere a questo stack;</span>
+      <li><span style="color: #000000">righe 15-16: l’eccezione precedente. Un’eccezione può incapsulare un’altra eccezione e definire così una pila di eccezioni. L’attributo </span><b><span style="color: #000000">[previous] </span></b><span style="color: #000000">consentirà di sfruttare questa pila;</span>
       </li>
     </ul>
   </li>
 </ul>
-<p><a id="toc42690660"></a>
-<a id="refheadingtoc788072244347140"></a>
-<a id="toc42689888"></a>
-<a id="toc42690274"></a></p>
-<h2 id="710-rilancio-di-uneccezione">7.10. <span style="color: #4f81bd">Rilancio di un&#x27;eccezione</span></h2>
-<p><span style="color: #000000">Un&#x27;eccezione può essere generata più volte, come mostrato nel seguente script</span><strong><span style="color: #000000"> [exceptions-07.php]</span></strong><span style="color: #000000">:</span></p>
+
+<p><span id="toc42690274" name="toc42690274" class="odt-bookmark-anchor"></span>
+<span id="toc42690660" name="toc42690660" class="odt-bookmark-anchor"></span>
+<span id="refheadingtoc788072244347140" name="refheadingtoc788072244347140" class="odt-bookmark-anchor"></span>
+<span id="toc42689888" name="toc42689888" class="odt-bookmark-anchor"></span></p>
+<h2 id="710-rilanciare-uneccezione">7.10. <span style="color: #4f81bd">Rilanciare un&#x27;eccezione</span></h2>
+<p><span style="color: #000000">Un&#x27;eccezione può essere generata più volte, come illustrato dal seguente script </span><strong><span style="color: #000000">[exceptions-07.php]</span></strong><span style="color: #000000">:</span></p>
 <div class="odt-code-rich" data-linenums="true" style="counter-reset: odtline 0;"><pre><code class="language-php">
 <span class="odt-code-line"><span class="odt-code-line-content">&lt;?php</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content"> </span></span>
+<span class="odt-code-line"><span class="odt-code-line-content"></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">try<span style="color:#008080"> </span>{</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold">try</span><span style="color:#008080"> </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#008080">// throw an exception</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#008080">// si genera un&#x27;eccezione</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span>throw<span style="color:#008080"> </span>new<span style="color:#008080"> \</span>Exception(<span style="color:#008000">&quot;test&quot;</span>);</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span>}<span style="color:#008080"> </span><span style="font-weight:bold">catch</span><span style="color:#008080"> </span>(\<span style="font-weight:bold">Exception</span><span style="color:#008080"> </span><span style="color:#0000ff">$ex</span>)<span style="color:#008080"> </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#008080">// the intercepted exception is re-launched</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#008080">// si rilancia l&#x27;eccezione intercettata</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="font-weight:bold">throw</span><span style="color:#008080"> </span><span style="color:#0000ff">$ex</span>;</span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span>}<span style="color:#008080"> </span>finally<span style="color:#008080"> </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#008080">// we&#x27;ll make it to the finally</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">    <span style="color:#008080">// si passerà correttamente al blocco finally</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">    </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span>&quot;finally 1\n&quot;<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#000000">}</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}<span style="color:#008080"> </span>catch<span style="color:#008080"> </span>(\Exception<span style="color:#008080"> </span><span style="color:#0000ff">$ex2</span>)<span style="color:#008080"> </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// the initial exception is recovered</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// si recupera correttamente l&#x27;eccezione iniziale</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span><span style="color:#0000ff">$ex2</span><span style="color:#000000">-&gt;getMessage()</span><span style="color:#008080"> </span><span style="color:#000000">.</span><span style="color:#008080"> </span>&quot; dans try / catch / finally externe\n&quot;<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}<span style="color:#008080"> </span>finally<span style="color:#008080"> </span>{</span></span>
-<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// we&#x27;ll make it to the finally</span></span></span>
+<span class="odt-code-line"><span class="odt-code-line-content">  <span style="color:#008080">// si entrerà correttamente nel blocco finally</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content"><span style="color:#008080">  </span><span style="font-weight:bold;color:#000000">print</span><span style="color:#008080"> </span>&quot;finally 2\n&quot;<span style="color:#000000">;</span></span></span>
 <span class="odt-code-line"><span class="odt-code-line-content">}</span></span>
 </code></pre></div>
 
 <p><strong><span style="color: #000000">Commenti</span></strong></p>
 <ul>
-  <li><span style="color: #000000">riga 6: generiamo un&#x27;eccezione;</span>
+  <li><span style="color: #000000">riga 6: si genera un&#x27;eccezione;</span>
   </li>
-  <li><span style="color: #000000">riga 7: la intercettiamo;</span>
+  <li><span style="color: #000000">riga 7: l&#x27;eccezione viene intercettata;</span>
   </li>
-  <li><span style="color: #000000">riga 9: la rilanciamo. Passa quindi attraverso il blocco try/catch/finally al livello superiore;</span>
+  <li><span style="color: #000000">riga 9: viene rilanciata. Passa quindi nella struttura try / catch / finally del livello superiore;</span>
   </li>
-  <li><span style="color: #000000">riga 14: viene intercettata nuovamente;</span>
+  <li><span style="color: #000000">riga 14: viene nuovamente intercettata;</span>
   </li>
-  <li><span style="color: #000000">righe 10–12: l&#x27;esecuzione mostra che anche dopo il </span><b><span style="color: #000000">[throw] </span></b><span style="color: #000000">nella riga 9, il controllo passa effettivamente alla clausola</span><b><span style="color: #000000"> [finally] </span></b><span style="color: #000000">del blocco try/catch/finally;</span>
+  <li><span style="color: #000000">righe 10-12: l&#x27;esecuzione mostra che, anche dopo il </span><b><span style="color: #000000">[throw] </span></b><span style="color: #000000">della riga 9, si passa effettivamente alla clausola </span><b><span style="color: #000000">[finally] </span></b><span style="color: #000000">del try / catch / finally;</span>
   </li>
 </ul>
 
@@ -1794,12 +1800,12 @@
 <a id="__codelineno-6-2" name="__codelineno-6-2"></a>test dans try / catch / finally externe
 <a id="__codelineno-6-3" name="__codelineno-6-3"></a>finally 2
 </code></pre></div></td></tr></table></div>
-<p><a id="toc42690661"></a>
-<a id="refheadingtoc788092244347140"></a>
-<a id="toc42689889"></a>
-<a id="toc42690275"></a></p>
-<h2 id="711-lavorare-con-uno-stack-di-eccezioni">7.11. <span style="color: #4f81bd">Lavorare con uno stack di eccezioni</span></h2>
-<p><span style="color: #000000">Un&#x27;eccezione può incapsulare un&#x27;altra eccezione, che a sua volta può incapsularne un&#x27;altra, formando in definitiva uno stack di eccezioni. Ecco un esempio </span><strong><span style="color: #000000">[exceptions-08.php]</span></strong><span style="color: #000000">:</span></p>
+<p><span id="toc42690275" name="toc42690275" class="odt-bookmark-anchor"></span>
+<span id="toc42690661" name="toc42690661" class="odt-bookmark-anchor"></span>
+<span id="refheadingtoc788092244347140" name="refheadingtoc788092244347140" class="odt-bookmark-anchor"></span>
+<span id="toc42689889" name="toc42689889" class="odt-bookmark-anchor"></span></p>
+<h2 id="711-gestione-di-una-pila-di-eccezioni">7.11. <span style="color: #4f81bd">Gestione di una pila di eccezioni</span></h2>
+<p><span style="color: #000000">Un&#x27;eccezione può incapsulare un&#x27;altra eccezione, che a sua volta può incapsularne un&#x27;altra, formando infine una pila di eccezioni. Ecco un esempio </span><strong><span style="color: #000000">[exceptions-08.php]</span></strong><span style="color: #000000">:</span></p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-14">14</a></span>
 <span class="normal"><a href="#__codelineno-7-15">15</a></span>
 <span class="normal"><a href="#__codelineno-7-16">16</a></span>
@@ -1828,7 +1834,7 @@
 <span class="normal"><a href="#__codelineno-7-39">39</a></span>
 <span class="normal"><a href="#__codelineno-7-40">40</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-14" name="__codelineno-7-14"></a><span class="cp">&lt;?php</span>
 <a id="__codelineno-7-15" name="__codelineno-7-15"></a>
-<a id="__codelineno-7-16" name="__codelineno-7-16"></a><span class="c1">// we define our own family of exceptions</span>
+<a id="__codelineno-7-16" name="__codelineno-7-16"></a><span class="c1">// si definisce la propria famiglia di eccezioni</span>
 <a id="__codelineno-7-17" name="__codelineno-7-17"></a><span class="k">class</span> <span class="nc">Exception1</span> <span class="k">extends</span> <span class="nx">\RuntimeException</span> <span class="p">{</span>
 <a id="__codelineno-7-18" name="__codelineno-7-18"></a>
 <a id="__codelineno-7-19" name="__codelineno-7-19"></a><span class="p">}</span>
@@ -1841,38 +1847,38 @@
 <a id="__codelineno-7-26" name="__codelineno-7-26"></a>
 <a id="__codelineno-7-27" name="__codelineno-7-27"></a><span class="p">}</span>
 <a id="__codelineno-7-28" name="__codelineno-7-28"></a>
-<a id="__codelineno-7-29" name="__codelineno-7-29"></a><span class="c1">// or use our exceptions</span>
+<a id="__codelineno-7-29" name="__codelineno-7-29"></a><span class="c1">// oppure utilizziamo le nostre eccezioni</span>
 <a id="__codelineno-7-30" name="__codelineno-7-30"></a><span class="nv">$e1</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Exception1</span><span class="p">(</span><span class="s2">&quot;Erreur 1…&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="k">new</span> <span class="nx">Exception2</span><span class="p">(</span><span class="s2">&quot;Erreur 2…&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="k">new</span> <span class="nx">Exception3</span><span class="p">(</span><span class="s2">&quot;Erreur 3…&quot;</span><span class="p">)));</span>
 <a id="__codelineno-7-31" name="__codelineno-7-31"></a><span class="nb">var_dump</span><span class="p">(</span><span class="nv">$e1</span><span class="p">);</span>
-<a id="__codelineno-7-32" name="__codelineno-7-32"></a><span class="c1">// exploiting the current exception</span>
+<a id="__codelineno-7-32" name="__codelineno-7-32"></a><span class="c1">// gestione dell&#39;eccezione corrente</span>
 <a id="__codelineno-7-33" name="__codelineno-7-33"></a><span class="k">print</span> <span class="nv">$e1</span><span class="o">-&gt;</span><span class="na">getMessage</span><span class="p">()</span> <span class="o">.</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
 <a id="__codelineno-7-34" name="__codelineno-7-34"></a><span class="nv">$e</span> <span class="o">=</span> <span class="nv">$e1</span><span class="p">;</span>
 <a id="__codelineno-7-35" name="__codelineno-7-35"></a><span class="k">while</span> <span class="p">(</span><span class="nv">$e</span><span class="o">-&gt;</span><span class="na">getPrevious</span><span class="p">()</span> <span class="o">!==</span> <span class="k">NULL</span><span class="p">)</span> <span class="p">{</span>
-<a id="__codelineno-7-36" name="__codelineno-7-36"></a>  <span class="c1">// previous exception</span>
+<a id="__codelineno-7-36" name="__codelineno-7-36"></a>   <span class="c1">// eccezione precedente</span>
 <a id="__codelineno-7-37" name="__codelineno-7-37"></a>  <span class="nv">$e</span> <span class="o">=</span> <span class="nv">$e</span><span class="o">-&gt;</span><span class="na">getPrevious</span><span class="p">();</span>
-<a id="__codelineno-7-38" name="__codelineno-7-38"></a>  <span class="c1">// error message</span>
+<a id="__codelineno-7-38" name="__codelineno-7-38"></a>   <span class="c1">// messaggio di errore</span>
 <a id="__codelineno-7-39" name="__codelineno-7-39"></a>  <span class="k">print</span> <span class="nv">$e</span><span class="o">-&gt;</span><span class="na">getMessage</span><span class="p">()</span> <span class="o">.</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">;</span>
 <a id="__codelineno-7-40" name="__codelineno-7-40"></a><span class="p">}</span>
 </code></pre></div></td></tr></table></div>
 <p><strong><span style="color: #000000">Commenti</span></strong></p>
 <ul>
-  <li><span style="color: #000000">righe 4–14: definiscono tre classi di eccezione derivate dall&#x27;eccezione predefinita </span><b><span style="color: #000000">[RuntimeException]</span></b><span style="color: #000000">;</span>
+  <li><span style="color: #000000">righe 4-14: definiscono tre classi di eccezioni derivate dall’eccezione predefinita </span><b><span style="color: #000000">[RuntimeException]</span></b><span style="color: #000000">;</span>
   </li>
-  <li><span style="color: #000000">riga 17: un&#x27;istanza della classe</span><b><span style="color: #000000"> [Exception3] </span></b><span style="color: #000000">è incapsulata all&#x27;interno di un&#x27;istanza della classe</span><b><span style="color: #000000"> [Exception2]</span></b><span style="color: #000000">, che a sua volta è incapsulata all&#x27;interno di un&#x27;istanza della classe</span><b><span style="color: #000000"> [Exception1]</span></b><span style="color: #000000">. Il costruttore utilizzato qui è il costruttore della classe</span><b><span style="color: #000000"> [Exception]</span></b><span style="color: #000000">:</span>
+  <li><span style="color: #000000">riga 17: un&#x27;istanza della classe </span><b><span style="color: #000000">[Exception3] </span></b><span style="color: #000000">è incapsulata in un&#x27;istanza della classe </span><b><span style="color: #000000">[Exception2], </span></b><span style="color: #000000">che a sua volta è incapsulata in un&#x27;istanza della classe </span><b><span style="color: #000000">[Exception1]</span></b><span style="color: #000000">. Il costruttore utilizzato in questo caso è quello della classe </span><b><span style="color: #000000">[Exception]</span></b><span style="color: #000000">:</span>
   </li>
 </ul>
 
-<p><img src="images/10000000000006030000006FF84FF42B.png" width="539" height="39" style="width:14.25cm;height:1.028cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000006030000006FF84FF42B.png" /></p>
+<p><img src="images/10000000000006030000006FF84FF42B.png" width="539" height="39" style="width:14.25cm;height:1.03cm;" alt="Image" class="odt-zoomable" data-zoom-src="images/10000000000006030000006FF84FF42B.png" /></p>
 <p><span style="color: #000000">Il terzo parametro del costruttore consente di incapsulare un&#x27;eccezione. Ciò può essere utile nel seguente scenario:</span></p>
 <ul>
-  <li><span style="color: #000000">definiamo un metodo M che può generare un&#x27;eccezione di tipo </span><b><span style="color: #000000">[Exception1] </span></b><span style="color: #000000">e solo di questo tipo per motivi di compatibilità, ad esempio con un&#x27;interfaccia;</span>
+  <li><span style="color: #000000">si definisce un metodo M che può generare un&#x27;eccezione di tipo </span><b><span style="color: #000000">[Exception1] </span></b><span style="color: #000000">e solo di questo tipo per motivi di compatibilità, ad esempio con un&#x27;interfaccia;</span>
   </li>
-  <li><span style="color: #000000">tuttavia, all&#x27;interno del metodo M possono verificarsi altri tipi di eccezioni. Per propagare un errore al codice che chiama il metodo M, incapsuleremo quindi queste eccezioni all&#x27;interno del tipo</span><b><span style="color: #000000"> [Exception1]</span></b><span style="color: #000000">, che lanceremo. Ciò garantisce che le informazioni contenute nell&#x27;eccezione incapsulata — che era la causa originale dell&#x27;errore — non vadano perse;</span>
+  <li><span style="color: #000000">tuttavia, nel metodo M possono verificarsi altri tipi di eccezioni. Per segnalare un errore al codice che chiama il metodo M, si incapsuleranno quindi queste eccezioni nel tipo </span><b><span style="color: #000000">[Exception1] </span></b><span style="color: #000000">che verrà lanciato. Ciò consente di non perdere le informazioni contenute nell’eccezione incapsulata e che sono state la causa originaria dell’errore;</span>
   </li>
 </ul>
 
 <ul>
-  <li><span style="color: #000000">Le righe 20–27 mostrano come gestire lo stack di eccezioni annidate all&#x27;interno di un&#x27;eccezione;</span>
+  <li><span style="color: #000000">le righe 20-27 mostrano come gestire lo stack delle eccezioni interne a un’eccezione;</span>
   </li>
 </ul>
 
